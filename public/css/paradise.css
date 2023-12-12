@@ -1,21 +1,126 @@
+.none{
+    display: none;
+}
+.box_location{
+    position: absolute;
+    background: white;
+    padding: 20px 15px;
+    height: 300px;
+    font-family: 'Gothic A1', sans-serif;
+    color: black;
+    font-weight: 600;
+    line-height: 30px;
+    top: 95px;
+    left: 375px;
+    font-size: 20px;
+    width: 280px;
+    text-align: left;
+    display: none;
+}
+.box_class{
+    position: absolute;
+    background: white;
+    padding: 20px 15px;
+    height: 300px;
+    font-family: 'Gothic A1', sans-serif;
+    color: black;
+    font-weight: 600;
+    line-height: 30px;
+    top: 95px;
+    left: 695px;
+    font-size: 20px;
+    width: 490px;
+    text-align: left;
+    display: none;
+}
 .contact{
     position: absolute;
     background: white;
+    /*display: none;*/
+    top: 230px;
+    left:450px;
+    padding: 40px 150px;
+    font-family: 'Gothic A1', sans-serif;
     display: none;
 }
+.contact h2{
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 30px;
+}
+.contact input{
+    outline: 0;
+    outline-offset: 0;
+    border: none;
+    font-size: 20px;
+    width: 300px;
+    margin-top: 10px ;
+}
+.contact .hr{
+    height: 2px;
+    width: 300px;
+    background: #B4D2FF;
+    margin: 5px 15px 5px 0;
+}
+.contact .input p{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Inter';
+}
+.contact .input span{
+    color: #ef4444;
+    font-size: 18px;
+}
+.contact .contact_input form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 40px;
+    grid-gap: 20px 10px;
+}
+.contact_input_2 .hr{
+    width: 620px;
 
-
-
-
+}
+.contact_input_2 input{
+    width: 620px;
+    color: black;
+}
+.contact_input_2 p{
+    margin-top: 20px;
+}
+.contact_input_2 textarea{
+    width: 620px;
+    height: 30px;
+    margin-top: 40px;
+    color: black;
+    font-size: 20px;
+}
+.contact  .button{
+    text-align: center;
+    margin: 30px auto 0;
+}
+.contact  button{
+    text-align: center;
+    margin: auto;
+    background: #B4D2FF;
+    border: none;
+    padding: 15px 60px 10px;
+    font-weight: 600;
+    font-size: 20px;
+}
+.contact .icon span{
+    font-size: 24px;
+    position: absolute;
+    top: 45px;
+    left: 45px;
+}
 .content_wrapper {
     width: 1400px;
     margin: auto;
-    /*align-items: center;*/
-    /*text-align: center;*/
 }
 
 .nav {
-    /*justify-content: center;*/
     background: rgba(250, 250, 250);
     font-family: 'Gothic A1', sans-serif;
 
@@ -105,7 +210,7 @@
 .title_screen .background img {
     position: absolute;
     z-index: -1;
-    top: -132px;
+    top: -250px;
     right: 0;
     left: 0;
     bottom: 0;

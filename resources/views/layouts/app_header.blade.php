@@ -17,9 +17,12 @@
 </head>
 <body>
 <div class="contact">
+    <div class="icon">
+        <span><i class="fa-solid fa-x"></i></span>
+    </div>
     <h2>контакт для зворотнього зв’язку</h2>
     <div class="input">
-        <div class="container_input">
+        <div class="contact_input">
             <form action="" class="flex">
                 <label for="">
                     <p>Ім’я <span>*</span></p>
@@ -31,46 +34,87 @@
 
                 <label for="">
                     <p>Ел.адреса <span>*</span></p>
-
                     <input type="text">
-                    <span class="hr"></span>
+
+                    <div class="hr"></div>
 
                 </label>
                 <label for="">
                     <p>Призвіще <span>*</span></p>
-
                     <input type="text">
-                    <span class="hr"></span>
+
+                    <div class="hr"></div>
 
                 </label>
                 <label for="">
                     <p>Телефон <span>*</span></p>
-
                     <input type="text">
-                    <span class="hr"></span>
+
+                    <div class="hr"></div>
 
                 </label>
             </form>
         </div>
-        <div class="container_2">
+        <div class="contact_input_2">
             <form action="">
                 <label for="">
                     <p>Тема</p>
                     <input class="subject" type="text">
-                    <span class="hr"></span>
+                    <div class="hr"></div>
                 </label>
                 <label for="">
-                    <p>Введіть своє повідомлення тут...</p>
-                    <textarea class="height" name="" id="" cols="30"
+                    <textarea class="height" placeholder="Введіть своє повідомлення тут..." name="" id="" cols="30"
                               rows="10"></textarea>
-                    <span class="hr"></span>
+                    <div class="hr"></div>
                 </label>
             </form>
         </div>
     </div>
     <div class="button">
-        <button></button>
+        <button>Надіслати</button>
     </div>
+</div>
+<div class="box_location">
+    <ul>
+        <li class="none">Вінницька</li>
+        <li class="none">Волинська</li>
+        <li class="none">Дніпропетровська</li>
+        <li class="none">Донецька</li>
+        <li class="none">Житомирська</li>
+        <li class="none">Закарпатська</li>
+        <li>Запорізька</li>
+        <li>Івано-Франківська</li>
+        <li>Київська</li>
+        <li>Кіровоградська</li>
+        <li>Луганська</li>
+        <li>Львівська</li>
+        <li class="none">Миколаївська</li>
+        <li class="none">Одеська</li>
+        <li class="none">Полтавська</li>
+        <li class="none">Рівненська</li>
+        <li class="none">Сумська</li>
+        <li class="none">Тернопільська</li>
+        <li class="none">Харківська</li>
+        <li class="none">Херсонська</li>
+        <li class="none">Хмельницька</li>
+        <li class="none">Хмельницька</li>
+        <li class="none">Черкаська</li>
+        <li class="none">Чернівецька</li>
+        <li class="none">Чернігівська</li>
+    </ul>
+</div>
+<div class="box_class">
+    <ul>
+        <li>Чотирикімнатні</li>
+        <li>Трикімнатні</li>
+        <li>Двокімнатні</li>
+        <li>Однокімнатні</li>
+        <li>Будинки</li>
+        <li>Новобудови</li>
+        <li>Новобудови Львів</li>
+        <li>Оренда Комерція</li>
+        <li>Оренда житло</li>
+    </ul>
 </div>
 <div class="nav">
     <div class="content_wrapper">
@@ -81,14 +125,18 @@
             <div class="icon">
                 <img src="{{asset("../img/icon_location.png")}}" alt="">
             </div>
-            <input type="text" placeholder="Область">
+            <label for="">
+                <input type="text" placeholder="Область">
+            </label>
             <span><i class="fa-solid fa-chevron-down"></i></span>
         </div>
         <div class="input input_class">
             <div class="icon">
                 <img src="{{asset("../img/icon_glass.png")}}" alt="">
             </div>
-            <input type="text" placeholder="Будинок, квартира..">
+            <label for="">
+                <input type="text" placeholder="Будинок, квартира..">
+            </label>
         </div>
         <ul>
             <li>Оренда</li>
@@ -113,7 +161,7 @@
                 <li>Дмитра Донського 2в</li>
                 <li>+38 067 17242 17</li>
                 <li>paradise.an.uz@gmail.com</li>
-                <li><img src="{{asset('../img/Qr code.png')}}" alt="">
+                <li><img src="{{asset('../img/Qr_code.png')}}" alt="">
                     <p>Instagram</p>
                 </li>
             </ul>

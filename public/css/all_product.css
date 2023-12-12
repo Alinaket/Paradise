@@ -1,0 +1,109 @@
+.all_product_container{
+    width: 1480px;
+    margin: auto;
+}
+.all_product .cardList{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 80px;
+    margin: 50px 0 70px;
+    font-family: 'Gothic A1', sans-serif;
+    width: 1480px;
+}
+.all_product  .card{
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+.all_product .card img {
+    width: 500px;
+    height: auto;
+    border-radius: 15px 0 0 15px  ;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.all_product  .card .text {
+    background: rgba(217, 219, 219, 0.25);
+    padding: 30px 40px;
+    border-radius: 0 15px  15px 0 ;
+    height: 375px;
+}
+
+.all_product   .card h2 {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.all_product  .card .location img {
+    width: 16px;
+    height: auto;
+}
+
+.all_product  .card .location {
+    color: rgba(61, 0, 197, 0.71);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: auto 0;
+    padding: 6px 0 10px;
+}
+
+.all_product  .card p {
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 20px;
+    width: 900px;
+    margin-bottom: 30px;
+    height: 100px;
+}
+
+.all_product  .card .text_border {
+    width: 200px;
+}
+
+.all_product .card .border_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.all_product  .card .border {
+    border-radius: 5px;
+    border: 3px solid #B4D2FF;
+    padding: 10px 15px 10px 12px;
+    text-transform: uppercase;
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    display: inline-block;
+}
+
+.all_product  .card .status {
+    font-size: 15px;
+    margin: 20px 0 10px;
+    padding: 6px 18px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.all_product .card .price {
+    font-size: 22px;
+    font-weight: 600;
+    padding: 10px 25px 7px;
+
+}
+
+.all_product  .card button {
+    border: none;
+    background: rgba(180, 210, 255, 0.75);
+    font-size: 25px;
+    padding: 18px 40px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-weight: 600;
+    font-family: "Inter" , sans-serif;
+}
+
+.all_product  .card .button {
+    display: flex;
+    align-items: end;
+}

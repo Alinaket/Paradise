@@ -19,3 +19,10 @@ Route::get('/paradise', function () {
 Route::get('/add_header', function () {
     return view('layouts/app_header');
 });
+Route::get('/all_product', function () {
+    return view('all_product');
+});
+Route::get('/product', function () {
+    return view('product');
+});
+
