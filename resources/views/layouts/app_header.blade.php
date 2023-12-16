@@ -18,7 +18,8 @@
 <body>
 <div class="contact">
     <div class="icon">
-        <span><i class="fa-solid fa-x"></i></span>
+{{--        <a href="{{route("paradise")}}"><span><i class="fa-solid fa-x"></i></span></a>--}}
+
     </div>
     <h2>контакт для зворотнього зв’язку</h2>
     <div class="input">

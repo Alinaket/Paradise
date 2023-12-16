@@ -1,0 +1,310 @@
+.content{
+    margin: 60px auto;
+    width: 1480px;
+}
+.content_container{
+    background: rgba(217, 219, 219, 0.25);
+    padding: 50px 30px;
+    border-radius: 20px;
+    font-family: "Inter" , sans-serif;
+
+}
+.content .all_img{
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+.content .img{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 15px 0;
+}
+.content img{
+    width: 190px;
+    height: 150px;
+    overflow: hidden;
+}
+.content .title_img img{
+    width: 720px;
+    height: 645px;
+    overflow: hidden;
+    padding-left: 20px;
+}
+.content .product{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 0 35px;
+}
+.content .product h2{
+    font-size: 32px;
+    font-weight: 600;
+}
+.content .product .location{
+    color: rgba(61, 0, 197, 0.71);
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: auto 0;
+    padding: 15px 0 10px;
+}
+.content .product .location img{
+    width: 14px;
+    height: auto;
+}
+.content .product p{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 21px;
+    margin-top: 10px;
+}
+.content .product .text_border{
+    width: 200px;
+}
+.content .product .border {
+    border-radius: 5px;
+    border: 3px solid #B4D2FF;
+    padding: 10px 15px 10px 12px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.content .product .status {
+    font-size: 16px;
+    margin: 30px 0 15px;
+    padding: 8px 18px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+.content .product .price {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 10px 25px 7px;
+
+}
+.content .product .button{
+    text-align: center;
+}
+.content .product button {
+    border: none;
+    background: rgba(180, 210, 255, 0.75);
+    font-size: 35px;
+    padding: 30px 70px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-top: 120px ;
+}
+.content .categories{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    margin-top: 40px;
+}
+.content .categories ul{
+    width: 900px;
+    grid-gap: 15px 10px;
+}
+.content .categories li{
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 2px solid #B4D2FF;
+    display: inline-block;
+    margin: 10px 6px;
+    padding: 5px 10px;
+}
+.content .categories iframe{
+    width: 470px;
+    height: 300px;
+}
+.app_products{
+    width: 1480px;
+    margin: auto;
+}
+.app_products .cardList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 45px 80px;
+    margin: 50px 0;
+    font-family: 'Gothic A1', sans-serif;
+}
+
+.app_products .card img {
+    width: 430px;
+    height: auto;
+    border-radius: 15px 15px 0 0;
+}
+
+.app_products .card .img {
+    width: 430px;
+    height: 320px;
+}
+
+.app_products .card .text {
+    background: rgba(217, 219, 219, 0.25);
+    padding: 30px 20px;
+    width: 430px;
+    border-radius: 0 0 15px 15px ;
+}
+
+.app_products .card h2 {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.app_products .card .location img {
+    width: 13px;
+    height: auto;
+}
+
+.app_products .card .location {
+    color: rgba(61, 0, 197, 0.71);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: auto 0;
+    padding: 6px 0 10px;
+}
+
+.app_products .card p {
+    font-size: 13px;
+    text-transform: uppercase;
+    line-height: 16px;
+}
+
+.app_products .card .text_border {
+    width: 200px;
+}
+
+.app_products .card .border_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.app_products .card .border {
+    border-radius: 5px;
+    border: 3px solid #B4D2FF;
+    padding: 10px 15px 10px 12px;
+    text-transform: uppercase;
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    display: inline-block;
+}
+
+.app_products .card .status {
+    font-size: 12px;
+    margin: 20px 0 10px;
+    padding: 6px 18px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.app_products .card .price {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 25px 7px;
+
+}
+
+.app_products .card button {
+    border: none;
+    background: rgba(180, 210, 255, 0.75);
+    font-size: 20px;
+    padding: 12px 22px;
+    text-transform: uppercase;
+    border-radius: 8px;
+}
+
+.app_products .card .button {
+    display: flex;
+    align-items: end;
+}
+.order{
+    background: white;
+    position: absolute;
+    top: 300px;
+    left: 500px;
+    font-family: "Inter" , sans-serif;
+    padding: 60px 150px;
+    display: none;
+}
+.order input{
+    outline: 0;
+    outline-offset: 0;
+    border: none;
+    font-size: 20px;
+    padding: 10px 5px;
+}
+
+.order .input_order h2{
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+.order .input_order .hr{
+    background: #B4D2FF;
+    height: 2px;
+    width: 240px;
+    color: white;
+    display: block;
+    margin-right: 5px;
+}
+.order .input_order .flex{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px 10px;
+    padding: 40px 0;
+
+}
+.order .input_order p{
+    font-size: 24px;
+    font-weight: 600;
+}
+.order .input_order p span{
+    color: #ef4444;
+}
+.order .check_list{
+    display: flex;
+    justify-content: space-between;
+    width: 525px;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.order .check_list h3{
+    margin-right: 15px;
+}
+.order .check_list label{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.order .check_list input{
+    height: 20px;
+    width: 20px;
+    border: 1px solid #B4D2FF;
+    border-radius: 50%;
+    stroke-width: 1.5px;
+    stroke: #B4D2FF;
+}
+.order .button{
+    text-align: center;
+    margin-top: 60px;
+}
+.order button{
+    font-size: 32px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 20px 40px;
+    background: rgba(180, 210, 255, 0.75);
+    border: none;
+}
+.order .icon{
+    position: absolute;
+    top: 65px;
+    left: 60px;
+}
+.order .icon span{
+    font-size: 25px;
+}
+
