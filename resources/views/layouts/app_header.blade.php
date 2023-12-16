@@ -13,12 +13,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <title>Document</title>
+    <link rel="icon" href="{{asset('img/logo.ico')}}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{asset('img/logo.ico')}}" type="image/x-icon">
+    <title>@yield('title', 'Paradise')</title>
 </head>
 <body>
 <div class="contact">
     <div class="icon">
-{{--        <a href="{{route("paradise")}}"><span><i class="fa-solid fa-x"></i></span></a>--}}
+        <a href="{{route("paradise")}}"><span><i class="fa-solid fa-x"></i></span></a>
 
     </div>
     <h2>контакт для зворотнього зв’язку</h2>
@@ -228,5 +230,6 @@
 
 </div>
 <script src="https://kit.fontawesome.com/1e05c9e939.js" crossorigin="anonymous"></script>
+<script src=""></script>
 </body>
 </html>

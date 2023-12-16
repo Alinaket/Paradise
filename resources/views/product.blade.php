@@ -1,4 +1,5 @@
 @extends("layouts.app_header")
+@section("title", $product->name)
 @section("content")
     <link rel="stylesheet" href="{{asset('css/product.css')}}">
     <div class="order">
@@ -77,7 +78,7 @@
                     </div>
                 </div>
                 <div class="text">
-                    <h2>Двокімнатна квартира</h2>
+                    <h2>{{$product->name}}</h2>
                     <div class="location">
                         <img src="{{asset("../img/location_color.png")}}" alt="">
                         <em>Вул. Мира</em>

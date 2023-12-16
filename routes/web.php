@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,14 +16,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/paradise', function () {
     return view('paradise');
-});
-Route::get('/add_header', function () {
-    return view('layouts/app_header');
-});
-Route::get('/all_product', function () {
-    return view('all_product');
-});
+})->name('paradise');
 Route::get('/product', function () {
-    return view('product');
-});
+    return view('all_product');
+})->name("all_product");
+Route::get('/product/{slug}',[ProductController::class, 'product'])->name('product');
 
