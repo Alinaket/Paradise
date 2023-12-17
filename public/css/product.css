@@ -55,6 +55,19 @@
     font-size: 20px;
     line-height: 21px;
     margin-top: 10px;
+    height: 190px;
+    /*overflow: hidden;*/
+    overflow-y: hidden;
+    position: relative;
+}
+.content .product p:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 5em;
+    /*backdrop-filter: blur(3px);*/
 }
 .content .product .text_border{
     width: 200px;

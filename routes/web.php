@@ -17,6 +17,9 @@ use App\Http\Controllers\ProductController;
 Route::get('/paradise', function () {
     return view('paradise');
 })->name('paradise');
+Route::get('/all_product', function () {
+    return view('all_product');
+})->name("all_product");
 Route::get('/product', function () {
     return view('all_product');
 })->name("all_product");

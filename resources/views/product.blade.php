@@ -81,17 +81,13 @@
                     <h2>{{$product->name}}</h2>
                     <div class="location">
                         <img src="{{asset("../img/location_color.png")}}" alt="">
-                        <em>Вул. Мира</em>
+                        <em>{{$product->address}}</em>
                     </div>
-                    <p>Має окрему простору спальну кімнату,з прилягаючою гардеробною кімнатою.Простору кухню студію,з
-                        якої
-                        наявний вихід на балкон та світлу ванну кімнату.Квартира омебльована та укомплектована всією
-                        необхідною технікою.
-                        Площа 52.9 м2</p>
+                    <p>{{$product->description}}</p>
                     <div class="border_container">
                         <div class="text_border">
                             <div class="status border">
-                                <span>Продаж</span>
+                                <span>{{$product->type}}</span>
                             </div>
 
                             <div class="price border">
