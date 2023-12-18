@@ -1,0 +1,297 @@
+@media (max-width: 375px){
+    .content_wrapper{
+        width: 320px;
+        margin: auto;
+    }
+    .nav .content_wrapper{
+        display: block;
+    }
+    .nav .menu_icon{
+        display: block;
+        font-size: 20px;
+    }
+    .nav .img_logo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav .img_logo img {
+        width: 40px;
+        height: auto;
+        margin-right: 0;
+    }
+    .nav .input {
+        display: none;
+    }
+    .nav ul {
+        display: none;
+    }
+    .nav button {
+        display: none;
+    }
+    .title_screen_container {
+        width: 300px;
+        margin: auto;
+    }
+    .title_screen{
+        padding: 140px 0 121px;
+    }
+    .title_screen {
+        background: rgba(0, 0, 0, 0.54);
+        overflow: hidden;
+        background-size: 60%;
+    }
+    .title_screen .background img {
+        position: absolute;
+        z-index: -1;
+        top: 55px;
+        right: 0;
+        left: -520px;
+        bottom: 0;
+        width: 290%;
+        overflow: hidden;
+    }
+    .title_screen h1{
+        font-size: 18px;
+        width: 300px;
+        line-height: 19px;
+        text-align: center;
+        padding: 0;
+    }
+    .title_screen .img_trident {
+        display: flex;
+        flex-direction: column-reverse;
+        font-size: 15px;
+        line-height: 16px;
+        width: 300px;
+        align-items: center;
+    }
+    .title_screen .img_trident p{
+        padding: 30px 0 10px;
+    }
+    .title_screen .img_trident img {
+        width: 30px;
+        height:auto;
+        margin-right: 0;
+        text-align: center;
+    }
+    .title_screen .button {
+        text-align: center;
+        padding-top: 147px;
+    }
+    .title_screen button {
+        font-size: 15px;
+        padding: 12px 22px;
+        margin-top:0;
+        font-weight: 600;
+    }
+
+
+
+    .commodity_container {
+        width: 300px;
+        margin: auto;
+    }
+
+    .commodity .cardList {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-gap: 30px ;
+        margin: 30px 0;
+    }
+
+    .commodity .card img {
+        width: 300px;
+        height: auto;
+    }
+
+    .commodity .card .img {
+        width: 300px;
+        height: 225px;
+    }
+
+    .commodity .card .text {
+        padding: 13px;
+        width: 300px;
+    }
+
+    .commodity .card h2 {
+        font-size: 17px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .commodity .card .location img {
+        width: 9px;
+        height: auto;
+    }
+
+    .commodity .card .location {
+        font-size: 11px;
+    }
+
+    .commodity .card p {
+        font-size: 12px;
+        line-height: 13px;
+    }
+
+    .commodity .card .text_border {
+        width: 100px;
+    }
+
+    .commodity .card .border_container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .commodity .card .border {
+        border-radius: 5px;
+        border: 2px solid #B4D2FF;
+        padding: 10px 15px 10px 12px;
+        text-transform: uppercase;
+        /*display: flex;*/
+        /*flex-wrap: wrap;*/
+        display: inline-block;
+    }
+
+    .commodity .card .status {
+        font-size: 10px;
+        margin: 15px 0 10px;
+        padding: 4px 14px;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.75);
+    }
+
+    .commodity .card .price {
+        font-size: 15px;
+        padding: 8px 15px 7px;
+
+    }
+
+    .commodity .card button {
+        border: none;
+        font-size: 16px;
+        padding: 10px 20px;
+        border-radius: 8px;
+    }
+
+    .commodity .card .button {
+        display: flex;
+        align-items: end;
+    }
+
+
+
+    .info_company{
+        padding: 40px 0 20px;
+    }
+    .info_company .text{
+        width: 260px;
+    }
+    .info_company .text h3{
+        font-weight: 500;
+        font-size: 20px;
+        padding-bottom:15px ;
+    }
+    .info_company .text p {
+        color: #1a202c;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .info_company .icon{
+        display: flex;
+        font-size: 20px;
+        color: rgba(101, 101, 102, 1);
+        text-align: center;
+        align-items: center;
+    }
+    .info_company .text .language{
+        margin-top: 35px;
+        font-size: 14px;
+    }
+
+
+
+    .footer_container{
+        width: 320px;
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 30px 0;
+
+    }
+    .form_contact{
+        width: 315px;
+        margin: auto;
+    }
+    .form_contact input,textarea {
+        font-size: 15px;
+        width: 100px;
+    }
+    .form_contact .container_input form .hr{
+        height: 1px;
+        width: 150px;
+        margin-right: 2px;
+    }
+    .form_contact .container_input .flex{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .form_contact .container_input{
+        width: 150px;
+    }
+    .form_contact .container_input input{
+        padding: 10px 5px;
+    }
+    .form_contact .container_input p{
+        font-size: 15px;
+    }
+    .form_contact .container_2 input{
+        width: 320px;
+    }
+    .container_2 textarea{
+        height: 30px;
+        width: 320px;
+    }
+    .form_contact .container_2 p,.container_2 p{
+        font-size: 15px;
+    }
+    .form_contact .container_2 .hr{
+        height: 1px;
+        width: 320px;
+    }
+    .form_contact button{
+        padding: 10px 120px;
+        margin-top: 40px;
+    }
+    .form_contact .hr_end{
+        display: block;
+        background: rgba(255, 255, 255, 0.13);
+        width: 320px;
+        height: 2px;
+        margin: 20px 0;
+    }
+
+
+    .info_contact{
+        text-align: center;
+    }
+
+    .info_contact img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .info_contact h3{
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+    .info_contact ul{
+        display: flex;
+        flex-direction: column;
+        grid-gap: 12px;
+        font-size: 14px;
+    }
+}
+@media (max-width: 1280px){
+
+}

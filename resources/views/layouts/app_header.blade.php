@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{asset('css/paradise.css')}}">
     <link rel="stylesheet" href="{{asset('css/recet.css')}}">
     <link rel="stylesheet" href="{{asset('css/font.css')}}">
+    <link rel="stylesheet" href="{{asset('css/adaptation.css')}}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -21,7 +22,6 @@
 <div class="contact">
     <div class="icon">
         <a href="{{route("paradise")}}"><span><i class="fa-solid fa-x"></i></span></a>
-
     </div>
     <h2>контакт для зворотнього зв’язку</h2>
     <div class="input">
@@ -123,6 +123,9 @@
     <div class="content_wrapper">
         <div class="img_logo">
             <img src="{{asset('../img/logo.png')}}" alt="">
+            <div class="menu_icon">
+                <span><i class="fa-solid fa-bars"></i></span>
+            </div>
         </div>
         <div class="input input_location">
             <div class="icon">
@@ -221,13 +224,15 @@
                         </form>
                     </div>
                 </div>
+
             </div>
             <div class="button">
                 <button>Надіслати</button>
             </div>
+            <div class="hr_end">
+            </div>
         </div>
     </div>
-
 </div>
 <script src="https://kit.fontawesome.com/1e05c9e939.js" crossorigin="anonymous"></script>
 <script src=""></script>
