@@ -2,7 +2,7 @@
 @section("content")
 
     <div class="title_screen">
-        <div class="title_screen_container">
+        <div class="content_wrapper">
             <div class="background">
                 <img src="{{asset("../img/background_house.png")}}" alt="">
             </div>
@@ -17,7 +17,7 @@
         </div>
     </div>
     <div class="commodity">
-        <div class="commodity_container">
+        <div class="content_wrapper">
             <div class="cardList">
                 @include('components.card_product_mini')
                 <div class="card">

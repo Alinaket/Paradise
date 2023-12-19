@@ -160,7 +160,7 @@
 
 
 <div class="footer">
-    <div class="footer_container">
+    <div class="content_wrapper">
         <div class="info_contact">
             <h3>Корисна інформація</h3>
             <ul>
@@ -173,59 +173,51 @@
             </ul>
         </div>
         <div class="form_contact">
-            <div class="container">
-                <div class="input">
-                    <div class="container_input">
-                        <form action="" class="flex">
-                            <label for="">
-                                <p>Ім’я <span>*</span></p>
-                                <input type="text">
+            <form class="container">
 
-                                <div class="hr"></div>
+                <label for="">
+                    <p>Ім’я <span>*</span></p>
+                    <input type="text">
 
-                            </label>
+                    <div class="hr"></div>
 
-                            <label for="">
-                                <p>Ел.адреса <span>*</span></p>
+                </label>
 
-                                <input type="text">
-                                <span class="hr"></span>
+                <label for="">
+                    <p>Ел.адреса <span>*</span></p>
 
-                            </label>
-                            <label for="">
-                                <p>Призвіще <span>*</span></p>
+                    <input type="text">
+                    <span class="hr"></span>
 
-                                <input type="text">
-                                <span class="hr"></span>
+                </label>
+                <label for="">
+                    <p>Призвіще <span>*</span></p>
 
-                            </label>
-                            <label for="">
-                                <p>Телефон <span>*</span></p>
+                    <input type="text">
+                    <span class="hr"></span>
 
-                                <input type="text">
-                                <span class="hr"></span>
+                </label>
+                <label for="">
+                    <p>Телефон <span>*</span></p>
 
-                            </label>
-                        </form>
-                    </div>
-                    <div class="container_2">
-                        <form action="">
-                            <label for="">
-                                <p>Тема</p>
-                                <input class="subject" type="text">
-                                <span class="hr"></span>
-                            </label>
-                            <label for="">
-                                <p>Введіть своє повідомлення тут...</p>
-                                <textarea class="height" name="" id="" cols="30"
-                                          rows="10"></textarea>
-                                <span class="hr"></span>
-                            </label>
-                        </form>
-                    </div>
-                </div>
+                    <input type="text">
+                    <span class="hr"></span>
 
-            </div>
+                </label>
+                <label class="sp2" for="">
+                    <p>Тема</p>
+                    <input class="subject" type="text">
+                    <span class="hr"></span>
+                </label>
+                <label class="sp2" for="">
+                    <p>Введіть своє повідомлення тут...</p>
+                    <textarea class="height" name="" id="" cols="30"
+                              rows="10"></textarea>
+                    <span class="hr"></span>
+                </label>
+
+
+            </form>
             <div class="button">
                 <button>Надіслати</button>
             </div>
