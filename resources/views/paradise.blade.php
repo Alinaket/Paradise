@@ -17,9 +17,9 @@
         </div>
     </div>
     <div class="commodity">
-
+        <div class="content_wrapper">
         <div class="cardList">
-            <div class="content_wrapper">
+
                 @include('components.card_product_mini')
                 <div class="card">
                     <div class="img">
