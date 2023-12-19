@@ -1,0 +1,120 @@
+@media (max-width: 1224px) {
+    .all_product .card p{
+        font-size: 16px;
+    }
+    .all_product .card h2{
+        font-size: 25px;
+    }
+    .all_product .card .status{
+        font-size: 13px;
+        margin: 20px 0 10px;
+        padding: 6px 15px;
+    }
+    .all_product .card .price{
+        font-size: 20px;
+        padding: 8px 23px 5px;
+    }
+    .all_product .card button {
+        font-size: 22px;
+        padding: 16px 38px;
+
+    }
+
+}
+@media (max-width: 1170px) {
+    .all_product .card img{
+        height: 100%;
+    }
+    .all_product .card .text{
+        height: 100%;
+
+    }
+
+    .border_container{
+        display: block;
+
+    }
+    .all_product .card .status{
+        margin-top: 100px;
+    }
+}
+@media (max-width: 1090px){
+
+    .all_product .card{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .all_product .cardList {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .all_product .card img{
+        border-radius: 15px   15px 0 0  ;
+    }
+    .all_product .card .text{
+        border-radius: 0 0 15px 15px ;
+    }
+    .all_product .card p{
+        height: 120px;
+    }
+    .all_product .card .status{
+        margin-top: 0;
+    }
+}
+@media (max-width: 995px){
+    .all_product .cardList{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 544px){
+    .all_product .card img{
+        width: 95%;
+    }
+    .all_product .card .text{
+        width: 100%;
+    }
+}
+@media (max-width: 513px){
+    .all_product .card .border_container{
+        display: block;
+    }
+    .all_product .card .status{
+        margin-top: 20px;
+    }
+    .all_product .card .button{
+        display: block;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .all_product .card button{
+        padding: 20px 100px;
+    }
+    .all_product .card .text_border{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    .all_product .card .border{
+        font-size: 18px;
+        padding: 10px 20px;
+        margin: 0 10px;
+        font-weight: 600;
+        font-family: "Inter" , sans-serif;
+    }
+}
+@media (max-width: 503px){
+    .all_product .card .border{
+        font-size: 16px;
+        padding: 7px 15px;
+        margin: 0 10px;
+    }
+    .all_product .card .text_border{
+        text-align: center;
+        margin-top: 70px;
+    }
+
+}

@@ -1,9 +1,11 @@
 @extends("layouts.app_header")
 @section("content")
     <link rel="stylesheet" href="{{asset('../css/all_product.css')}}">
-    <div class="all_product_container">
+    <link rel="stylesheet" href="{{asset('../css/adaptation_all_product.css')}}">
+
 
         <div class="all_product">
+            <div class="content_wrapper">
             <div class="cardList">
                 <div class="card">
                     <div class="img">
