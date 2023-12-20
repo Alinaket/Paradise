@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * @method static where(string $string, $slug)
+ * @method static take(int $int)
  */
 class Product extends Model
 {

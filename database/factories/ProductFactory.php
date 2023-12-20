@@ -22,6 +22,7 @@ class ProductFactory extends Factory
             'name'=>$name,
             'slug'=>$slug,
             'img'=>$this->faker->imageUrl(),
+            'price'=>rand(1000, 100000),
             'description'=>$this->faker->text(5000),
             'address'=>$this->faker->address(),
             'type'=>rand(1,2),

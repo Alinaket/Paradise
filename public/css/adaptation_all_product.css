@@ -69,7 +69,7 @@
 }
 @media (max-width: 544px){
     .all_product .card img{
-        width: 95%;
+        width: 100%;
     }
     .all_product .card .text{
         width: 100%;

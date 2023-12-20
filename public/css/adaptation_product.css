@@ -1,0 +1,129 @@
+
+@media (max-width: 1257px){
+    .content ul{
+        display: none;
+    }
+
+    .content .product .text{
+       grid-column: span 2;
+    }
+    .content .product .all_img{
+        grid-column: span 2;
+    }
+
+    .content .product .border_container{
+        display: none;
+    }
+
+    .content .product .mobile{
+        display: block;
+        width: 100%;
+        margin-right: 90px;
+    }
+    .content .product .mobile .status{
+        font-size: 20px;
+    }
+    .content .product .mobile .price{
+        font-size: 26px;
+        padding: 10px 35px;
+        margin: 10px 0;
+    }
+    .content .product .button{
+        text-align: left;
+    }
+
+    .content .product button{
+        margin-top: 20%;
+        font-size: 30px;
+        padding: 25px 60px;
+    }
+    .content .product {
+        grid-gap: 40px 0;
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+    .content .product .status{
+        margin-top: 0;
+    }
+
+
+}
+@media (max-width: 785px) {
+    .content .product .mobile .status{
+        font-size: 16px;
+    }
+    .content .product .mobile .price{
+        font-size: 20px;
+    }
+    .content .product iframe{
+        height: 220px;
+        width: 100%;
+    }
+    .content .product button{
+        margin-top: 10%;
+        font-size: 25px;
+        padding: 20px 50px;
+
+    }
+}
+@media (max-width: 702px) {
+    .content .product iframe {
+        height: 180px;
+        width: 100%;
+    }
+    .content .product .all_img{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .content .product .slider_img{
+        display: flex;
+        flex-direction: row;
+        grid-gap: 0 15px;
+    }
+    .content .product .title_img{
+        padding: 0 0 20px 0;
+    }
+    .content .product button{
+        margin-top: 10%;
+        font-size: 18px;
+        padding: 15px 45px;
+
+    }
+    .content .product .mobile .status{
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .content .product .mobile .price{
+        font-size: 18px;
+        margin: 0;
+    }
+
+}
+@media (max-width: 653px ) {
+    .content .product {
+        grid-gap: 40px 0;
+        display: block;
+    }
+    .location_map{
+        display: none;
+    }
+    .content .product .text_border{
+        width: 100%;
+        align-items: center;
+        margin-top: 40px;
+    }
+    .content .product .mobile .border {
+        font-size: 25px;
+        padding: 15px 25px;
+        margin-left: 60px;
+
+    }
+    .content .product .mobile .button{
+        text-align: center;
+    }
+    .content .product .mobile button{
+        width: 90%;
+        font-size: 30px;
+    }
+
+}

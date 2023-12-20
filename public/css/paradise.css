@@ -292,6 +292,7 @@
     padding: 30px 20px;
     width: 100%;
     border-radius: 0 0 15px 15px ;
+    overflow: hidden;
 }
 
 .commodity .card h2 {
