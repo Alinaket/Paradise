@@ -42,10 +42,10 @@
     display: none;
 }
 .contact{
-    position: absolute;
+    position: fixed;
     background: white;
-    top: 230px;
-    left:450px;
+    top: 200px;
+    left:480px;
     padding: 40px 150px;
     font-family: 'Gothic A1', sans-serif;
     z-index: 2;
@@ -124,6 +124,14 @@
     padding: 15px 60px 10px;
     font-weight: 600;
     font-size: 20px;
+    transition-duration: 0.5s;
+}
+.contact  button:hover{
+    background: #f5f414;
+
+}
+.contact  button:active{
+    background: #919012;
 }
 .contact .icon span{
     font-size: 24px;
@@ -329,7 +337,7 @@
 }
 
 .commodity .card .text {
-    background: rgba(217, 219, 219, 0.43);
+    background: rgba(217, 219, 219, 0.25);
     padding: 30px 20px;
     width: 100%;
     border-radius: 0 0 15px 15px ;

@@ -1,3 +1,6 @@
+@media (max-width: 1880px){
+
+}
 @media (max-width: 1224px) {
     .all_product .card p{
         font-size: 16px;
@@ -17,9 +20,11 @@
     .all_product .card button {
         font-size: 22px;
         padding: 16px 38px;
+    }
+    .all_product .card .text p{
+        max-height:4.9em;
 
     }
-
 }
 @media (max-width: 1170px) {
     .all_product .card img{
@@ -65,6 +70,13 @@
     .all_product .cardList{
         display: grid;
         grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 660px){
+    .all_product .card .location{
+        height: 1.8em;
+        overflow: hidden;
+        margin-bottom: 6px;
     }
 }
 @media (max-width: 544px){

@@ -1,5 +1,6 @@
 const contact_form = document.querySelector(".contact")
 const order = document.querySelector(".order")
+// const
 let intervelContact = null
 let intervelOrder = null
 
@@ -46,6 +47,9 @@ function order_block() {
         intervelOrder = null
     }, 400)
 }
+// function text_product(){
+//
+// }
 
 
 

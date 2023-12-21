@@ -41,7 +41,7 @@
     overflow: hidden;
     position: relative;
     line-height: 1.2em;
-    max-height:3.8em;
+    max-height:5em;
     text-align: justify;
     padding-right: 1em;
     font-family: "Inter" , sans-serif;
@@ -75,14 +75,25 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    top: 39px;
+    top: 61px;
     height: 1em;
     background: linear-gradient(to right, rgb(245, 246, 246), #F5F6F6);
     box-shadow: -15px 0px 10px #F5F6F6;
     padding: 0 8px 0 20px;
 
 }
+.all_product .card .text p:after {
+    content: "...";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 56px;
+    height: 1em;
+    background: linear-gradient(to right, rgb(245, 246, 246), #F5F6F6);
+    box-shadow: -15px 0px 10px #F5F6F6;
+    padding: 0 8px 0 20px;
 
+}
 .all_product .card h2 {
     font-size: 30px;
     font-weight: 600;

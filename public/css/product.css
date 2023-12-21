@@ -86,13 +86,6 @@
     position: absolute;
     top: 79px;
     left: 0;
-    -webkit-transition: all 0.3s ease;;
-    -moz-transition: all 0.3s ease;;
-    -o-transition: all 0.3s ease;;
-    transition: all 0.3s ease;
-}
-.content .product p:hover .fake{
-    display: block;
 }
 .content .product p:after{
     content: "";

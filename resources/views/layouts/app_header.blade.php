@@ -147,8 +147,10 @@
         <ul>
             <li>Оренда</li>
             <li>Продаж</li>
+            <li>Новобудови</li>
             <a href="{{route('all_product')}}" class="button"><li>Всі будинки</li></a>
         </ul>
+
         <div class="button" onclick="contact_block()">
             <button>Замовити</button>
         </div>

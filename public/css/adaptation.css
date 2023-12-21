@@ -6,7 +6,9 @@
 
 }
 @media (max-width: 452px){
-
+    .commodity .card .text p{
+        height: 3.3em;
+    }
     .nav .img_logo img {
         width: 40px;
         height: auto;
@@ -111,8 +113,9 @@
 
     .commodity .card .location {
         font-size: 11px;
-    }
+        height: 1.3em;
 
+    }
     .commodity .card p {
         font-size: 12px;
         line-height: 13px;
