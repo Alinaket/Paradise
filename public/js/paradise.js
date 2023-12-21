@@ -22,7 +22,7 @@ function contact_block() {
             contact_form.classList.add('none')
         }
         intervelContact = null
-    }, 1000)
+    }, 400)
 
 }
 function order_block() {
@@ -44,7 +44,7 @@ function order_block() {
             order.classList.add('none')
         }
         intervelOrder = null
-    }, 1000)
+    }, 400)
 }
 
 

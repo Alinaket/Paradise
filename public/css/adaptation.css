@@ -1,4 +1,11 @@
-@media (max-width: 375px){
+@media (max-width: 1744px){
+    .content_wrapper{
+        padding: 5px 30px;
+
+    }
+
+}
+@media (max-width: 452px){
 
     .nav .img_logo img {
         width: 40px;
@@ -226,7 +233,7 @@
         font-size: 14px;
     }
 }
-@media (max-width: 280px){
+@media (max-width: 365px){
 
     .nav .content_wrapper{
         display: block;
@@ -313,7 +320,7 @@
 
     .commodity .card .text {
         padding: 13px;
-        width: 240px;
+        width: 100%;
     }
 
     .commodity .card h2 {

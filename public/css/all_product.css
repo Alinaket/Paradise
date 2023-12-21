@@ -155,8 +155,15 @@
     border-radius: 8px;
     font-weight: 600;
     font-family: "Inter", sans-serif;
+    transition-duration: 0.5s;
 }
+.all_product .card button:hover{
+    background: #f5f414;
+}
+.all_product .card button:active{
+    background: #919012;
 
+}
 .all_product .card .button {
     display: flex;
     align-items: end;
