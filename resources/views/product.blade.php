@@ -95,7 +95,7 @@
                         <em>{{$product->address}}</em>
                     </div>
                     <div class="fake">
-                    <p>{{$product->description}}</p>
+                        <p>{{$product->description}}</p>
                     </div>
                     <div class="border_container">
                         <div class="text_border">
@@ -162,9 +162,13 @@
 
         </div>
     </div>
-    <div class="app_products ">
-        <div class="cardList">
-            @include('components.card_product_mini')
+    <div class="content_wrapper">
+        <div class="app_products ">
+
+            <div class="cardList">
+
+                @include('components.card_product_mini')
+            </div>
         </div>
     </div>
 

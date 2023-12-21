@@ -1,4 +1,13 @@
-
+@media (max-width: 1364px){
+    .app_products .cardList{
+        grid-gap: 0 60px;
+    }
+}
+@media (max-width: 1320px){
+    .app_products .cardList{
+        grid-gap: 0 40px;
+    }
+}
 @media (max-width: 1257px){
     .content ul{
         display: none;

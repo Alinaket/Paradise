@@ -208,7 +208,7 @@
 }
 
 .app_products {
-    width: 1480px;
+    width: 100%;
     margin: auto;
 }
 
@@ -222,7 +222,6 @@
 
 .app_products .card img {
     width: 100%;
-    height: auto;
     border-radius: 15px 15px 0 0;
 }
 
