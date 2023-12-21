@@ -10,8 +10,9 @@ class ProductController extends Controller
     public function product($slug)
     {
         $product = Product::where('slug', $slug)->first();
+        $recommend_house = Product::take(3)->get();
         if ($product)
-            return view('product', compact('product'));
+            return view('product', compact('product', 'recommend_house'));
         else
             return view('error.nohouse');
 
@@ -23,8 +24,8 @@ class ProductController extends Controller
         $all_product = Product::take(9)->get();
         return view('all_product', compact('all_product'));
     }
-    public function app_product(){
-        $app_product = Product::take(3)->get();
-        return view('app_product', compact('app_product'));
+    public function paradise(){
+        $recommend_house = Product::take(9)->get();
+        return view('paradise', compact('recommend_house'));
     }
 }

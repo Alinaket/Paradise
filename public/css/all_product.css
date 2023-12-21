@@ -32,9 +32,8 @@
     width: 100%;
 }
 
-.all_product .card .text p {
-    /*overflow: hidden;*/
-    /*position: relative;*/
+.all_product .card .text {
+
 
 }
 
@@ -42,18 +41,22 @@
     overflow: hidden;
     position: relative;
     line-height: 1.2em;
-    max-height: 3.6em;
+    max-height:3.8em;
     text-align: justify;
     padding-right: 1em;
+    font-family: "Inter" , sans-serif;
+    font-weight: 500;
 }
 
 
-.all_product .card .text p:before {
-    content: '…';
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
+/*.all_product .card .text p:before {*/
+/*    content: '…';*/
+/*    position: absolute;*/
+/*    right: 0;*/
+/*    bottom: 0;*/
+/*    top: 46px;*/
+
+/*}*/
 
 .all_product .card .text p:after {
     content: "";
@@ -62,17 +65,22 @@
     width: 1em;
     height: 1em;
     margin-top: 0.2em;
-    background: white;
+    background: #F5F6F6;
+    /*padding-left: 40px;*/
+    z-index: 2;
 }
 
 .all_product .card .text p:after {
-    /*content: "...";*/
-    /*position: absolute;*/
-    /*bottom: 0;*/
-    /*right: 0;*/
-    /*height: 1em;*/
-    /*background: #F5F6F6;*/
-    /*padding: 0 3px*/;
+    content: "...";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 39px;
+    height: 1em;
+    background: linear-gradient(to right, rgb(245, 246, 246), #F5F6F6);
+    box-shadow: -15px 0px 10px #F5F6F6;
+    padding: 0 8px 0 20px;
+
 }
 
 .all_product .card h2 {

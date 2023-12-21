@@ -45,6 +45,7 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 50px 35px;
+
 }
 .content .product h2{
     font-size: 32px;
@@ -62,6 +63,9 @@
     width: 14px;
     height: auto;
 }
+.content .product .text{
+    position: relative;
+}
 .content .product p{
     font-weight: 500;
     font-size: 20px;
@@ -71,6 +75,24 @@
     /*overflow: hidden;*/
     overflow-y: hidden;
     position: relative;
+}
+.content .product .fake{
+    height: 190px;
+    display: none;
+}
+ .content .product p:hover{
+    height: 590px;
+    background: #f8f8f8;
+    position: absolute;
+    top: 79px;
+    left: 0;
+    -webkit-transition: all 0.3s ease;;
+    -moz-transition: all 0.3s ease;;
+    -o-transition: all 0.3s ease;;
+    transition: all 0.3s ease;
+}
+.content .product p:hover .fake{
+    display: block;
 }
 .content .product p:after{
     content: "";
@@ -253,7 +275,14 @@
     left: 500px;
     font-family: "Inter" , sans-serif;
     padding: 60px 150px;
+    opacity: 0;
+    transition-duration: 1s;
+}
+.none{
     display: none;
+}
+.order.open{
+    opacity: 1;
 }
 .order input{
     outline: 0;

@@ -14,12 +14,9 @@ use App\Http\Controllers\ProductController;
 |
 */
 
-Route::get('/paradise', function () {
-    return view('paradise');
-})->name('paradise');
+Route::get('/', [ProductController::class, 'paradise'], )->name('paradise');
 
 
 Route::get('/product/{slug}',[ProductController::class, 'product'], )->name('product');
-Route::get('/product',[ProductController::class, 'all_product', 'app_product'])->name('all_product', 'app_product' );
-//Route::get('/product', [ProductController::class, 'app_product'])->name( 'app_product');
+Route::get('/product',[ProductController::class, 'all_product'])->name('all_product');
 

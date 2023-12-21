@@ -19,9 +19,9 @@
     <title>@yield('title', 'Paradise')</title>
 </head>
 <body>
-<div class="contact">
+<div class="contact none">
     <div class="icon">
-        <a href="{{route("paradise")}}"><span><i class="fa-solid fa-x"></i></span></a>
+        <span class="x"onclick="contact_block(2)" ><i class="fa-solid fa-x"></i></span>
     </div>
     <h2>контакт для зворотнього зв’язку</h2>
     <div class="input">
@@ -122,7 +122,7 @@
 <div class="nav">
     <div class="content_wrapper">
         <div class="img_logo">
-            <img src="{{asset('../img/logo.png')}}" alt="">
+            <a href="{{route("paradise")}}"><img src="{{asset('../img/logo.png')}}" alt=""></a>
             <div class="menu_icon">
                 <span><i class="fa-solid fa-bars"></i></span>
             </div>
@@ -149,7 +149,7 @@
             <li>Продаж</li>
             <li>Новобудови</li>
         </ul>
-        <div class="button">
+        <div class="button" onclick="contact_block()">
             <button>Замовити</button>
         </div>
     </div>
@@ -227,6 +227,6 @@
     </div>
 </div>
 <script src="https://kit.fontawesome.com/1e05c9e939.js" crossorigin="anonymous"></script>
-<script src=""></script>
+<script src="{{asset('../js/paradise.js')}}"></script>
 </body>
 </html>

@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="{{asset('css/product.css')}}">
     <link rel="stylesheet" href="{{asset('css/adaptation_product.css')}}">
     <div class="order">
-        <div class="icon">
+        <div class="icon" onclick="order_block()">
             <span><i class="fa-solid fa-x"></i></span>
         </div>
         <div class="input_order">
@@ -109,7 +109,7 @@
                                 <span>{{$product->price}}</span>$
                             </div>
                         </div>
-                        <div class="button">
+                        <div class="button" onclick="order_block()">
                             <button>Придбати</button>
                         </div>
                     </div>
@@ -130,7 +130,6 @@
                     <li>Світла квартира</li>
                     <li>Двокімнатна квартира</li>
                 </ul>
-                {{--                <div class="container_display">--}}
                 <div class="border_container mobile">
                     <div class="text_border">
                         <div class="status border">
@@ -155,7 +154,6 @@
                         width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                {{--                </div>--}}
 
 
             </div>
