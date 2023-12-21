@@ -24,15 +24,14 @@
                         <span>{{$item->price}}</span>$
                     </div>
                 </div>
-                <div class="button">
+                <a href="{{route('product', ['slug'=>$item->slug])}}" class="button">
                     <button>@if($item->type==1)
                             Продаж
                         @else
                             Купівля
                         @endif</button>
-                </div>
-
                 </a>
+
             </div>
         </div>
     </div>

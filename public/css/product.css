@@ -129,7 +129,7 @@
 .content .product .button{
     text-align: center;
 }
-.content .product button {
+.content .product button{
     border: none;
     background: rgba(180, 210, 255, 0.75);
     font-size: 35px;
@@ -138,6 +138,13 @@
     border-radius: 8px;
     font-weight: 600;
     margin-top: 120px ;
+    transition-duration: 0.5s;
+}
+.content .product button:hover{
+    background: #f5f414;
+}
+.content .product button:active{
+    background: #919012;
 }
 .content .categories{
     display: grid;
@@ -155,6 +162,10 @@
     display: inline-block;
     margin: 10px 6px;
     padding: 5px 10px;
+    transition-duration: 0.5s;
+}
+.content .product li:hover{
+    background: white;
 }
 .content .product iframe{
     width: 100%;
@@ -176,21 +187,22 @@
 }
 
 .app_products .card img {
-    width: 430px;
+    width: 100%;
     height: auto;
     border-radius: 15px 15px 0 0;
 }
 
 .app_products .card .img {
-    width: 430px;
+    width: 100%;
     height: 320px;
 }
 
 .app_products .card .text {
     background: rgba(217, 219, 219, 0.25);
     padding: 30px 20px;
-    width: 430px;
+    width: 100%;
     border-radius: 0 0 15px 15px ;
+
 }
 
 .app_products .card h2 {
@@ -206,19 +218,27 @@
 
 .app_products .card .location {
     color: rgba(61, 0, 197, 0.71);
-    font-size: 14px;
+    font-size: 16px;
     text-transform: uppercase;
     font-weight: 600;
     margin: auto 0;
-    padding: 6px 0 10px;
-}
-
-.app_products .card p {
-    font-size: 13px;
-    text-transform: uppercase;
-    line-height: 16px;
-    height: 140px;
+    height: 1em;
     overflow: hidden;
+    margin: 10px 0 15px;
+    font-family: "Inter" , sans-serif;
+}
+/*.app_products .card .location em{*/
+/*    height: 2.5em;*/
+
+/*}*/
+.app_products .card p {
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 17px;
+    overflow: hidden;
+    height: 3.2em;
+    font-weight: 500;
+    font-family: "Inter" , sans-serif;
 }
 
 .app_products .card .text_border {
@@ -262,8 +282,16 @@
     padding: 12px 22px;
     text-transform: uppercase;
     border-radius: 8px;
+    font-weight: 500;
+    font-family: "Inter" , sans-serif;
+    transition-duration: 0.5s;
 }
-
+.app_products .card button:hover{
+    background: #f5f414;
+}
+.app_products .card button:active{
+    background: #919012;
+}
 .app_products .card .button {
     display: flex;
     align-items: end;
@@ -277,6 +305,7 @@
     padding: 60px 150px;
     opacity: 0;
     transition-duration: 1s;
+    z-index: 2;
 }
 .none{
     display: none;
