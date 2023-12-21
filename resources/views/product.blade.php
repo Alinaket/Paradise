@@ -111,8 +111,8 @@
                                 <span>{{$product->price}}</span>$
                             </div>
                         </div>
-                        <div class="button" onclick="order_block()">
-                            <button>Придбати</button>
+                        <div class="button">
+                            <button onclick="order_block()">Придбати</button>
                         </div>
                     </div>
                 </div>
