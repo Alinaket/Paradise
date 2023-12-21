@@ -10,6 +10,7 @@
                 <img src="{{asset("../img/location_color.png")}}" alt="">
                 <em>{{$item->address}}</em>
             </div>
+
             <p>{{$item->description}}</p>
             <div class="border_container">
                 <div class="text_border">

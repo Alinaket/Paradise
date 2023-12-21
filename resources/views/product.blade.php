@@ -94,7 +94,9 @@
                         <img src="{{asset("../img/location_color.png")}}" alt="">
                         <em>{{$product->address}}</em>
                     </div>
+                    <div class="fake">
                     <p>{{$product->description}}</p>
+                    </div>
                     <div class="border_container">
                         <div class="text_border">
                             <div class="status border">
