@@ -1,6 +1,8 @@
 const contact_form = document.querySelector(".contact")
 const order = document.querySelector(".order")
-// const
+let currentIndex = 0;
+const sliders = document.querySelectorAll('.text_slider > div');
+let transitioning = false;
 let intervelContact = null
 let intervelOrder = null
 
@@ -47,9 +49,71 @@ function order_block() {
         intervelOrder = null
     }, 400)
 }
-// function text_product(){
-//
-// }
 
+
+
+
+
+
+
+
+function showSlide(index) {
+    if (transitioning) return;
+
+    transitioning = true;
+    fadeOut(sliders[currentIndex], () => {
+        fadeIn(sliders[index], () => {
+            sliders[currentIndex].classList.remove('active');
+            sliders[index].classList.add('active');
+            currentIndex = index;
+            transitioning = false;
+        });
+    });
+}
+
+function fadeIn(element, callback) {
+    element.style.opacity = '0';
+    element.style.display = 'block';
+
+    let opacity = 0;
+
+    function updateOpacity() {
+        opacity += 0.05; // уменьшаем шаг
+        element.style.opacity = opacity.toFixed(2);
+
+        if (opacity < 1) {
+            requestAnimationFrame(updateOpacity);
+        } else {
+            if (callback) callback();
+        }
+    }
+
+    updateOpacity();
+}
+
+function fadeOut(element, callback) {
+    element.style.opacity = '1';
+
+    let opacity = 1;
+
+    function updateOpacity() {
+        opacity -= 0.02; // уменьшаем шаг
+        element.style.opacity = opacity.toFixed(2);
+
+        if (opacity > 0) {
+            requestAnimationFrame(updateOpacity);
+        } else {
+            element.style.display = 'none';
+            if (callback) callback();
+        }
+    }
+
+    updateOpacity();
+}
+
+function changeSlide(direction) {
+    const newIndex = (currentIndex + direction + sliders.length) % sliders.length;
+    showSlide(newIndex);
+}
 
 

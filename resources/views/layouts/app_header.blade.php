@@ -84,7 +84,6 @@
 
 </div>
 
-</div>
 <div class="contact none">
     <div class="icon">
         <span class="x" onclick="contact_block(2)"><i class="fa-solid fa-x"></i></span>
@@ -225,6 +224,49 @@
     </div>
 </div>
 
+
+
+
+
+<div class="nav_mobile">
+    <div class="content_wrapper">
+        <div class="img_logo">
+            <a href="{{route("paradise")}}"><img src="{{asset('../img/logo.png')}}" alt=""></a>
+            <div class="menu_icon">
+                <span><i class="fa-solid fa-bars"></i></span>
+            </div>
+        </div>
+        <div class="input input_location">
+            <div class="icon">
+                <img src="{{asset("../img/icon_location.png")}}" alt="">
+            </div>
+            <label for="">
+                <input type="text" placeholder="Область">
+            </label>
+            <span><i class="fa-solid fa-chevron-down"></i></span>
+        </div>
+        <div class="input input_class">
+            <div class="icon">
+                <img src="{{asset("../img/icon_glass.png")}}" alt="">
+            </div>
+            <label for="">
+                <input type="text" placeholder="Будинок, квартира..">
+                <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </label>
+
+        </div>
+        <ul>
+            <li>Оренда</li>
+            <li>Продаж</li>
+            <li>Новобудови</li>
+            {{--                        <a href="{{route('all_product')}}" class="button"><li>Всі будинки</li></a>--}}
+        </ul>
+
+        <div class="button" onclick="contact_block()">
+            <button>Замовити</button>
+        </div>
+    </div>
+</div>
 
 @yield("content")
 
