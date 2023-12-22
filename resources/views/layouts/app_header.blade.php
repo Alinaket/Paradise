@@ -208,13 +208,15 @@
             </div>
             <label for="">
                 <input type="text" placeholder="Будинок, квартира..">
+                <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
             </label>
+
         </div>
         <ul>
             <li>Оренда</li>
             <li>Продаж</li>
             <li>Новобудови</li>
-            {{--            <a href="{{route('all_product')}}" class="button"><li>Всі будинки</li></a>--}}
+                        <a href="{{route('all_product')}}" class="button"><li>Всі будинки</li></a>
         </ul>
 
         <div class="button" onclick="contact_block()">

@@ -476,6 +476,7 @@
     height: 100%;
     padding: 130px 0;
     top: 0;
+    display: none;
 }
 .mobile_order button:hover {
     background: #f5f414;

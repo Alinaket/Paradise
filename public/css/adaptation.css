@@ -2,7 +2,10 @@
     .content_wrapper{
         padding: 5px 30px;
     }
+    .nav .content_wrapper{
+        padding: 10px 2%;
 
+    }
 }
 @media (max-width: 1512px) {
     .contact{
@@ -12,6 +15,11 @@
 
 }
 @media (max-width: 778px) {
+    .nav .menu_icon span{
+        font-size: 24px;
+
+    }
+
     .contact_mobile{
         padding: 55px 0;
     }

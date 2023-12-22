@@ -185,11 +185,17 @@
 .nav .menu_icon{
     display: none;
 }
+.nav .menu_icon span{
+    font-size: 30px;
+
+}
 .nav .content_wrapper {
     display: flex;
     justify-content: space-between;
     text-align: center;
     align-items: center;
+    padding: 10px 1%;
+
 }
 
 .nav .img_logo img {
@@ -200,6 +206,7 @@
 
 .nav .input {
     display: flex;
+    justify-content: left;
     background: white;
     padding: 10px;
     margin: 0 20px;
@@ -212,10 +219,18 @@
 .nav .input_class{
     width: 100%;
 }
+.nav .input_class .icon {
+    margin-right: 10px;
+    text-align: right;
+}
 .nav .input_class input {
-    /*max-width: 600px;*/
+    width: 50%;
+    color: rgba(0, 0, 0, 0.89);
+}
+.nav .input_class label{
+    display: flex;
+    justify-content: space-between;
     width: 100%;
-    color: rgba(0, 0, 0, 0.15);
 }
 .nav .input_location{
     width: 60%;
