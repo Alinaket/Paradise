@@ -9,6 +9,14 @@
     }
 }
 @media (max-width: 1257px){
+    .mobile_order{
+        padding: 200px 40px;
+        text-align: center;
+    }
+    .input_order p{
+        font-size: 24px;
+        text-align: left;
+    }
     .content ul{
         display: none;
     }
@@ -73,6 +81,21 @@
     }
 }
 @media (max-width: 785px) {
+    .mobile_order .input_order h2{
+        font-size: 30px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+    .mobile_order .input_order p{
+        font-size: 20px;
+    }
+    .mobile_order .check_list{
+        font-size: 18px;
+    }
+    .mobile_order button{
+        font-size: 20px;
+        padding: 15px 20px;
+    }
     .content .product h2{
         padding-top: 10px;
     }
@@ -179,6 +202,21 @@
     }
 
 }
+@media (max-width: 500px){
+    .mobile_order .input_order h2{
+        font-size: 20px;
+    }
+    .mobile_order{
+        padding: 90px 40px;
+    }
+    .mobile_order .input_order .flex{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .mobile_order .input_order .hr{
+        width: 100%;
+    }
+}
 @media (max-width: 474px) {
     .content .product .mobile .border{
         font-size: 18px;
@@ -200,6 +238,19 @@
         line-height: 17px;
     }
 
+}
+@media (max-width: 434px) {
+    .mobile_order .check_list{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px 0;
+    }
+    .mobile_order .check_list label{
+        justify-content: space-between;
+    }
+    .mobile_order{
+        padding: 50px 40px;
+    }
 }
 @media (max-width: 396px) {
     .content .product .text_border{
@@ -223,5 +274,23 @@
         max-height: 40.5em;
         height: auto;
         width: 100%;
+    }
+}
+@media (max-width: 360px) {
+    .mobile_order{
+        padding: 100px 0;
+    }
+    .mobile_order .input_order h2{
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    .mobile_order .input_order p{
+        font-size: 15px;
+    }
+    .mobile_order button{
+        font-size: 15px;
+    }
+    .mobile_order .check_list h3{
+        font-size: 18px;
     }
 }
