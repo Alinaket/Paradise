@@ -1,7 +1,7 @@
 .content_wrapper {
     width: 100%;
     margin: auto;
-    padding: 0 50px;
+    padding: 0 18px;
 }
 
 .all_product .cardList {
@@ -49,14 +49,7 @@
 }
 
 
-/*.all_product .card .text p:before {*/
-/*    content: '…';*/
-/*    position: absolute;*/
-/*    right: 0;*/
-/*    bottom: 0;*/
-/*    top: 46px;*/
 
-/*}*/
 
 .all_product .card .text p:after {
     content: "";
@@ -75,7 +68,7 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    top: 61px;
+    top: 64px;
     height: 1em;
     background: linear-gradient(to right, rgb(245, 246, 246), #F5F6F6);
     box-shadow: -15px 0px 10px #F5F6F6;
@@ -87,7 +80,7 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    top: 56px;
+    top: 64px;
     height: 1em;
     background: linear-gradient(to right, rgb(245, 246, 246), #F5F6F6);
     box-shadow: -15px 0px 10px #F5F6F6;
