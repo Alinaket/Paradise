@@ -1,7 +1,50 @@
 @media (max-width: 1744px){
     .content_wrapper{
         padding: 5px 30px;
+    }
 
+}
+@media (max-width: 1512px) {
+    .contact{
+        left:20%;
+        right:20%;
+    }
+
+}
+@media (max-width: 778px) {
+    .contact_mobile{
+        padding: 55px 0;
+    }
+    .contact_mobile h2{
+        font-size: 28px;
+        padding: 0;
+    }
+    .contact_mobile .img{
+        width: 60px;
+    }
+    .contact_mobile .contact_input form{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+    .contact_mobile .input p{
+        font-size: 16px;
+    }
+    .contact_mobile .contact_input_2 textarea{
+        font-size: 16px;
+    }
+    .contact_mobile button{
+        font-size: 18px;
+        width: 100%;
+    }
+}
+@media (max-width: 580px){
+    .contact_mobile h2{
+        font-size: 25px;
+        padding: 0;
+    }
+    .contact_mobile button{
+        font-size: 14px;
     }
 
 }
@@ -449,7 +492,7 @@
         font-size: 14px;
     }
 }
-@media (max-width: 1544px){
+@media (max-width: 1382px){
     .nav .img_logo img{
         margin: 0;
     }
@@ -471,6 +514,13 @@
         grid-template-columns: 1fr 1fr;
         grid-gap: 45px 90px;
     }
+}
+@media (max-width: 1120px){
+    .contact{
+        left:10%;
+        right:10%;
+    }
+
 }
 @media (max-width: 882px){
     .commodity .cardList{
@@ -506,6 +556,7 @@
         justify-content: space-between;
         align-items: center;
     }
+
 }
 @media (max-width: 852px){
     .commodity .cardList{
