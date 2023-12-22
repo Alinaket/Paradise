@@ -280,7 +280,15 @@
     }
 }
 @media (max-width: 365px){
-
+    .contact_mobile h2{
+        font-size: 13px;
+    }
+    .contact_mobile .img {
+        width: 55px;
+    }
+    .contact_mobile button{
+        padding: 20px 0;
+    }
     .nav .content_wrapper{
         display: block;
     }

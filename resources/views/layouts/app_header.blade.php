@@ -22,7 +22,7 @@
 <div class="contact_mobile">
     <div class="content_wrapper">
         <div class="icon">
-            <span class="x" onclick="contact_block(2)"><i class="fa-solid fa-x"></i></span>
+            <span class="x"><i class="fa-solid fa-x"></i></span>
         </div>
         <div class="img">
             <img src="{{asset('../img/logo.png')}}" alt="">
