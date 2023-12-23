@@ -144,33 +144,9 @@
 </div>
 <div class="box_location">
     <ul>
-        <li class="none">Вінницька</li>
-        <li class="none">Волинська</li>
-        <li class="none">Дніпропетровська</li>
-        <li class="none">Донецька</li>
-        <li class="none">Житомирська</li>
-        <li class="none">Закарпатська</li>
         @foreach(\App\Models\Location::get() as $item)
         <li><a href="{{route('all_product',['location'=>$item->tag])}}">{{$item->name}}</a></li>
         @endforeach
-        <li>Івано-Франківська</li>
-        <li>Київська</li>
-        <li>Кіровоградська</li>
-        <li>Луганська</li>
-        <li>Львівська</li>
-        <li class="none">Миколаївська</li>
-        <li class="none">Одеська</li>
-        <li class="none">Полтавська</li>
-        <li class="none">Рівненська</li>
-        <li class="none">Сумська</li>
-        <li class="none">Тернопільська</li>
-        <li class="none">Харківська</li>
-        <li class="none">Херсонська</li>
-        <li class="none">Хмельницька</li>
-        <li class="none">Хмельницька</li>
-        <li class="none">Черкаська</li>
-        <li class="none">Чернівецька</li>
-        <li class="none">Чернігівська</li>
     </ul>
 </div>
 <div class="box_class">

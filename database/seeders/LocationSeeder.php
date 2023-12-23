@@ -15,9 +15,8 @@ class LocationSeeder extends Seeder
     {
         Location::truncate();
         Location::insert([
-            ['tag'=>'zp', 'name'=>'Запоріжжя'],
-            ['tag'=>'bh', 'name'=>'Буштино'],
-
+            ['tag'=>'lv', 'name'=>'Львів'],
+            ['tag'=>'zk', 'name'=>'Закарпаття'],
         ]);
     }
 }
