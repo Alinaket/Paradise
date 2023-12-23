@@ -19,12 +19,32 @@ class ProductController extends Controller
 
     }
 
-    public function all_product()
+    public function all_product($type = null)
     {
-        $all_product = Product::take(9)->get();
+        switch ($type) {
+            case 'rent':
+                $type_key = 1;
+                break;
+            case 'buy':
+                $type_key = 2;
+                break;
+            case 'new_buildings':
+                $type_key = 3;
+                    break;
+            default:
+                $type_key = null;
+        }
+        $all_product = Product::take(9);
+        if ($type_key) {
+            $all_product = $all_product->where('type', $type_key);
+        }
+
+        $all_product = $all_product->get();
         return view('all_product', compact('all_product'));
     }
-    public function paradise(){
+
+    public function paradise()
+    {
         $recommend_house = Product::take(9)->get();
         return view('paradise', compact('recommend_house'));
     }

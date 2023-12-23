@@ -212,10 +212,10 @@
 
         </div>
         <ul>
-            <li>Оренда</li>
-            <li>Продаж</li>
-            <li>Новобудови</li>
-                        <a href="{{route('all_product')}}" class="button"><li>Всі будинки</li></a>
+            <li><a href="{{route('all_product_type', ['type'=>'rent'])}}">Оренда</a></li>
+            <li><a href="{{route('all_product_type', ['type'=>'buy'])}}">Продаж</a></li>
+            <li><a href="{{route('all_product_type', ['type'=>'new_buildings'])}}">Новобудови</a></li>
+{{--                        <a href="{{route('all_product')}}" class="button"><li>Всі будинки</li></a>--}}
         </ul>
 
         <div class="button" onclick="contact_block()">
@@ -259,7 +259,6 @@
             <li>Оренда</li>
             <li>Продаж</li>
             <li>Новобудови</li>
-            {{--                        <a href="{{route('all_product')}}" class="button"><li>Всі будинки</li></a>--}}
         </ul>
 
         <div class="button" onclick="contact_block()">
@@ -340,5 +339,6 @@
 </div>
 <script src="https://kit.fontawesome.com/1e05c9e939.js" crossorigin="anonymous"></script>
 <script src="{{asset('../js/paradise.js')}}"></script>
+<script src="{{asset('../js/product.js')}}"></script>
 </body>
 </html>

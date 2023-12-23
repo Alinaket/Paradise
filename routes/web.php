@@ -15,8 +15,7 @@ use App\Http\Controllers\ProductController;
 */
 
 Route::get('/', [ProductController::class, 'paradise'], )->name('paradise');
-
-
-Route::get('/product/{slug}',[ProductController::class, 'product'], )->name('product');
 Route::get('/product',[ProductController::class, 'all_product'])->name('all_product');
+Route::get('/product/{type}',[ProductController::class, 'all_product'])->name('all_product_type');
+Route::get('/product/lot/{slug}',[ProductController::class, 'product'], )->name('product');
 

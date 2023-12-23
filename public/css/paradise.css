@@ -177,15 +177,22 @@
     top: 45px;
     left: 45px;
 }
-
-.nav {
+.nav_mobile{
+    background: rgba(250, 250, 250);
+    width: 100%;
+    height: 900px;
+    position: fixed;
+    z-index: 3;
+    display: none;
+}
+.nav, .nav_mobile{
     background: rgba(250, 250, 250);
     font-family: 'Gothic A1', sans-serif;
 }
-.nav .menu_icon{
+.nav .menu_icon, .nav_mobile .menu_icon{
     display: none;
 }
-.nav .menu_icon span{
+.nav .menu_icon span,.nav_mobile .menu_icon span{
     font-size: 30px;
 
 }
@@ -198,13 +205,13 @@
 
 }
 
-.nav .img_logo img {
+.nav .img_logo img,.nav_mobile .img_logo img{
     width: 71px;
     height: 82px;
     margin-right: 65px;
 }
 
-.nav .input {
+.nav .input  {
     display: flex;
     justify-content: left;
     background: white;
@@ -213,7 +220,7 @@
     align-items: center;
 }
 
-.nav .input_location input {
+.nav .input_location input, .nav_mobile .input_location input{
     width: 100%;
 }
 .nav .input_class{
@@ -234,7 +241,6 @@
 }
 .nav .input_location{
     width: 60%;
-
 }
 .nav .input_location span {
     margin-right: 5px;
@@ -250,7 +256,7 @@
     font-family: 'Inter', sans-serif;
 }
 
-.nav .input img {
+.nav .input img,.nav_mobile .input img{
     width: 35px;
     height: auto;
     padding-right: 10px;
@@ -265,16 +271,15 @@
     font-size: 16px;
     align-items: center;
 }
-.nav ul li{
+.nav ul li,.nav_mobile ul li{
     padding: 15px 13px 15px 10px;
     transition-duration: 0.5s;
 
 }
 .nav ul li:hover{
-
     background: rgba(215, 215, 215, 0.77);
 }
-.nav button {
+.nav button, .nav_mobile button{
     border: none;
     background: #B4D2FF;
     font-family: 'Gothic A1', sans-serif;

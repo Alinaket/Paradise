@@ -113,31 +113,18 @@
             <div class="product">
                 <div class="all_img">
                     <div class="slider_img">
+                        @foreach($product->all_img as $item)
                         <div class="img">
                             <img
-                                src="https://s3-alpha-sig.figma.com/img/b426/a8eb/feea5da9dbba69e67492c981de6f3314?Expires=1703462400&Signature=p20HSY0v9iK7L5fe6OWDdCv21C9Rju1CBjPGQGGix-XaOuMqOB-t172~Prj6~eaYYX5zwSHRXMoKSq8~1V1s0zt5uMKQF59uzSYAFKfkY1qBtVrD4p0yixAWsr-N3c6in8NhAmukDdr8jcKd5jnQvnNG7aHgyup7fs6xRccmP4Cbv7qmeMF3eCPTfDq0kpDPIYtwEtttYF~9VcZjIStNLgjs3-Osq42wgW-teBzyddc4mWij-cVkjfN1QbC4NOnGOKaL0wnog2EYSnUqvlPUcLe8wG9qzQTFaVapjZgNfMFlwQXex93j2iZ7a0eLF9Go2598nNJ87h5dS2YRHFi8~w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                                src="{{$item->url}}"
                                 alt="">
                         </div>
-                        <div class="img">
-                            <img
-                                src="https://s3-alpha-sig.figma.com/img/b426/a8eb/feea5da9dbba69e67492c981de6f3314?Expires=1703462400&Signature=p20HSY0v9iK7L5fe6OWDdCv21C9Rju1CBjPGQGGix-XaOuMqOB-t172~Prj6~eaYYX5zwSHRXMoKSq8~1V1s0zt5uMKQF59uzSYAFKfkY1qBtVrD4p0yixAWsr-N3c6in8NhAmukDdr8jcKd5jnQvnNG7aHgyup7fs6xRccmP4Cbv7qmeMF3eCPTfDq0kpDPIYtwEtttYF~9VcZjIStNLgjs3-Osq42wgW-teBzyddc4mWij-cVkjfN1QbC4NOnGOKaL0wnog2EYSnUqvlPUcLe8wG9qzQTFaVapjZgNfMFlwQXex93j2iZ7a0eLF9Go2598nNJ87h5dS2YRHFi8~w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                                alt="">
-                        </div>
-                        <div class="img">
-                            <img
-                                src="https://s3-alpha-sig.figma.com/img/59e9/9a01/60756cda360413d36ea5285e289e7106?Expires=1703462400&Signature=HuQTVPKH2KxnITNrlKmxAty1ZDxiMzf9vOc~QIaNrAv0VldUmJlLPR37MCtjDVuSjENE4udSWYAFPUOJRfzCxqM4QB~6NuZzxjvEtUctTLghJ8IwCG01393xmMvD9GuCfweMJeetAh4wt6GrUDGQ7dYtHVAUEXgBTY3N-9fZYRmqvdifUx4jGHKeULmhXysyAZ4GBCo4GX5tRyJnvUXnHO1LGO8P9vKp-mL1rx2Xt7FwU6eT9sbOlkCIF7sPesBCti6GsApNKQPK1ea2i49kgqrsb8VBXB3iUwOEczLUXHz5FltriIXsNKl329hoO~KKkfhw0UXj94Lqj7-lTKmojw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                                alt="">
-                        </div>
-                        <div class="img">
-                            <img
-                                src="https://s3-alpha-sig.figma.com/img/59e9/9a01/60756cda360413d36ea5285e289e7106?Expires=1703462400&Signature=HuQTVPKH2KxnITNrlKmxAty1ZDxiMzf9vOc~QIaNrAv0VldUmJlLPR37MCtjDVuSjENE4udSWYAFPUOJRfzCxqM4QB~6NuZzxjvEtUctTLghJ8IwCG01393xmMvD9GuCfweMJeetAh4wt6GrUDGQ7dYtHVAUEXgBTY3N-9fZYRmqvdifUx4jGHKeULmhXysyAZ4GBCo4GX5tRyJnvUXnHO1LGO8P9vKp-mL1rx2Xt7FwU6eT9sbOlkCIF7sPesBCti6GsApNKQPK1ea2i49kgqrsb8VBXB3iUwOEczLUXHz5FltriIXsNKl329hoO~KKkfhw0UXj94Lqj7-lTKmojw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                                alt="">
-                        </div>
+                        @endforeach
                     </div>
 
                     <div class="title_img img">
                         <img
-                            src="https://s3-alpha-sig.figma.com/img/eb52/016b/6eff0e7a923f63071b4bcfe4eb14bdf1?Expires=1703462400&Signature=b~UWyq9PplorGlobwrTtFhrmdp-yYQEP0qI3i8mlFjJ0aXMJ3DfjOvF~9n59dytSo6uECQ8fFOvep67IuHFl~jeof~o11p968habZ9e7WCydGWKQHA9C-C7z3RfPjxAwCZJg1XwQbfChQC9X2~GWfgPo4dzhCBLHGqMCHr5hF3IzvIbWQJvVVfMPo~9BJYusWxtRNkv1NmrBmCvINFfqueVYe8H85a-bOdrIfDSTLlXhf-om0c9UEVWJdy8pYLUfdE3w1hdPHUO4MV8-J-jhbZW4zoeY2S8w39XkC3336DfrfNbkYgu6WNfajFF3hgoUlpi8LOaxAV8wEtkvQaoryA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                            src="{{$product->title_img->url}}"
                             alt="">
                     </div>
                 </div>
@@ -171,20 +158,23 @@
                     </div>
                 </div>
                 <ul>
-                    <li> Окрема спальня</li>
-                    <li>Прилягаюча гардеробна кімната</li>
-                    <li>Світла ванна кімната</li>
-                    <li>Кухня студія з якої наявний вихід на балкон</li>
-                    <li>З меблями</li>
-                    <li>З технікою</li>
-                    <li>Продається</li>
-                    <li>Вигідна ціна</li>
-                    <li>Площа 52.9 м2</li>
-                    <li>Спокійний та тихий район</li>
-                    <li>Стильний ремонт</li>
-                    <li>Є балкон</li>
-                    <li>Світла квартира</li>
-                    <li>Двокімнатна квартира</li>
+                    @foreach($product->tag as $item)
+                    <li>{{$item}}</li>
+                    @endforeach
+{{--                    <li>Прилягаюча гардеробна кімната</li>--}}
+{{--                    <li>Світла ванна кімната</li>--}}
+{{--                    <li>Кухня студія з якої наявний вихід на балкон</li>--}}
+{{--                    <li>З меблями</li>--}}
+{{--                    <li>З технікою</li>--}}
+{{--                    <li>Продається</li>--}}
+{{--                    <li>Вигідна ціна</li>--}}
+{{--                    <li>Площа 52.9 м2</li>--}}
+{{--                    <li>Спокійний та тихий район</li>--}}
+{{--                    <li>Стильний ремонт</li>--}}
+{{--                    <li>Є балкон</li>--}}
+{{--                    <li>Світла квартира</li>--}}
+{{--                    <li>Двокімнатна квартира</li>--}}
+
                 </ul>
                 <div class="border_container mobile">
                     <div class="text_border">

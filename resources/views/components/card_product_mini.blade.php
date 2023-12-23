@@ -1,7 +1,7 @@
 @foreach($recommend_house as $item )
     <div class="card">
         <div class="img">
-            <img src="{{$item->img}}"
+            <img src="{{$item->title_img->url}}"
                  alt="">
         </div>
         <div class="text">

@@ -11,7 +11,7 @@
                     <div class="card">
                         <div class="img">
                             <img
-                                src="{{asset($item->img)}}"
+                                src="{{asset($item->title_img->url)}}"
                                 alt="">
                         </div>
                         <div class="text">
@@ -20,7 +20,6 @@
                                 <img src="{{asset("../img/location_color.png")}}" alt="">
                                 <em>{{$item->address}}</em>
                             </div>
-{{--                            <p class="fake"></p>--}}
                             <p>{{$item->description}}</p>
                             <div class="border_container">
                                 <div class="text_border">
