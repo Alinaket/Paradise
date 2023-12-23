@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Location;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -18,12 +19,14 @@ class ProductFactory extends Factory
     {
         $name = $this->faker->name();
         $slug = $this->create_slug($name);
+        $rand_location = Location::inRandomOrder()->first();
         return [
             'name'=>$name,
             'slug'=>$slug,
             'price'=>rand(1000, 100000),
             'description'=>$this->faker->text(5000),
             'address'=>$this->faker->address(),
+            'location'=>$rand_location->tag,
             'type'=>rand(1,3),
 
         ];

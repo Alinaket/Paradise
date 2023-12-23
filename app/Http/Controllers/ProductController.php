@@ -19,8 +19,9 @@ class ProductController extends Controller
 
     }
 
-    public function all_product($type = null)
+    public function all_product(Request $request, $type = null)
     {
+
         switch ($type) {
             case 'rent':
                 $type_key = 1;
@@ -37,6 +38,9 @@ class ProductController extends Controller
         $all_product = Product::take(9);
         if ($type_key) {
             $all_product = $all_product->where('type', $type_key);
+        }
+        if ($request->has('location')) {
+            $all_product = $all_product->where('location', $request->input('location'));
         }
 
         $all_product = $all_product->get();

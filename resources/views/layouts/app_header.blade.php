@@ -150,7 +150,9 @@
         <li class="none">Донецька</li>
         <li class="none">Житомирська</li>
         <li class="none">Закарпатська</li>
-        <li>Запорізька</li>
+        @foreach(\App\Models\Location::get() as $item)
+        <li><a href="{{route('all_product',['location'=>$item->tag])}}">{{$item->name}}</a></li>
+        @endforeach
         <li>Івано-Франківська</li>
         <li>Київська</li>
         <li>Кіровоградська</li>

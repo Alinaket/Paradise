@@ -18,6 +18,7 @@ return new class extends Migration
             $table->text('description')->nullable();
             $table->integer('price')->default(0);
             $table->text('address')->nullable();
+            $table->string('location')->nullable();
             $table->integer('type')->nullable();
             $table->timestamps();
         });

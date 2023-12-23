@@ -59,7 +59,7 @@
     font-size: 20px;
     width: 280px;
     text-align: left;
-    display: none;
+    /*display: none;*/
 }
 .box_class{
     position: absolute;
@@ -75,7 +75,7 @@
     font-size: 20px;
     width: 490px;
     text-align: left;
-    display: none;
+    /*display: none;*/
 }
 .contact{
     position: fixed;
