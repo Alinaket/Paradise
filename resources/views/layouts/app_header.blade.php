@@ -167,7 +167,7 @@
                         </ul>
                     </div>
                 </label>
-                <span><i class="fa-solid fa-chevron-down"></i></span>
+                <span onclick="open_input()"><i class="fa-solid fa-chevron-down"></i></span>
             </div>
 
         </div>
@@ -178,19 +178,21 @@
                 </div>
                 <label for="">
                     <input type="text" placeholder="Будинок, квартира..">
-                    <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    <span class="icon" onclick="open_input(this)"><i class="fa-solid fa-chevron-down"></i></span>
                     <div class="box_class">
-                        <ul>
-                            <li>Чотирикімнатні</li>
-                            <li>Трикімнатні</li>
-                            <li>Двокімнатні</li>
-                            <li>Однокімнатні</li>
-                            <li>Будинки</li>
-                            <li>Новобудови</li>
-                            <li>Новобудови Львів</li>
-                            <li>Оренда Комерція</li>
-                            <li>Оренда житло</li>
-                        </ul>
+                        <div class="wrapper_ul">
+                                <ul>
+                                    <li>Чотирикімнатні</li>
+                                    <li>Трикімнатні</li>
+                                    <li>Двокімнатні</li>
+                                    <li>Однокімнатні</li>
+                                    <li>Будинки</li>
+                                    <li>Новобудови</li>
+                                    <li>Новобудови Львів</li>
+                                    <li>Оренда Комерція</li>
+                                    <li>Оренда житло</li>
+                                </ul>
+                        </div>
                     </div>
                 </label>
 

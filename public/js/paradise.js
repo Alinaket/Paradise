@@ -1,5 +1,7 @@
 const contact_form = document.querySelector(".contact")
 const order = document.querySelector(".order")
+const input_loc = document.querySelector('.input_location')
+
 let intervelContact = null
 let intervelOrder = null
 
@@ -48,7 +50,12 @@ function order_block() {
 }
 
 
+function open_input(elem){
+    const wrapper_ul = elem.parentNode.querySelector('.wrapper_ul');
+    wrapper_ul.classList.toggle('open')
+    const ul = wrapper_ul.querySelector('ul')
 
+}
 
 
 

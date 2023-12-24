@@ -49,7 +49,6 @@
     position: absolute;
     background: white;
     padding: 10px 15px;
-    max-height: 300px;
     font-family: 'Gothic A1', sans-serif;
     color: black;
     font-weight: 600;
@@ -60,16 +59,15 @@
     right: 0;
     top: 35px;
     left: 0;
+
 }
 .input_location{
     position: relative;
-
 }
+
 .box_class{
     position: absolute;
-    background: white;
-    padding: 20px 15px;
-    height: 300px;
+
     font-family: 'Gothic A1', sans-serif;
     color: black;
     font-weight: 600;
@@ -80,7 +78,18 @@
     top: 45px;
     right: 0;
     left: 0;
-    bottom: 0;
+    overflow: hidden;
+}
+
+.box_class .wrapper_ul{
+    position: relative;
+    transform: translateY(-100%);
+    background: #ece6e6;
+    padding: 20px 15px;
+    transition: .5s;
+}
+.box_class .wrapper_ul.open{
+    transform: translateY(0%);
 }
 .input_class{
     position: relative;
@@ -99,6 +108,30 @@
 }
 .none{
     display: none;
+}
+.nav .box_class li:hover, .nav .box_location li:hover{
+    background: rgba(200, 221, 255, 0.59);
+    border-radius: 10px;
+}
+.nav .box_class li:active, .nav .box_location li:active{
+    background: rgba(200, 221, 255, 0.78);
+    border-radius: 10px;
+}
+ button{
+    cursor: pointer;
+}
+.nav .box_class li, .nav .box_location li , img, .button, .border{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+.nav .box_class li, .nav .box_location li{
+    padding: 5px 10px;
+    font-size: 20px;
 }
 
 .contact.open{
@@ -280,7 +313,7 @@
     transition-duration: 0.5s;
 
 }
-.nav ul li:hover{
+.nav .sort ul li:hover{
     background: rgba(215, 215, 215, 0.77);
 }
 .nav button, .nav_mobile button{
