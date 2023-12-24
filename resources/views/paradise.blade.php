@@ -11,8 +11,8 @@
                 <img src="{{asset("../img/trident.png")}}" alt="">
                 <p>Будуйте майбутнє разом з нами!</p>
             </div>
-            <div class="button" onclick="contact_block()">
-                <button>Замовити послугу</button>
+            <div class="button" >
+                <button onclick="contact_block()">Замовити послугу</button>
             </div>
         </div>
     </div>

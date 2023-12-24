@@ -142,26 +142,8 @@
         <button>Надіслати</button>
     </div>
 </div>
-<div class="box_location">
-    <ul>
-        @foreach(\App\Models\Location::get() as $item)
-        <li><a href="{{route('all_product',['location'=>$item->tag])}}">{{$item->name}}</a></li>
-        @endforeach
-    </ul>
-</div>
-<div class="box_class">
-    <ul>
-        <li>Чотирикімнатні</li>
-        <li>Трикімнатні</li>
-        <li>Двокімнатні</li>
-        <li>Однокімнатні</li>
-        <li>Будинки</li>
-        <li>Новобудови</li>
-        <li>Новобудови Львів</li>
-        <li>Оренда Комерція</li>
-        <li>Оренда житло</li>
-    </ul>
-</div>
+
+
 <div class="nav">
     <div class="content_wrapper">
         <div class="img_logo">
@@ -170,40 +152,65 @@
                 <span><i class="fa-solid fa-bars"></i></span>
             </div>
         </div>
-        <div class="input input_location">
-            <div class="icon">
-                <img src="{{asset("../img/icon_location.png")}}" alt="">
+        <div class="container_location">
+            <div class="input input_location">
+                <div class="icon">
+                    <img src="{{asset("../img/icon_location.png")}}" alt="">
+                </div>
+                <label for="">
+                    <input type="text" placeholder="Область">
+                    <div class="box_location">
+                        <ul>
+                            @foreach(\App\Models\Location::get() as $item)
+                                <li><a href="{{route('all_product',['location'=>$item->tag])}}">{{$item->name}}</a></li>
+                            @endforeach
+                        </ul>
+                    </div>
+                </label>
+                <span><i class="fa-solid fa-chevron-down"></i></span>
             </div>
-            <label for="">
-                <input type="text" placeholder="Область">
-            </label>
-            <span><i class="fa-solid fa-chevron-down"></i></span>
-        </div>
-        <div class="input input_class">
-            <div class="icon">
-                <img src="{{asset("../img/icon_glass.png")}}" alt="">
-            </div>
-            <label for="">
-                <input type="text" placeholder="Будинок, квартира..">
-                <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
-            </label>
 
         </div>
-        <ul>
-            <li><a href="{{route('all_product_type', ['type'=>'rent'])}}">Оренда</a></li>
-            <li><a href="{{route('all_product_type', ['type'=>'buy'])}}">Продаж</a></li>
-            <li><a href="{{route('all_product_type', ['type'=>'new_buildings'])}}">Новобудови</a></li>
-{{--                        <a href="{{route('all_product')}}" class="button"><li>Всі будинки</li></a>--}}
-        </ul>
+        <div class="container_class">
+            <div class="input input_class">
+                <div class="icon">
+                    <img src="{{asset("../img/icon_glass.png")}}" alt="">
+                </div>
+                <label for="">
+                    <input type="text" placeholder="Будинок, квартира..">
+                    <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    <div class="box_class">
+                        <ul>
+                            <li>Чотирикімнатні</li>
+                            <li>Трикімнатні</li>
+                            <li>Двокімнатні</li>
+                            <li>Однокімнатні</li>
+                            <li>Будинки</li>
+                            <li>Новобудови</li>
+                            <li>Новобудови Львів</li>
+                            <li>Оренда Комерція</li>
+                            <li>Оренда житло</li>
+                        </ul>
+                    </div>
+                </label>
+
+            </div>
+
+        </div>
+        <div class="sort">
+            <ul>
+                <li><a href="{{route('all_product_type', ['type'=>'rent'])}}">Оренда</a></li>
+                <li><a href="{{route('all_product_type', ['type'=>'buy'])}}">Продаж</a></li>
+                <li><a href="{{route('all_product_type', ['type'=>'new_buildings'])}}">Новобудови</a></li>
+                {{--                        <a href="{{route('all_product')}}" class="button"><li>Всі будинки</li></a>--}}
+            </ul>
+        </div>
 
         <div class="button" onclick="contact_block()">
             <button>Замовити</button>
         </div>
     </div>
 </div>
-
-
-
 
 
 <div class="nav_mobile">

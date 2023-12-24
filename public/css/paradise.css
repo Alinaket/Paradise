@@ -48,18 +48,22 @@
 .box_location{
     position: absolute;
     background: white;
-    padding: 20px 15px;
-    height: 300px;
+    padding: 10px 15px;
+    max-height: 300px;
     font-family: 'Gothic A1', sans-serif;
     color: black;
     font-weight: 600;
     line-height: 30px;
-    top: 95px;
-    left: 375px;
     font-size: 20px;
-    width: 280px;
     text-align: left;
-    /*display: none;*/
+    z-index: 4;
+    right: 0;
+    top: 35px;
+    left: 0;
+}
+.input_location{
+    position: relative;
+
 }
 .box_class{
     position: absolute;
@@ -70,12 +74,16 @@
     color: black;
     font-weight: 600;
     line-height: 30px;
-    top: 95px;
-    left: 695px;
     font-size: 20px;
-    width: 490px;
     text-align: left;
-    /*display: none;*/
+    z-index: 4;
+    top: 45px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.input_class{
+    position: relative;
 }
 .contact{
     position: fixed;
@@ -208,22 +216,20 @@
 .nav .img_logo img,.nav_mobile .img_logo img{
     width: 71px;
     height: 82px;
-    margin-right: 65px;
 }
 
 .nav .input  {
-    display: flex;
-    justify-content: left;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     background: white;
     padding: 10px;
     margin: 0 20px;
     align-items: center;
+    position: relative;
 }
 
-.nav .input_location input, .nav_mobile .input_location input{
-    width: 100%;
-}
-.nav .input_class{
+.nav .container_class{
+    max-width: 510px;
     width: 100%;
 }
 .nav .input_class .icon {
@@ -231,16 +237,15 @@
     text-align: right;
 }
 .nav .input_class input {
-    width: 50%;
     color: rgba(0, 0, 0, 0.89);
 }
 .nav .input_class label{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
 }
-.nav .input_location{
-    width: 60%;
+.nav .container_location {
+    max-width: 350px;
+    width: 100%;
 }
 .nav .input_location span {
     margin-right: 5px;
@@ -249,7 +254,6 @@
     display: block;
 }
 .nav input {
-
     border: none;
     outline: 0;
     outline-offset: 0;
@@ -262,7 +266,7 @@
     padding-right: 10px;
 }
 
-.nav ul {
+.nav .sort ul {
     display: flex;
     font-family: 'Inter', sans-serif;
     text-transform: uppercase;
@@ -271,7 +275,7 @@
     font-size: 16px;
     align-items: center;
 }
-.nav ul li,.nav_mobile ul li{
+.nav .sort ul li,.nav_mobile ul li{
     padding: 15px 13px 15px 10px;
     transition-duration: 0.5s;
 

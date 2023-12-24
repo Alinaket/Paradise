@@ -1,8 +1,5 @@
 const contact_form = document.querySelector(".contact")
 const order = document.querySelector(".order")
-let currentIndex = 0;
-const sliders = document.querySelectorAll('.text_slider > div');
-let transitioning = false;
 let intervelContact = null
 let intervelOrder = null
 
@@ -57,6 +54,34 @@ function order_block() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let currentIndex = 0;
+const sliders = document.querySelectorAll('.text_slider > div');
+let transitioning = false;
 function showSlide(index) {
     if (transitioning) return;
 

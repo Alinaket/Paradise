@@ -77,7 +77,9 @@
         font-size: 10px;
         line-height: 11px;
     }
-
+    .nav .sort ul {
+        display: none;
+    }
     .commodity .card .text p{
         height: 3.3em;
     }
@@ -89,9 +91,7 @@
     .nav .input {
         display: none;
     }
-    .nav ul {
-        display: none;
-    }
+
     .nav button {
         display: none;
     }
@@ -567,7 +567,7 @@
     .nav .input_class  {
         display: none;
     }
-    .nav ul{
+    .nav .sort ul{
         display: none;
     }
     .nav .button{
