@@ -1,7 +1,9 @@
 .img {
     overflow: visible;
 }
-
+.none{
+    opacity: 0;
+}
 .content_wrapper {
     margin: auto;
     width: 100%;
@@ -345,12 +347,8 @@
     opacity: 0;
     transition-duration: 1s;
     z-index: 2;
-
 }
 
-.none {
-    display: none;
-}
 
 .order.open {
     opacity: 1;
@@ -476,8 +474,9 @@
     height: 100%;
     padding: 130px 0;
     top: 0;
-    display: none;
+    /*display: none;*/
 }
+
 .mobile_order button:hover {
     background: #f5f414;
 }

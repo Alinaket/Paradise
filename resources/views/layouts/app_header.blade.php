@@ -212,7 +212,6 @@
                 @endphp
                 @foreach($arr_lick as $key=>$item)
                     @php
-//                        dd($key,$type??"")
                         $class_link = "";
                     if($key === ($type??"")){
                          $class_link = "active";

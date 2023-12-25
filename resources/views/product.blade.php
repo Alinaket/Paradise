@@ -3,7 +3,7 @@
 @section("content")
     <link rel="stylesheet" href="{{asset('css/product.css')}}">
     <link rel="stylesheet" href="{{asset('css/adaptation_product.css')}}">
-    <div class="mobile_order">
+    <div class="mobile_order none open">
         <div class="content_wrapper">
             <div class="icon" onclick="order_block()">
                 <span><i class="fa-solid fa-x"></i></span>
@@ -52,12 +52,12 @@
                 </label>
             </div>
             <div class="button">
-                <button>Відправити</button>
+                <button onclick="order_block()">Відправити</button>
             </div>
         </div>
 
     </div>
-    <div class="order">
+    <div class="order none open">
         <div class="icon" onclick="order_block()">
             <span><i class="fa-solid fa-x"></i></span>
         </div>
@@ -177,7 +177,7 @@
                         </div>
                     </div>
                     <div class="button">
-                        <button>Придбати</button>
+                        <button onclick="order_block()">Придбати</button>
                     </div>
                 </div>
                 <div class="location_map">
