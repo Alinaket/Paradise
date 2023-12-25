@@ -14,12 +14,214 @@
     }
 
 }
+@media (max-width: 1382px){
+    .nav .img_logo img{
+        margin: 0;
+    }
+    .nav .input_location input {
+        width: 100%;
+    }
+    .nav .input_class input {
+        width: 100%;
+    }
+}
+@media (max-width: 1380px){
+    .commodity .cardList{
+        grid-gap: 45px 30px;
+    }
+}
+@media (max-width: 1366px){
+    .commodity .cardList{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 45px 90px;
+    }
+}
+
+
+
+@media (max-width: 1174px){
+    .nav_mobile .img_logo img{
+        width: 71px;
+        height: 100%;
+    }
+    .nav_mobile .content_wrapper{
+        padding: 120px 90px;
+    }
+    .nav_mobile .sort ul li{
+        font-size: 22px;
+    }
+    .nav_mobile button{
+        font-size: 26px;
+    }
+    .nav_mobile {
+        width: 71px;
+        height: 100%;
+    }
+    .nav_mobile button{
+        margin: 0;
+        padding: 10px 35px;
+    }
+    .nav{
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.32);
+        position: sticky;
+        z-index: 5;
+    }
+    .nav .menu_icon span{
+        font-size: 25px;
+    }
+    .nav .img_logo img{
+        width: 51px;
+        height: 100%;
+    }
+    .nav .input_location {
+        display: none;
+    }
+    .nav .input_class  {
+        display: none;
+    }
+    .nav .sort ul{
+        display: none;
+    }
+    .nav .button{
+        display: none;
+    }
+    .nav .content_wrapper{
+        display: block;
+    }
+    .nav .menu_icon{
+        display: block;
+        font-size: 20px;
+    }
+    .nav .img_logo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+@media (max-width: 1120px){
+    .contact{
+        left:10%;
+        right:10%;
+    }
+
+}
+
 @media (max-width: 1030px) {
     .info_company .text{
         width: 100%;
     }
+
 }
+@media (max-width: 882px){
+
+
+    .commodity .cardList{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .title_screen_container {
+        width: 300px;
+        margin: auto;
+    }
+    .title_screen{
+        padding: 140px 0 121px;
+    }
+    .title_screen {
+        background: rgba(0, 0, 0, 0.54);
+        overflow: hidden;
+        position: relative;
+    }
+    .title_screen h1{
+        font-size: 18px;
+        width: 100%;
+        line-height: 19px;
+        text-align: center;
+        padding: 0;
+    }
+    .title_screen .img_trident {
+        display: flex;
+        flex-direction: column-reverse;
+        font-size: 15px;
+        line-height: 16px;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .title_screen .img_trident p{
+        padding: 30px 0 10px;
+    }
+    .title_screen .img_trident img {
+        width: 30px;
+        height:auto;
+        margin-right: 0;
+        text-align: center;
+    }
+    .title_screen .button {
+        text-align: center;
+        padding-top: 147px;
+    }
+    .title_screen button {
+        font-size: 15px;
+        padding: 12px 22px;
+        margin-top:0;
+        font-weight: 600;
+    }
+    .footer .content_wrapper{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .form_contact input, textarea {
+        width: 50%;
+    }
+    .form_contact button{
+        margin-top: 40px;
+    }
+    .form_contact .hr_end{
+        display: block;
+        background: rgba(255, 255, 255, 0.13);
+        width: 100%;
+        height: 2px;
+        margin: 10px 0;
+    }
+
+
+    .info_contact{
+        text-align: center;
+    }
+
+    .info_contact img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .info_contact h3{
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+    .info_contact ul{
+        display: flex;
+        flex-direction: column;
+        grid-gap: 12px;
+        font-size: 14px;
+    }
+    .commodity .cardList{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 45px 60px;
+    }
+
+}
+
 @media (max-width: 778px) {
+    .contact_input_2{
+        font-size: 16px;
+
+    }
+
+
     .info_company .text p{
         font-size: 20px;
         line-height: 21px;
@@ -31,9 +233,7 @@
         font-size: 24px;
 
     }
-    .contact_mobile{
-        padding: 55px 0;
-    }
+
     .contact_mobile h2{
         font-size: 28px;
         padding: 0;
@@ -51,13 +251,45 @@
     }
     .contact_mobile .contact_input_2 textarea{
         font-size: 16px;
+        margin-top: 20px;
     }
     .contact_mobile button{
         font-size: 18px;
         width: 100%;
     }
+
+    .nav_mobile button{
+        font-size: 26px;
+    }
 }
 @media (max-width: 580px){
+    .nav_mobile .info_mobile .hr{
+        margin: 35px 0;
+    }
+    .nav_mobile .info_con_mob h3{
+        font-size: 26px;
+    }
+    .nav_mobile .info_con_mob li{
+        font-size: 14px;
+    }
+    .nav_mobile .input .icon{
+        font-size: 16px;
+    }
+    .nav .input img, .nav_mobile .input img{
+        width: 30px;
+        height: auto;
+    }
+    .nav_mobile input{
+        font-size: 18px;
+    }
+    .nav_mobile .sort ul li{
+        font-size: 20px;
+        padding: 13px 11px 13px 8px;
+    }
+
+    .nav_mobile button{
+        font-size: 22px;
+    }
     .info_company .text p{
         font-size: 15px;
         line-height: 16px;
@@ -71,7 +303,47 @@
     }
 
 }
+@media (max-width: 500px) {
+
+    .nav_mobile button{
+        font-size: 18px;
+    }
+    .nav_mobile .sort ul li{
+        font-size: 16px;
+        padding: 9px 7px 9px 4px;
+
+    }
+    .nav_mobile input{
+        font-size: 16px;
+    }
+    .nav_mobile .input .icon {
+        margin: 0 5px;
+    }
+}
+@media (max-width: 484px) {
+    .contact_mobile .content_wrapper {
+        padding: 35px 15%;
+    }
+}
 @media (max-width: 452px){
+    .nav_mobile .content_wrapper{
+        padding: 120px 40px;
+    }
+    .nav_mobile .img_logo img{
+        width: 51px;
+        height: auto;
+    }
+    .nav_mobile button{
+        font-size: 16px;
+        font-weight: 500;
+        font-family: "Inter" , sans-serif;
+    }
+    .nav_mobile .sort ul li{
+        padding: 5px 3px 5px 5px;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: "Inter" , sans-serif;
+    }
 
     .info_company .text p{
         font-size: 10px;
@@ -304,8 +576,21 @@
     }
 }
 @media (max-width: 365px){
-    .contact_mobile h2{
-        font-size: 13px;
+    .nav_mobile button{
+        font-size: 14px;
+    }
+
+    .nav_mobile .sort ul li{
+        padding: 10px 3px 5px 5px;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: "Inter" , sans-serif;
+    }
+    .nav_mobile .info_con_mob h3{
+        font-size: 20px;
+    }
+    .nav_mobile .info_con_mob li{
+        font-size: 12px;
     }
     .contact_mobile .img {
         width: 55px;
@@ -521,164 +806,6 @@
         font-size: 14px;
     }
 }
-@media (max-width: 1382px){
-    .nav .img_logo img{
-        margin: 0;
-    }
-    .nav .input_location input {
-        width: 100%;
-    }
-    .nav .input_class input {
-        width: 100%;
-    }
-}
-@media (max-width: 1380px){
-    .commodity .cardList{
-        grid-gap: 45px 30px;
-    }
-}
-@media (max-width: 1366px){
-    .commodity .cardList{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 45px 90px;
-    }
-}
-@media (max-width: 1120px){
-    .contact{
-        left:10%;
-        right:10%;
-    }
-
-}
-@media (max-width: 882px){
-    .commodity .cardList{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 45px 60px;
-    }
-
-}
-
-@media (max-width: 1174px){
-    .nav .input_location {
-        display: none;
-    }
-    .nav .input_class  {
-        display: none;
-    }
-    .nav .sort ul{
-        display: none;
-    }
-    .nav .button{
-        display: none;
-    }
-    .nav .content_wrapper{
-        display: block;
-    }
-    .nav .menu_icon{
-        display: block;
-        font-size: 20px;
-    }
-    .nav .img_logo{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-}
-@media (max-width: 852px){
-    .commodity .cardList{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    .title_screen_container {
-        width: 300px;
-        margin: auto;
-    }
-    .title_screen{
-        padding: 140px 0 121px;
-    }
-    .title_screen {
-        background: rgba(0, 0, 0, 0.54);
-        overflow: hidden;
-        position: relative;
-    }
-    .title_screen h1{
-        font-size: 18px;
-        width: 100%;
-        line-height: 19px;
-        text-align: center;
-        padding: 0;
-    }
-    .title_screen .img_trident {
-        display: flex;
-        flex-direction: column-reverse;
-        font-size: 15px;
-        line-height: 16px;
-        width: 100%;
-        align-items: center;
-        text-align: center;
-    }
-    .title_screen .img_trident p{
-        padding: 30px 0 10px;
-    }
-    .title_screen .img_trident img {
-        width: 30px;
-        height:auto;
-        margin-right: 0;
-        text-align: center;
-    }
-    .title_screen .button {
-        text-align: center;
-        padding-top: 147px;
-    }
-    .title_screen button {
-        font-size: 15px;
-        padding: 12px 22px;
-        margin-top:0;
-        font-weight: 600;
-    }
-    .footer .content_wrapper{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    .form_contact input, textarea {
-        width: 50%;
-    }
-    .form_contact button{
-        margin-top: 40px;
-    }
-    .form_contact .hr_end{
-        display: block;
-        background: rgba(255, 255, 255, 0.13);
-        width: 100%;
-        height: 2px;
-        margin: 10px 0;
-    }
 
 
-    .info_contact{
-        text-align: center;
-    }
-
-    .info_contact img{
-        width: 80px;
-        height: 80px;
-    }
-
-    .info_contact h3{
-        font-size: 25px;
-        margin-bottom: 25px;
-    }
-    .info_contact ul{
-        display: flex;
-        flex-direction: column;
-        grid-gap: 12px;
-        font-size: 14px;
-    }
-
-
-}
 

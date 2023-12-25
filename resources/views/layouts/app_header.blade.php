@@ -158,16 +158,21 @@
                     <img src="{{asset("../img/icon_location.png")}}" alt="">
                 </div>
                 <label for="">
-                    <input type="text" placeholder="Область">
+                    <input type="text" onclick="open_input_location(this)" placeholder="Область">
+                    <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
                     <div class="box_location">
-                        <ul>
-                            @foreach(\App\Models\Location::get() as $item)
-                                <li><a href="{{route('all_product',['location'=>$item->tag])}}">{{$item->name}}</a></li>
-                            @endforeach
-                        </ul>
+                        <div class="wrapper_ul_loc">
+                            <ul>
+                                @foreach(\App\Models\Location::get() as $item)
+                                    <a href="{{route('all_product',['location'=>$item->tag])}}">
+                                        <li>{{$item->name}}</li>
+                                    </a>
+
+                                @endforeach
+                            </ul>
+                        </div>
                     </div>
                 </label>
-                <span onclick="open_input()"><i class="fa-solid fa-chevron-down"></i></span>
             </div>
 
         </div>
@@ -177,21 +182,17 @@
                     <img src="{{asset("../img/icon_glass.png")}}" alt="">
                 </div>
                 <label for="">
-                    <input type="text" placeholder="Будинок, квартира..">
-                    <span class="icon" onclick="open_input(this)"><i class="fa-solid fa-chevron-down"></i></span>
+                    <input type="text" onclick="open_input_class(this)" placeholder="Будинок, квартира..">
+                    <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
                     <div class="box_class">
                         <div class="wrapper_ul">
-                                <ul>
-                                    <li>Чотирикімнатні</li>
-                                    <li>Трикімнатні</li>
-                                    <li>Двокімнатні</li>
-                                    <li>Однокімнатні</li>
-                                    <li>Будинки</li>
-                                    <li>Новобудови</li>
-                                    <li>Новобудови Львів</li>
-                                    <li>Оренда Комерція</li>
-                                    <li>Оренда житло</li>
-                                </ul>
+                            <ul>
+                                @foreach(\App\Models\ClassHouse::get() as $item)
+                                    <a href="{{route('all_product',['location'=>$item->tag])}}">
+                                        <li>{{$item->name}}</li>
+                                    </a>
+                                @endforeach
+                            </ul>
                         </div>
                     </div>
                 </label>
@@ -214,42 +215,88 @@
     </div>
 </div>
 
-
 <div class="nav_mobile">
     <div class="content_wrapper">
         <div class="img_logo">
             <a href="{{route("paradise")}}"><img src="{{asset('../img/logo.png')}}" alt=""></a>
-            <div class="menu_icon">
+            <div class="menu_icon" onclick="open_menu_mob(this)">
                 <span><i class="fa-solid fa-bars"></i></span>
             </div>
         </div>
-        <div class="input input_location">
-            <div class="icon">
-                <img src="{{asset("../img/icon_location.png")}}" alt="">
+        <div class="container_location">
+            <div class="input input_location">
+                <div class="icon">
+                    <img src="{{asset("../img/icon_location.png")}}" alt="">
+                </div>
+                <label for="">
+                    <input type="text" onclick="open_input_location(this)" placeholder="Область">
+                    <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    <div class="box_location">
+                        <div class="wrapper_ul_loc">
+                            <ul>
+                                @foreach(\App\Models\Location::get() as $item)
+                                    <a href="{{route('all_product',['location'=>$item->tag])}}">
+                                        <li>{{$item->name}}</li>
+                                    </a>
+
+                                @endforeach
+                            </ul>
+                        </div>
+                    </div>
+                </label>
             </div>
-            <label for="">
-                <input type="text" placeholder="Область">
-            </label>
-            <span><i class="fa-solid fa-chevron-down"></i></span>
-        </div>
-        <div class="input input_class">
-            <div class="icon">
-                <img src="{{asset("../img/icon_glass.png")}}" alt="">
-            </div>
-            <label for="">
-                <input type="text" placeholder="Будинок, квартира..">
-                <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
-            </label>
 
         </div>
-        <ul>
-            <li>Оренда</li>
-            <li>Продаж</li>
-            <li>Новобудови</li>
-        </ul>
+        <div class="container_class">
+            <div class="input input_class">
+                <div class="icon">
+                    <img src="{{asset("../img/icon_glass.png")}}" alt="">
+                </div>
+                <label for="">
+                    <input type="text" onclick="open_input_class(this)" placeholder="Будинок, квартира..">
+                    <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    <div class="box_class">
+                        <div class="wrapper_ul">
+                            <ul>
+                                @foreach(\App\Models\ClassHouse::get() as $item)
+                                    <a href="{{route('all_product',['location'=>$item->tag])}}">
+                                        <li>{{$item->name}}</li>
+                                    </a>
+                                @endforeach
+                            </ul>
+                        </div>
+                    </div>
+                </label>
+
+            </div>
+
+        </div>
+        <div class="sort">
+            <ul>
+                <li><a href="{{route('all_product_type', ['type'=>'rent'])}}">Оренда</a></li>
+                <li><a href="{{route('all_product_type', ['type'=>'buy'])}}">Продаж</a></li>
+                <li><a href="{{route('all_product_type', ['type'=>'new_buildings'])}}">Новобудови</a></li>
+                {{--                        <a href="{{route('all_product')}}" class="button"><li>Всі будинки</li></a>--}}
+            </ul>
+        </div>
 
         <div class="button" onclick="contact_block()">
-            <button>Замовити</button>
+            <button>Замовити послугу</button>
+        </div>
+        <div class="info_mobile">
+            <div class="hr">
+            </div>
+            <div class="info_con_mob">
+                <h3>Корисна інформація</h3>
+                <ul>
+                    <li>Дмитра Донського 2в</li>
+                    <li>+38 067 17242 17</li>
+                    <li>paradise.an.uz@gmail.com</li>
+                    <li><img src="{{asset('../img/Qr_bleak.png')}}" alt="">
+                        <p>Instagram</p>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>

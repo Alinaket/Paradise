@@ -1,48 +1,47 @@
 const contact_form = document.querySelector(".contact")
 const order = document.querySelector(".order")
-const input_loc = document.querySelector('.input_location')
-
 let intervelContact = null
 let intervelOrder = null
 
 
 function contact_block() {
-    if(intervelContact){
+    if (intervelContact) {
         clearTimeout(intervelContact)
         intervelContact = null
     }
-    if(!contact_form.classList.contains("open")){
+    if (!contact_form.classList.contains("open")) {
         contact_form.classList.remove('none')
     }
-    setTimeout(()=>{
+    setTimeout(() => {
         contact_form.classList.toggle('open')
     }, 0)
-    intervelContact = setTimeout(()=>{
-        if(contact_form.classList.contains("open")){
+    intervelContact = setTimeout(() => {
+        if (contact_form.classList.contains("open")) {
             contact_form.classList.remove('none')
-        }else{
+        } else {
             contact_form.classList.add('none')
         }
         intervelContact = null
     }, 400)
 
 }
+
 function order_block() {
 
-    if(intervelOrder){
+    if (intervelOrder) {
         clearTimeout(intervelOrder)
         intervelOrder = null
     }
-    if(!order.classList.contains("open")){
+    if (!order.classList.contains("open")) {
         order.classList.remove('none')
     }
-    setTimeout(()=>{
+    setTimeout(() => {
         order.classList.toggle('open')
     }, 0)
-    intervelOrder = setTimeout(()=>{
-        if(order.classList.contains("open")){
+    intervelOrder = setTimeout(() => {
+        if (order.classList.contains("open")) {
             order.classList.remove('none')
-        }else{
+        } else {
             order.classList.add('none')
         }
         intervelOrder = null
@@ -50,12 +49,24 @@ function order_block() {
 }
 
 
-function open_input(elem){
+function open_input_class(elem) {
     const wrapper_ul = elem.parentNode.querySelector('.wrapper_ul');
     wrapper_ul.classList.toggle('open')
     const ul = wrapper_ul.querySelector('ul')
 
 }
+
+function open_input_location(elem) {
+    const wrapper_ul_loc = elem.parentNode.querySelector(' .wrapper_ul_loc')
+    console.log(elem.parentNode.querySelector(' .wrapper_ul_loc'))
+    wrapper_ul_loc.classList.toggle('open')
+    const ul = wrapper_ul_loc.querySelector('ul')
+}
+
+function open_menu_mob(elem) {
+
+}
+
 
 
 
@@ -89,6 +100,7 @@ function open_input(elem){
 let currentIndex = 0;
 const sliders = document.querySelectorAll('.text_slider > div');
 let transitioning = false;
+
 function showSlide(index) {
     if (transitioning) return;
 

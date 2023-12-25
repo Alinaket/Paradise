@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\ClassHouse;
 use App\Models\Location;
 use App\Models\Product;
 use App\Models\ProductTeg;
@@ -16,14 +17,12 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         $this->call([
-//            LocationSeeder::class,
-//            ProductSeeder::class,
-//            ProductImgSeeder::class,
-//
-//            TagSeeder::class,
-//            ProductTegSeeder::class,
-
-
+            ClassHouseSeeder::class,
+            LocationSeeder::class,
+            ProductSeeder::class,
+            ProductImgSeeder::class,
+            TagSeeder::class,
+            ProductTegSeeder::class,
         ]);
     }
 }
