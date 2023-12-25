@@ -53,4 +53,5 @@ class ProductController extends Controller
         $recommend_house = Product::take(9)->get();
         return view('paradise', compact('recommend_house'));
     }
+
 }

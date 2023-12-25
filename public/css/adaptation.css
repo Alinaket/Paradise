@@ -1,148 +1,219 @@
-@media (max-width: 1744px){
-    .content_wrapper{
+@media (max-width: 1744px) {
+    .content_wrapper {
         padding: 5px 30px;
     }
-    .nav .content_wrapper{
+
+    .nav .content_wrapper {
         padding: 10px 2%;
 
     }
 }
+
 @media (max-width: 1512px) {
-    .contact{
-        left:20%;
-        right:20%;
+    .contact {
+        left: 20%;
+        right: 20%;
     }
 
 }
-@media (max-width: 1382px){
-    .nav .img_logo img{
+
+@media (max-width: 1382px) {
+    .nav .img_logo img {
         margin: 0;
     }
+
     .nav .input_location input {
         width: 100%;
     }
+
     .nav .input_class input {
         width: 100%;
     }
 }
-@media (max-width: 1380px){
-    .commodity .cardList{
+
+@media (max-width: 1380px) {
+    .commodity .cardList {
         grid-gap: 45px 30px;
     }
 }
-@media (max-width: 1366px){
-    .commodity .cardList{
+
+@media (max-width: 1366px) {
+    .commodity .cardList {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 45px 90px;
     }
 }
 
-
-
-@media (max-width: 1174px){
-    .contact{
+@media (max-width: 1100px) {
+    .contact {
         top: 0;
-        left:0;
-        right:0;
+        left: 0;
+        right: 0;
         bottom: 0;
-        padding: 40px 150px;
+        padding: 150px;
+        margin: auto;
     }
-    .nav_mobile .img_logo img{
-        width: 71px;
-        height: 100%;
+
+    .contact .img_logo {
+        display: block;
+        text-align: center;
+        margin-bottom: 30px;
     }
-    .nav_mobile .content_wrapper{
+
+    .contact .img_logo img {
+        width: 81px;
+        height: auto;
+    }
+
+    .contact .content_wrapper {
+        padding: 35px 30%;
+    }
+
+    .contact .img {
+        width: 75px;
+        height: auto;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .contact h2 {
+        font-size: 32px;
+        font-weight: 300;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .contact button:hover {
+        background: #f5f414;
+
+    }
+
+    .contact button:active {
+        background: #919012;
+    }
+
+    .contact .input p {
+        font-size: 20px;
+        font-weight: 600;
+        font-family: 'Inter';
+    }
+
+    .nav_mobile .content_wrapper {
         padding: 120px 90px;
     }
-    .nav_mobile .sort ul li{
+
+    .nav_mobile .sort ul li {
         font-size: 22px;
     }
-    .nav_mobile button{
+
+    .nav_mobile button {
         font-size: 26px;
     }
+
     .nav_mobile {
         width: 71px;
         height: 100%;
     }
-    .nav_mobile button{
+
+    .nav_mobile button {
         margin: 0;
         padding: 10px 35px;
     }
-    .nav{
+
+    .nav {
         box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.32);
         position: sticky;
         z-index: 5;
     }
-    .nav .menu_icon span{
+
+    .nav .menu_icon span {
         font-size: 25px;
     }
-    .nav .img_logo img{
+
+    .nav .img_logo img {
         width: 51px;
         height: 100%;
     }
+
     .nav .input_location {
         display: none;
     }
-    .nav .input_class  {
+
+    .nav .input_class {
         display: none;
     }
-    .nav .sort ul{
+
+    .nav .sort ul {
         display: none;
     }
-    .nav .button{
+
+    .nav .button {
         display: none;
     }
-    .nav .content_wrapper{
+
+    .nav .content_wrapper {
         display: block;
     }
-    .nav .menu_icon{
+
+    .nav .menu_icon {
         display: block;
         font-size: 20px;
     }
-    .nav .img_logo{
+
+    .nav .img_logo {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
 }
-@media (max-width: 1120px){
-
-}
 
 @media (max-width: 1030px) {
-    .info_company .text{
+    .info_company .text {
         width: 100%;
+    }
+    .contact{
+        padding: 130px 150px;
+    }
+    .contact .img_logo img {
+        width: 61px;
+        height: auto;
     }
 
 }
-@media (max-width: 882px){
+
+@media (max-width: 882px) {
 
 
-    .commodity .cardList{
+    .commodity .cardList {
         display: grid;
         grid-template-columns: 1fr;
     }
+
     .title_screen_container {
         width: 300px;
         margin: auto;
     }
-    .title_screen{
+
+    .title_screen {
         padding: 140px 0 121px;
     }
+
     .title_screen {
         background: rgba(0, 0, 0, 0.54);
         overflow: hidden;
         position: relative;
     }
-    .title_screen h1{
+
+    .title_screen h1 {
         font-size: 18px;
         width: 100%;
         line-height: 19px;
         text-align: center;
         padding: 0;
     }
+
     .title_screen .img_trident {
         display: flex;
         flex-direction: column-reverse;
@@ -152,26 +223,31 @@
         align-items: center;
         text-align: center;
     }
-    .title_screen .img_trident p{
+
+    .title_screen .img_trident p {
         padding: 30px 0 10px;
     }
+
     .title_screen .img_trident img {
         width: 30px;
-        height:auto;
+        height: auto;
         margin-right: 0;
         text-align: center;
     }
+
     .title_screen .button {
         text-align: center;
         padding-top: 147px;
     }
+
     .title_screen button {
         font-size: 15px;
         padding: 12px 22px;
-        margin-top:0;
+        margin-top: 0;
         font-weight: 600;
     }
-    .footer .content_wrapper{
+
+    .footer .content_wrapper {
         display: flex;
         flex-direction: column-reverse;
     }
@@ -179,10 +255,12 @@
     .form_contact input, textarea {
         width: 50%;
     }
-    .form_contact button{
+
+    .form_contact button {
         margin-top: 40px;
     }
-    .form_contact .hr_end{
+
+    .form_contact .hr_end {
         display: block;
         background: rgba(255, 255, 255, 0.13);
         width: 100%;
@@ -191,26 +269,28 @@
     }
 
 
-    .info_contact{
+    .info_contact {
         text-align: center;
     }
 
-    .info_contact img{
+    .info_contact img {
         width: 80px;
         height: 80px;
     }
 
-    .info_contact h3{
+    .info_contact h3 {
         font-size: 25px;
         margin-bottom: 25px;
     }
-    .info_contact ul{
+
+    .info_contact ul {
         display: flex;
         flex-direction: column;
         grid-gap: 12px;
         font-size: 14px;
     }
-    .commodity .cardList{
+
+    .commodity .cardList {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 45px 60px;
@@ -219,150 +299,186 @@
 }
 
 @media (max-width: 778px) {
-    .contact_input_2{
+    .contact {
+        padding: 130px 120px;
+    }
+    .contact_input_2 {
         font-size: 16px;
 
     }
-
-
-    .info_company .text p{
+    .info_company .text p {
         font-size: 20px;
         line-height: 21px;
     }
-    .info_company .title h3{
+
+    .info_company .title h3 {
         font-size: 28px;
     }
-    .nav .menu_icon span{
+
+    .nav .menu_icon span {
         font-size: 24px;
-
     }
 
-    .contact_mobile h2{
-        font-size: 28px;
+    .contact h2 {
+        font-size: 24px;
         padding: 0;
     }
-    .contact_mobile .img{
+
+    .contact .img {
         width: 60px;
     }
-    .contact_mobile .contact_input form{
+
+    .contact .contact_input form {
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 10px;
     }
-    .contact_mobile .input p{
+
+    .contact .input p {
         font-size: 16px;
     }
-    .contact_mobile .contact_input_2 textarea{
+
+    .contact .contact_input_2 textarea {
         font-size: 16px;
         margin-top: 20px;
     }
-    .contact_mobile button{
+
+    .contact button {
         font-size: 18px;
         width: 100%;
     }
 
-    .nav_mobile button{
+    .nav_mobile button {
         font-size: 26px;
     }
 }
-@media (max-width: 580px){
-    .nav_mobile .info_mobile .hr{
+
+@media (max-width: 580px) {
+    .contact {
+        padding: 130px 100px;
+    }
+    .nav_mobile .info_mobile .hr {
         margin: 35px 0;
     }
-    .nav_mobile .info_con_mob h3{
+
+    .nav_mobile .info_con_mob h3 {
         font-size: 26px;
     }
-    .nav_mobile .info_con_mob li{
+
+    .nav_mobile .info_con_mob li {
         font-size: 14px;
     }
-    .nav_mobile .input .icon{
+
+    .nav_mobile .input .icon {
         font-size: 16px;
     }
-    .nav .input img, .nav_mobile .input img{
+
+    .nav .input img, .nav_mobile .input img {
         width: 30px;
         height: auto;
     }
-    .nav_mobile input{
+
+    .nav_mobile input {
         font-size: 18px;
     }
-    .nav_mobile .sort ul li{
+
+    .nav_mobile .sort ul li {
         font-size: 20px;
         padding: 13px 11px 13px 8px;
     }
 
-    .nav_mobile button{
+    .nav_mobile button {
         font-size: 22px;
     }
-    .info_company .text p{
+
+    .info_company .text p {
         font-size: 15px;
         line-height: 16px;
     }
-    .contact_mobile h2{
-        font-size: 25px;
+
+    .contact h2 {
+        font-size: 18px;
         padding: 0;
     }
-    .contact_mobile button{
+
+    .contact button {
         font-size: 14px;
     }
 
 }
+
 @media (max-width: 500px) {
 
-    .nav_mobile button{
+    .nav_mobile button {
         font-size: 18px;
     }
-    .nav_mobile .sort ul li{
+
+    .nav_mobile .sort ul li {
         font-size: 16px;
         padding: 9px 7px 9px 4px;
 
     }
-    .nav_mobile input{
+
+    .nav_mobile input {
         font-size: 16px;
     }
+
     .nav_mobile .input .icon {
         margin: 0 5px;
     }
 }
+
 @media (max-width: 484px) {
-    .contact_mobile .content_wrapper {
+    .contact {
+        padding: 130px 80px;
+    }
+    .contact .content_wrapper {
         padding: 35px 15%;
     }
 }
-@media (max-width: 452px){
-    .nav_mobile .content_wrapper{
+
+@media (max-width: 452px) {
+    .nav_mobile .content_wrapper {
         padding: 120px 40px;
     }
-    .nav_mobile .img_logo img{
+
+    .nav_mobile .img_logo img {
         width: 51px;
         height: auto;
     }
-    .nav_mobile button{
+
+    .nav_mobile button {
         font-size: 16px;
         font-weight: 500;
-        font-family: "Inter" , sans-serif;
+        font-family: "Inter", sans-serif;
     }
-    .nav_mobile .sort ul li{
+
+    .nav_mobile .sort ul li {
         padding: 5px 3px 5px 5px;
         font-size: 14px;
         font-weight: 500;
-        font-family: "Inter" , sans-serif;
+        font-family: "Inter", sans-serif;
     }
 
-    .info_company .text p{
+    .info_company .text p {
         font-size: 10px;
         line-height: 11px;
     }
+
     .nav .sort ul {
         display: none;
     }
-    .commodity .card .text p{
+
+    .commodity .card .text p {
         height: 3.3em;
     }
+
     .nav .img_logo img {
         width: 40px;
         height: auto;
         margin-right: 0;
     }
+
     .nav .input {
         display: none;
     }
@@ -370,25 +486,30 @@
     .nav button {
         display: none;
     }
+
     .title_screen_container {
         width: 300px;
         margin: auto;
     }
-    .title_screen{
+
+    .title_screen {
         padding: 140px 0 121px;
     }
+
     .title_screen {
         background: rgba(0, 0, 0, 0.54);
         overflow: hidden;
         position: relative;
     }
-    .title_screen h1{
+
+    .title_screen h1 {
         font-size: 18px;
         width: 100%;
         line-height: 19px;
         text-align: center;
         padding: 0;
     }
+
     .title_screen .img_trident {
         display: flex;
         flex-direction: column-reverse;
@@ -398,26 +519,29 @@
         align-items: center;
         text-align: center;
     }
-    .title_screen .img_trident p{
+
+    .title_screen .img_trident p {
         padding: 30px 0 10px;
     }
+
     .title_screen .img_trident img {
         width: 30px;
-        height:auto;
+        height: auto;
         margin-right: 0;
         text-align: center;
     }
+
     .title_screen .button {
         text-align: center;
         padding-top: 147px;
     }
+
     .title_screen button {
         font-size: 15px;
         padding: 12px 22px;
-        margin-top:0;
+        margin-top: 0;
         font-weight: 600;
     }
-
 
 
     .commodity_container {
@@ -427,8 +551,8 @@
 
     .commodity .cardList {
         display: grid;
-        grid-template-columns: 1fr ;
-        grid-gap: 30px ;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
         margin: 30px 0;
     }
 
@@ -463,6 +587,7 @@
         height: 1.3em;
 
     }
+
     .commodity .card p {
         font-size: 12px;
         line-height: 13px;
@@ -513,32 +638,36 @@
         align-items: end;
     }
 
-    .info_company .text{
+    .info_company .text {
         width: 100%;
     }
-    .info_company .text h3{
+
+    .info_company .text h3 {
         font-weight: 500;
         font-size: 25px;
-        padding-bottom:15px ;
+        padding-bottom: 15px;
     }
+
     .info_company .text p {
         color: #1a202c;
         font-size: 14px;
         line-height: 16px;
     }
-    .info_company .icon{
+
+    .info_company .icon {
         display: flex;
         font-size: 20px;
         color: rgba(101, 101, 102, 1);
         text-align: center;
         align-items: center;
     }
-    .info_company .text .language{
+
+    .info_company .text .language {
         margin-top: 35px;
         font-size: 14px;
     }
 
-    .footer .content_wrapper{
+    .footer .content_wrapper {
         display: flex;
         flex-direction: column-reverse;
     }
@@ -546,10 +675,12 @@
     .form_contact input, textarea {
         width: 50%;
     }
-    .form_contact button{
+
+    .form_contact button {
         margin-top: 40px;
     }
-    .form_contact .hr_end{
+
+    .form_contact .hr_end {
         display: block;
         background: rgba(255, 255, 255, 0.13);
         width: 100%;
@@ -558,91 +689,110 @@
     }
 
 
-    .info_contact{
+    .info_contact {
         text-align: center;
     }
 
-    .info_contact img{
+    .info_contact img {
         width: 80px;
         height: 80px;
     }
 
-    .info_contact h3{
+    .info_contact h3 {
         font-size: 25px;
         margin-bottom: 25px;
     }
-    .info_contact ul{
+
+    .info_contact ul {
         display: flex;
         flex-direction: column;
         grid-gap: 12px;
         font-size: 14px;
     }
 }
-@media (max-width: 365px){
-    .nav_mobile button{
+
+@media (max-width: 365px) {
+    .contact {
+        padding: 130px 60px;
+    }
+    .nav_mobile button {
         font-size: 14px;
     }
 
-    .nav_mobile .sort ul li{
+    .nav_mobile .sort ul li {
         padding: 10px 3px 5px 5px;
         font-size: 16px;
         font-weight: 500;
-        font-family: "Inter" , sans-serif;
+        font-family: "Inter", sans-serif;
     }
-    .nav_mobile .info_con_mob h3{
+
+    .nav_mobile .info_con_mob h3 {
         font-size: 20px;
     }
-    .nav_mobile .info_con_mob li{
+
+    .nav_mobile .info_con_mob li {
         font-size: 12px;
     }
-    .contact_mobile .img {
+
+    .contact .img {
         width: 55px;
     }
-    .contact_mobile button{
+
+    .contact button {
         padding: 20px 0;
     }
-    .nav .content_wrapper{
+
+    .nav .content_wrapper {
         display: block;
     }
-    .nav .menu_icon{
+
+    .nav .menu_icon {
         display: block;
         font-size: 20px;
     }
-    .nav .img_logo{
+
+    .nav .img_logo {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
+
     .nav .img_logo img {
         width: 40px;
         height: auto;
         margin-right: 0;
     }
+
     .nav .input {
         display: none;
     }
+
     .nav ul {
         display: none;
     }
+
     .nav button {
         display: none;
     }
 
-    .title_screen{
+    .title_screen {
         padding: 120px 0 120px;
     }
+
     .title_screen {
         background: rgba(0, 0, 0, 0.54);
         overflow: hidden;
         background-size: 60%;
     }
-    .title_screen h1{
+
+    .title_screen h1 {
         font-size: 15px;
         width: 240px;
         line-height: 16px;
         text-align: center;
         padding: 0;
     }
+
     .title_screen .img_trident {
         display: flex;
         flex-direction: column-reverse;
@@ -651,30 +801,34 @@
         width: 240px;
         align-items: center;
     }
-    .title_screen .img_trident p{
+
+    .title_screen .img_trident p {
         padding: 50px 0 10px;
     }
+
     .title_screen .img_trident img {
         width: 30px;
-        height:auto;
+        height: auto;
         margin-right: 0;
         text-align: center;
     }
+
     .title_screen .button {
         text-align: center;
         padding-top: 147px;
     }
+
     .title_screen button {
         font-size: 15px;
         padding: 12px 22px;
-        margin-top:0;
+        margin-top: 0;
         font-weight: 600;
     }
 
     .commodity .cardList {
         display: grid;
-        grid-template-columns: 1fr ;
-        grid-gap: 15px ;
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
         margin: 30px 0;
     }
 
@@ -749,39 +903,45 @@
     }
 
 
-    .info_company{
+    .info_company {
         padding: 35px 0 15px;
     }
-    .info_company .text h3{
+
+    .info_company .text h3 {
         font-size: 18px;
-        padding-bottom:15px ;
+        padding-bottom: 15px;
     }
+
     .info_company .text p {
         color: #1a202c;
         font-size: 14px;
         line-height: 16px;
     }
-    .info_company .icon{
+
+    .info_company .icon {
         display: flex;
         font-size: 20px;
         color: rgba(101, 101, 102, 1);
         text-align: center;
         align-items: center;
     }
-    .info_company .text .language{
+
+    .info_company .text .language {
         margin-top: 35px;
         font-size: 14px;
     }
-    .footer .content_wrapper{
+
+    .footer .content_wrapper {
         display: flex;
         flex-direction: column-reverse;
     }
 
 
-    .form_contact button{
+    .form_contact button {
         margin-top: 40px;
     }
-    .form_contact .hr_end{
+
+    .form_contact .hr_end {
         display: block;
         background: rgba(255, 255, 255, 0.13);
         width: 320px;
@@ -789,20 +949,21 @@
         margin: 20px 0;
     }
 
-    .info_contact{
+    .info_contact {
         text-align: center;
     }
 
-    .info_contact img{
+    .info_contact img {
         width: 80px;
         height: 80px;
     }
 
-    .info_contact h3{
+    .info_contact h3 {
         font-size: 25px;
         margin-bottom: 25px;
     }
-    .info_contact ul{
+
+    .info_contact ul {
         display: flex;
         flex-direction: column;
         grid-gap: 12px;

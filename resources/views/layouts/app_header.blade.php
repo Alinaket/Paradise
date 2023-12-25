@@ -19,75 +19,12 @@
     <title>@yield('title', 'Paradise')</title>
 </head>
 <body>
-<div class="contact_mobile">
-    <div class="content_wrapper">
-        <div class="icon">
-            <span class="x"><i class="fa-solid fa-x"></i></span>
-        </div>
-        <div class="img">
-            <img src="{{asset('../img/logo.png')}}" alt="">
-        </div>
-        <h2>контакт для зворотнього зв’язку</h2>
-        <div class="input">
-            <div class="contact_input">
-                <form action="" class="flex">
-                    <label for="">
-                        <p>Ім’я <span>*</span></p>
-                        <input type="text">
-
-                        <div class="hr"></div>
-
-                    </label>
-
-                    <label for="">
-                        <p>Ел.адреса <span>*</span></p>
-                        <input type="text">
-
-                        <div class="hr"></div>
-
-                    </label>
-                    <label for="">
-                        <p>Призвіще <span>*</span></p>
-                        <input type="text">
-
-                        <div class="hr"></div>
-
-                    </label>
-                    <label for="">
-                        <p>Телефон <span>*</span></p>
-                        <input type="text">
-
-                        <div class="hr"></div>
-
-                    </label>
-                </form>
-            </div>
-            <div class="contact_input_2">
-                <form action="">
-                    <label for="">
-                        <p>Тема</p>
-                        <input class="subject" type="text">
-                        <div class="hr"></div>
-                    </label>
-                    <label for="">
-                    <textarea class="height" placeholder="Введіть своє повідомлення тут..." name="" id="" cols="30"
-                              rows="10"></textarea>
-                        <div class="hr"></div>
-                    </label>
-                </form>
-            </div>
-        </div>
-        <div class="button">
-            <button>Замовити послугу</button>
-        </div>
-    </div>
-
-</div>
-
-
 <div class="contact none">
     <div class="icon">
         <span class="x" onclick="contact_block(2)"><i class="fa-solid fa-x"></i></span>
+    </div>
+    <div class="img_logo">
+        <img src="{{asset('../img/logo.png')}}" alt="">
     </div>
     <h2>контакт для зворотнього зв’язку</h2>
     <div class="input">

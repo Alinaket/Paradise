@@ -3,60 +3,6 @@
 @section("content")
     <link rel="stylesheet" href="{{asset('css/product.css')}}">
     <link rel="stylesheet" href="{{asset('css/adaptation_product.css')}}">
-    <div class="mobile_order none open">
-        <div class="content_wrapper">
-            <div class="icon" onclick="order_block()">
-                <span><i class="fa-solid fa-x"></i></span>
-            </div>
-            <div class="input_order">
-                <h2>Замовити послугу</h2>
-                <form action="" class="flex">
-                    <label for="">
-                        <p>Ім’я <span>*</span></p>
-                        <input type="text">
-
-                        <div class="hr"></div>
-
-                    </label>
-
-                    <label for="">
-                        <p>Прізвище <span>*</span></p>
-                        <input type="text">
-
-                        <div class="hr"></div>
-
-                    </label>
-                    <label for="">
-                        <p>Ел.адреса <span>*</span></p>
-                        <input type="text">
-
-                        <div class="hr"></div>
-
-                    </label>
-                    <label for="">
-                        <p>Телефон <span>*</span></p>
-                        <input type="text">
-                        <div class="hr"></div>
-
-                    </label>
-                </form>
-            </div>
-            <div class="check_list">
-                <label>
-                    <h3>оренда</h3>
-                    <input type="checkbox"/>
-                </label>
-                <label>
-                    <h3>продаж</h3>
-                    <input type="checkbox"/>
-                </label>
-            </div>
-            <div class="button">
-                <button onclick="order_block()">Відправити</button>
-            </div>
-        </div>
-
-    </div>
     <div class="order none open">
         <div class="icon" onclick="order_block()">
             <span><i class="fa-solid fa-x"></i></span>
