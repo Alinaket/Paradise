@@ -7,6 +7,9 @@
         <div class="icon" onclick="order_block()">
             <span><i class="fa-solid fa-x"></i></span>
         </div>
+        <div class="img_logo">
+            <img src="{{asset('../img/logo.png')}}" alt="">
+        </div>
         <div class="input_order">
             <h2>Замовити послугу</h2>
             <form action="" class="flex">

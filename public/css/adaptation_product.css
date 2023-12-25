@@ -9,10 +9,7 @@
     }
 }
 @media (max-width: 1257px){
-    .mobile_order{
-        padding: 200px 40px;
-        text-align: center;
-    }
+
     .nav .content_wrapper{
         padding: 10px 4%;
 
@@ -77,7 +74,39 @@
 
 
 }
+@media (max-width: 1100px){
+    .order{
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        padding: 150px;
+        text-align: center;
+        font-family: "Inter" , sans-serif;
+        position: fixed;
+        z-index: 3;
+        background: white;
+    }
+    .order button:hover {
+        background: #f5f414;
+    }
+    .order button:active {
+        background: #919012;
+    }
+    .order .img_logo{
+        display: block;
+    }
+    .order .img_logo img{
+        width: 150px;
+        height: auto;
+        padding: 30px;
+    }
+}
 @media (max-width: 800px){
+    .order{
+        padding: 150px 100px;
+    }
     .content .product .location{
         height: 1.8em;
         overflow: hidden;
@@ -85,28 +114,28 @@
     }
 }
 @media (max-width: 785px) {
-    .mobile_order .input_order h2{
+    .order .input_order h2{
         font-size: 30px;
-        padding-bottom: 50px;
+        padding-bottom: 30px;
         text-align: center;
     }
-    .mobile_order .input_order p{
+    .order .input_order p{
         font-size: 20px;
     }
-    .mobile_order .check_list{
+    .order .check_list{
         font-size: 18px;
     }
-    .mobile_order button{
+    .order button{
         font-size: 20px;
         padding: 15px 20px;
     }
     .content .product h2{
         padding-top: 10px;
     }
-    .content .product .mobile .status{
+    .content .product  .status{
         font-size: 16px;
     }
-    .content .product .mobile .price{
+    .content .product  .price{
         font-size: 20px;
     }
     .content .product iframe{
@@ -140,6 +169,9 @@
     }
 }
 @media (max-width: 702px) {
+    .order{
+        padding: 70px;
+    }
     .nav .content_wrapper{
         padding: 10px 7%;
 
@@ -166,17 +198,21 @@
         padding: 15px 45px;
 
     }
-    .content .product .mobile .status{
+    .content .product .status{
         font-size: 14px;
         margin-bottom: 10px;
     }
-    .content .product .mobile .price{
+    .content .product .price{
         font-size: 18px;
         margin: 0;
     }
 
 }
 @media (max-width: 653px ) {
+    .order{
+        padding: 100px 50px;
+    }
+
     .nav .img_logo img {
         width: 61px;
         height: 72px;
@@ -197,16 +233,16 @@
         grid-template-columns: 1fr 1fr;
         grid-gap: 0 10px;
     }
-    .content .product .mobile .border {
+    .content .product .border {
         font-size: 25px;
         padding: 15px 25px;
         margin: auto;
 
     }
-    .content .product .mobile .button{
+    .content .product.button{
         text-align: center;
     }
-    .content .product .mobile button{
+    .content .product button{
         width: 90%;
         font-size: 30px;
     }
@@ -226,17 +262,17 @@
         padding: 10px 10%;
 
     }
-    .mobile_order .input_order h2{
+    .order .input_order h2{
         font-size: 20px;
     }
-    .mobile_order{
-        padding: 90px 40px;
+    .order{
+        padding: 40px 40px;
     }
-    .mobile_order .input_order .flex{
+    .order .input_order .flex{
         display: grid;
         grid-template-columns: 1fr;
     }
-    .mobile_order .input_order .hr{
+    .order .input_order .hr{
         width: 100%;
     }
 }
@@ -250,11 +286,11 @@
         height: 62px;
         margin-right: 65px;
     }
-    .content .product .mobile .border{
+    .content .product .border{
         font-size: 18px;
         padding: 10px 20px;
     }
-    .content .product .mobile button{
+    .content .product button{
         font-size: 20px;
     }
     .content .product h2{
@@ -272,15 +308,15 @@
 
 }
 @media (max-width: 434px) {
-    .mobile_order .check_list{
+    .order .check_list{
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 20px 0;
     }
-    .mobile_order .check_list label{
+    .morder .check_list label{
         justify-content: space-between;
     }
-    .mobile_order{
+    .order{
         padding: 50px 40px;
     }
 }
@@ -290,11 +326,11 @@
         flex-direction: column;
         grid-gap: 10px 0;
     }
-    .content .product .mobile .border{
+    .content .product .border{
         font-size: 16px;
         padding: 8px 18px;
     }
-    .content .product .mobile .price{
+    .content .product .price{
         font-size: 18px;
         padding: 10px 20px;
     }
@@ -309,20 +345,20 @@
     }
 }
 @media (max-width: 360px) {
-    .mobile_order{
+    .order{
         padding: 100px 0;
     }
-    .mobile_order .input_order h2{
+    .order .input_order h2{
         font-size: 20px;
         padding-bottom: 20px;
     }
-    .mobile_order .input_order p{
+    .order .input_order p{
+        font-size: 13px;
+    }
+    .order button{
         font-size: 15px;
     }
-    .mobile_order button{
-        font-size: 15px;
-    }
-    .mobile_order .check_list h3{
+    .order .check_list h3{
         font-size: 18px;
     }
 }
