@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Route;
 
 class ProductController extends Controller
 {
@@ -21,7 +22,8 @@ class ProductController extends Controller
 
     public function all_product(Request $request, $type = null)
     {
-
+//        $name = \Illuminate\Support\Facades\Route::currentRouteName();
+//        dd($name);
         switch ($type) {
             case 'rent':
                 $type_key = 1;
@@ -42,9 +44,8 @@ class ProductController extends Controller
         if ($request->has('location')) {
             $all_product = $all_product->where('location', $request->input('location'));
         }
-
         $all_product = $all_product->get();
-        return view('all_product', compact('all_product'));
+        return view('all_product', compact('all_product', 'type'));
     }
 
     public function paradise()

@@ -58,13 +58,14 @@ function open_input_class(elem) {
 
 function open_input_location(elem) {
     const wrapper_ul_loc = elem.parentNode.querySelector(' .wrapper_ul_loc')
-    console.log(elem.parentNode.querySelector(' .wrapper_ul_loc'))
+
     wrapper_ul_loc.classList.toggle('open')
     const ul = wrapper_ul_loc.querySelector('ul')
 }
 
-function open_menu_mob(elem) {
-
+function open_menu_mob() {
+    const menu_right = document.querySelector(' .nav_mobile .content_wrapper')
+    menu_right.classList.toggle('open')
 }
 
 

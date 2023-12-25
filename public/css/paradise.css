@@ -117,6 +117,7 @@
     opacity: 0;
     transition-duration: 1s;
 }
+
 .none{
     display: none;
 }
@@ -240,24 +241,11 @@
     right: 0;
     text-align: center;
     padding: 100px 80px;
-    /*display: none;*/
+    transform: translateX(100%);
+    transition-duration: 1.5s;
 }
-.nav_mobile .content_wrapper{
-    position: fixed;
-    top: 0;
-    right: -100%; /* начальное положение справа за пределами видимой области */
-    width: 300px; /* ширина блока */
-    height: 100%;
-    background-color: #f0f0f0;
-    overflow-y: auto; /* добавить вертикальную прокрутку, если содержимое слишком длинное */
-    transition: right 0.3s ease;
-}
-
 .nav_mobile .content_wrapper.open {
-    right: 0;
-}
-.nav_mobile .info_contact{
-
+    transform: translateX(0);
 }
 .nav_mobile .input .icon{
     margin:0 10px;
@@ -391,8 +379,11 @@
     font-size: 16px;
     align-items: center;
 }
+.nav .sort .active{
+    background: rgba(215, 215, 215, 0.77);
+}
 .nav .sort ul li,.nav_mobile .sort ul li{
-    padding: 10px 13px 5px 10px;
+    padding: 10px;
     transition-duration: 0.5s;
 }
 .nav .sort ul li:hover{

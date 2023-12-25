@@ -20,6 +20,7 @@ return new class extends Migration
             $table->text('address')->nullable();
             $table->string('location')->nullable();
             $table->integer('type')->nullable();
+            $table->integer('classHouse')->nullable();
             $table->timestamps();
         });
     }

@@ -28,6 +28,7 @@ class ProductFactory extends Factory
             'address'=>$this->faker->address(),
             'location'=>$rand_location->tag,
             'type'=>rand(1,3),
+            'classHouse' =>rand(1,11),
 
         ];
     }

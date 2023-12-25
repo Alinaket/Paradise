@@ -84,6 +84,7 @@
 
 </div>
 
+
 <div class="contact none">
     <div class="icon">
         <span class="x" onclick="contact_block(2)"><i class="fa-solid fa-x"></i></span>
@@ -149,7 +150,7 @@
         <div class="img_logo">
             <a href="{{route("paradise")}}"><img src="{{asset('../img/logo.png')}}" alt=""></a>
             <div class="menu_icon">
-                <span><i class="fa-solid fa-bars"></i></span>
+                <span onclick="open_menu_mob()"><i class="fa-solid fa-bars"></i></span>
             </div>
         </div>
         <div class="container_location">
@@ -167,7 +168,6 @@
                                     <a href="{{route('all_product',['location'=>$item->tag])}}">
                                         <li>{{$item->name}}</li>
                                     </a>
-
                                 @endforeach
                             </ul>
                         </div>
@@ -202,10 +202,26 @@
         </div>
         <div class="sort">
             <ul>
-                <li><a href="{{route('all_product_type', ['type'=>'rent'])}}">Оренда</a></li>
-                <li><a href="{{route('all_product_type', ['type'=>'buy'])}}">Продаж</a></li>
-                <li><a href="{{route('all_product_type', ['type'=>'new_buildings'])}}">Новобудови</a></li>
-                {{--                        <a href="{{route('all_product')}}" class="button"><li>Всі будинки</li></a>--}}
+
+                @php
+                $arr_lick = [
+                    'rent'=>'Оренда',
+                    'buy'=>'Продаж',
+                    'new_buildings' =>'Новобудови',
+                    ]
+                @endphp
+                @foreach($arr_lick as $key=>$item)
+                    @php
+//                        dd($key,$type??"")
+                        $class_link = "";
+                    if($key === ($type??"")){
+                         $class_link = "active";
+                    }
+                    @endphp
+                    <li class="{{$class_link}}"><a href="{{route('all_product_type', ['type'=>$key])}}">{{$item}}</a></li>
+                    {{--                        <a href="{{route('all_product')}}" class="button"><li>Всі будинки</li></a>--}}
+                @endforeach
+
             </ul>
         </div>
 
@@ -219,8 +235,8 @@
     <div class="content_wrapper">
         <div class="img_logo">
             <a href="{{route("paradise")}}"><img src="{{asset('../img/logo.png')}}" alt=""></a>
-            <div class="menu_icon" onclick="open_menu_mob(this)">
-                <span><i class="fa-solid fa-bars"></i></span>
+            <div class="menu_icon">
+                <span onclick="open_menu_mob()"><i class="fa-solid fa-bars"></i></span>
             </div>
         </div>
         <div class="container_location">
