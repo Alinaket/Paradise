@@ -43,17 +43,17 @@
     overflow: hidden;
     position: relative;
     line-height: 1.2em;
-    max-height: 5em;
+    max-height: 4.8em;
     text-align: justify;
     padding-right: 1em;
     font-family: "Inter", sans-serif;
     font-weight: 500;
 }
 .all_product .card .text p {
-    display: -webkit-box; /* Включение flexbox layout */
-    overflow: hidden; /* Скрытие текста, который не помещается в контейнер */
-    -webkit-line-clamp: 4; /* Максимальное количество строк для отображения */
-    -webkit-box-orient: vertical; /* Направление блока (вертикальное) */
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
 }
 
 
@@ -82,18 +82,18 @@
 
 }
 
-/*.all_product .card .text p:after {*/
-/*    content: "...";*/
-/*    position: absolute;*/
-/*    bottom: 0;*/
-/*    right: 0;*/
-/*    top: 64px;*/
-/*    height: 1em;*/
-/*    background: linear-gradient(to right, rgb(245, 246, 246), #F5F6F6);*/
-/*    box-shadow: -15px 0px 10px #F5F6F6;*/
-/*    padding: 0 8px 0 20px;*/
+.all_product .card .text p:after {
+    content: "...";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 64px;
+    height: 1em;
+    background: linear-gradient(to right, rgb(245, 246, 246), #F5F6F6);
+    box-shadow: -15px 0px 10px #F5F6F6;
+    padding: 0 8px 0 20px;
 
-/*}*/
+}
 
 .all_product .card h2 {
     font-size: 30px;
