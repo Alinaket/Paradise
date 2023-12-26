@@ -282,14 +282,14 @@
     justify-content: space-between;
     text-align: center;
     align-items: center;
-    padding: 10px 4%;
+    padding: 10px 2%;
 
 }
 
 .nav .img_logo img{
     width: 81px;
     height: 100%;
-    margin-right:15px ;
+    margin-right:40px ;
 }
 
 .nav .input, .nav_mobile .input  {

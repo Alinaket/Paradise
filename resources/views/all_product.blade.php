@@ -49,9 +49,9 @@
 
                 @endforeach
             </div>
-            <div class="button">
-                <button>Більше</button>
-            </div>
+{{--            <div class="button">--}}
+{{--                <button>Більше</button>--}}
+{{--            </div>--}}
         </div>
 
 @stop

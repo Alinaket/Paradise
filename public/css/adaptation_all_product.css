@@ -119,6 +119,9 @@
     }
 }
 @media (max-width: 503px){
+    .all_product .card .text{
+        padding: 20px 30px;
+    }
     .all_product .card .border{
         font-size: 16px;
         padding: 7px 15px;

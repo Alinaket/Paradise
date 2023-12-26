@@ -26,11 +26,7 @@
                     </div>
                 </div>
                 <a href="{{route('product', ['slug'=>$item->slug])}}" class="button">
-                    <button>@if($item->type==1)
-                            Продаж
-                        @else
-                            Купівля
-                        @endif</button>
+                    <button>Детальніше</button>
                 </a>
 
             </div>
