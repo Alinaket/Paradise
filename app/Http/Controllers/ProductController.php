@@ -44,8 +44,12 @@ class ProductController extends Controller
         if ($request->has('location')) {
             $all_product = $all_product->where('location', $request->input('location'));
         }
+        if ($request->has('classHouse')) {
+            $all_product = $all_product->where('classHouse', $request->input('classHouse'));
+        }
         $all_product = $all_product->get();
         return view('all_product', compact('all_product', 'type'));
+
     }
 
     public function paradise()

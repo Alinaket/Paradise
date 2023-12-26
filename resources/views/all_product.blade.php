@@ -16,6 +16,7 @@
                         </div>
                         <div class="text">
                             <h2>{{$item->name}}</h2>
+                            <h3>{{$item->location}} {{$item->classHouse}}</h3>
                             <div class="location">
                                 <img src="{{asset("../img/location_color.png")}}" alt="">
                                 <em>{{$item->address}}</em>
@@ -47,6 +48,9 @@
                     </div>
 
                 @endforeach
+            </div>
+            <div class="button">
+                <button>Більше</button>
             </div>
         </div>
 

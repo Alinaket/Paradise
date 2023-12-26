@@ -18,9 +18,9 @@ return new class extends Migration
             $table->text('description')->nullable();
             $table->integer('price')->default(0);
             $table->text('address')->nullable();
-            $table->string('location')->nullable();
-            $table->integer('type')->nullable();
-            $table->integer('classHouse')->nullable();
+            $table->string('classHouse')->nullable()->index();
+            $table->string('location')->nullable()->index();
+            $table->integer('type')->nullable()->index();
             $table->timestamps();
         });
     }

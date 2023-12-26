@@ -19,6 +19,20 @@
     <title>@yield('title', 'Paradise')</title>
 </head>
 <body>
+@php
+    $request = request();
+    $get = $request->input();
+    $location = '';
+    $classHouse = '';
+    if(isset($get['location'])){
+       $location = \App\Models\Location::where('tag', $get["location"])->first()->name??"";
+    }
+    if(isset($get['classHouse'])){
+        $classHouse = \App\Models\ClassHouse::where('tag',$get["classHouse"] )->first()->name??'';
+    }
+
+
+@endphp
 <div class="contact none">
     <div class="icon">
         <span class="x" onclick="contact_block(2)"><i class="fa-solid fa-x"></i></span>
@@ -96,15 +110,29 @@
                     <img src="{{asset("../img/icon_location.png")}}" alt="">
                 </div>
                 <label for="">
-                    <input type="text" onclick="open_input_location(this)" placeholder="Область">
+                    <input type="text" onclick="open_input_location(this)" placeholder="Область" value="{{$location}}">
                     <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
                     <div class="box_location">
                         <div class="wrapper_ul_loc">
                             <ul>
                                 @foreach(\App\Models\Location::get() as $item)
-                                    <a href="{{route('all_product',['location'=>$item->tag])}}">
-                                        <li>{{$item->name}}</li>
-                                    </a>
+                                    @php
+                                        $new_get = $get;
+                                        $new_get['location']=$item->tag;
+                                    @endphp
+                                    @if($type??null)
+                                        @php
+                                            $new_get['type']=$type;
+                                        @endphp
+                                        <a href="{{route('all_product_type',$new_get)}}">
+                                            <li>{{$item->name}}</li>
+                                        </a>
+                                    @else
+                                        <a href="{{route('all_product',$new_get)}}">
+                                            <li>{{$item->name}}</li>
+                                        </a>
+                                    @endif
+
                                 @endforeach
                             </ul>
                         </div>
@@ -119,15 +147,28 @@
                     <img src="{{asset("../img/icon_glass.png")}}" alt="">
                 </div>
                 <label for="">
-                    <input type="text" onclick="open_input_class(this)" placeholder="Будинок, квартира..">
+                    <input type="text" onclick="open_input_class(this)" placeholder="Будинок, квартира.." value="{{$classHouse}}">
                     <span class="icon"><i class="fa-solid fa-chevron-down"></i></span>
                     <div class="box_class">
                         <div class="wrapper_ul">
                             <ul>
                                 @foreach(\App\Models\ClassHouse::get() as $item)
-                                    <a href="{{route('all_product',['location'=>$item->tag])}}">
-                                        <li>{{$item->name}}</li>
-                                    </a>
+                                    @php
+                                        $new_get = $get;
+                                        $new_get['classHouse']=$item->tag;
+                                    @endphp
+                                    @if($type??null)
+                                        @php
+                                            $new_get['type']=$type;
+                                        @endphp
+                                        <a href="{{route('all_product_type',$new_get)}}">
+                                            <li>{{$item->name}}</li>
+                                        </a>
+                                    @else
+                                        <a href="{{route('all_product',$new_get)}}">
+                                            <li>{{$item->name}}</li>
+                                        </a>
+                                    @endif
                                 @endforeach
                             </ul>
                         </div>
@@ -141,11 +182,11 @@
             <ul>
 
                 @php
-                $arr_lick = [
-                    'rent'=>'Оренда',
-                    'buy'=>'Продаж',
-                    'new_buildings' =>'Новобудови',
-                    ]
+                    $arr_lick = [
+                        'rent'=>'Оренда',
+                        'buy'=>'Продаж',
+                        'new_buildings' =>'Новобудови',
+                        ]
                 @endphp
                 @foreach($arr_lick as $key=>$item)
                     @php
@@ -154,7 +195,8 @@
                          $class_link = "active";
                     }
                     @endphp
-                    <li class="{{$class_link}}"><a href="{{route('all_product_type', ['type'=>$key])}}">{{$item}}</a></li>
+                    <li class="{{$class_link}}"><a href="{{route('all_product_type', ['type'=>$key])}}">{{$item}}</a>
+                    </li>
                     {{--                        <a href="{{route('all_product')}}" class="button"><li>Всі будинки</li></a>--}}
                 @endforeach
 

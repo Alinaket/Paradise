@@ -2,7 +2,9 @@
 
 namespace Database\Factories;
 
+use App\Models\ClassHouse;
 use App\Models\Location;
+use Database\Seeders\ClassHouseSeeder;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -20,6 +22,7 @@ class ProductFactory extends Factory
         $name = $this->faker->name();
         $slug = $this->create_slug($name);
         $rand_location = Location::inRandomOrder()->first();
+        $rand_classHouse = ClassHouse::inRandomOrder()->first();
         return [
             'name'=>$name,
             'slug'=>$slug,
@@ -28,7 +31,7 @@ class ProductFactory extends Factory
             'address'=>$this->faker->address(),
             'location'=>$rand_location->tag,
             'type'=>rand(1,3),
-            'classHouse' =>rand(1,11),
+            'classHouse'=>$rand_classHouse->tag,
 
         ];
     }
