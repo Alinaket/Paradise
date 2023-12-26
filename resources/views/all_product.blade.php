@@ -16,7 +16,7 @@
                         </div>
                         <div class="text">
                             <h2>{{$item->name}}</h2>
-                            <h3>{{$item->location}} {{$item->classHouse}}</h3>
+{{--                            <h3>{{$item->location}} {{$item->classHouse}}</h3>--}}
                             <div class="location">
                                 <img src="{{asset("../img/location_color.png")}}" alt="">
                                 <em>{{$item->address}}</em>
@@ -33,7 +33,7 @@
                                     </div>
 
                                     <div class="price border">
-                                        <span>{{$item->price}}</span>$
+                                        <span>{{$item->price}} $</span>
                                     </div>
                                 </div>
                                 <a href="{{route('product', ['slug'=>$item->slug])}}" class="button">

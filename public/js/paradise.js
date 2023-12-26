@@ -50,15 +50,14 @@ function order_block() {
 
 
 function open_input_class(elem) {
-    const wrapper_ul = elem.parentNode.querySelector('.wrapper_ul');
+    const wrapper_ul = elem.parentNode.querySelector('.box_class');
     wrapper_ul.classList.toggle('open')
     const ul = wrapper_ul.querySelector('ul')
 
 }
 
 function open_input_location(elem) {
-    const wrapper_ul_loc = elem.parentNode.querySelector(' .wrapper_ul_loc')
-
+    const wrapper_ul_loc = elem.parentNode.querySelector(' .box_class')
     wrapper_ul_loc.classList.toggle('open')
     const ul = wrapper_ul_loc.querySelector('ul')
 }

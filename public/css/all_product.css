@@ -151,7 +151,7 @@
     color: rgba(0, 0, 0, 0.75);
 }
 
-.all_product .card .price {
+.all_product .card .price span {
     font-size: 22px;
     font-weight: 600;
     padding: 10px 25px 7px;

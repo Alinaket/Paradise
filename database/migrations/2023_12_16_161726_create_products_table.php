@@ -18,6 +18,7 @@ return new class extends Migration
             $table->text('description')->nullable();
             $table->integer('price')->default(0);
             $table->text('address')->nullable();
+            $table->text('map')->nullable();
             $table->string('classHouse')->nullable()->index();
             $table->string('location')->nullable()->index();
             $table->integer('type')->nullable()->index();

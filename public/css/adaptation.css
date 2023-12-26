@@ -199,6 +199,13 @@
         display: grid;
         grid-template-columns: auto;
     }
+    .title_screen h1 {
+        text-align: left;
+    }
+
+    .title_screen .img_trident {
+        text-align: left;
+    }
 }
 @media (max-width: 882px) {
 
@@ -207,13 +214,9 @@
         grid-template-columns: 1fr;
     }
 
-    .title_screen_container {
-        width: 300px;
-        margin: auto;
-    }
-
     .title_screen {
         padding: 140px 0 121px;
+
     }
 
     .title_screen {
@@ -790,6 +793,7 @@
 
     .title_screen {
         padding: 120px 0 120px;
+
     }
 
     .title_screen {
@@ -800,7 +804,6 @@
 
     .title_screen h1 {
         font-size: 15px;
-        width: 240px;
         line-height: 16px;
         text-align: center;
         padding: 0;
@@ -811,7 +814,6 @@
         flex-direction: column-reverse;
         font-size: 12px;
         line-height: 16px;
-        width: 240px;
         align-items: center;
     }
 

@@ -63,11 +63,11 @@
                 <div class="all_img">
                     <div class="slider_img">
                         @foreach($product->all_img as $item)
-                        <div class="img">
-                            <img
-                                src="{{$item->url}}"
-                                alt="">
-                        </div>
+                            <div class="img">
+                                <img
+                                    src="{{$item->url}}"
+                                    alt="">
+                            </div>
                         @endforeach
                     </div>
 
@@ -98,7 +98,7 @@
                             </div>
 
                             <div class="price border">
-                                <span>{{$product->price}}</span>$
+                                <span>{{$product->price}}$</span>
                             </div>
                         </div>
                         <div class="button">
@@ -108,7 +108,7 @@
                 </div>
                 <ul>
                     @foreach($product->tag as $item)
-                    <li>{{$item}}</li>
+                        <li>{{$item}}</li>
                     @endforeach
                 </ul>
                 <div class="border_container mobile">
@@ -121,8 +121,8 @@
                                     @endif</span>
                         </div>
 
-                        <div class="price border">
-                            <span>{{$product->price}}</span>$
+                        <div class=" border price">
+                            <p><span>{{$product->price}}</span></p>
                         </div>
                     </div>
                     <div class="button">
@@ -130,9 +130,13 @@
                     </div>
                 </div>
                 <div class="location_map">
+                    {{--                    <iframe--}}
+                    {{--                        src="{{$product->map}}"--}}
+                    {{--                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"--}}
+                    {{--                        referrerpolicy="no-referrer-when-downgrade"></iframe>--}}
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d207446.32916008425!2d139.57606058270267!3d35.66841030597444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b857628235d%3A0xcdd8aef709a2b520!2zVG9reW8sINCi0L7QutGW0L4sINCv0L_QvtC90ZbRjw!5e0!3m2!1suk!2sua!4v1702411337524!5m2!1suk!2sua"
-                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13695544.69435517!2d126.54951586965775!3d33.0659738668307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34674e0fd77f192f%3A0xf54275d47c665244!2z0K_Qv9C-0L3RltGP!5e0!3m2!1suk!2sua!4v1703625722648!5m2!1suk!2sua"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
 
@@ -142,7 +146,7 @@
         </div>
     </div>
     <div class="app_products ">
-    <div class="content_wrapper">
+        <div class="content_wrapper">
             <div class="cardList">
 
                 @include('components.card_product_mini')
