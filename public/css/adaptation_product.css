@@ -1,15 +1,46 @@
-@media (max-width: 1364px){
-    .app_products .cardList{
-        grid-gap: 0 60px;
-    }
-}
-@media (max-width: 1320px){
+
+@media (max-width: 1492px){
     .app_products .cardList{
         grid-gap: 0 40px;
+    }
+    .app_products .card button {
+        font-size: 18px;
+        padding: 15px 25px;
+        font-family: "Inter" , sans-serif;
+    }
+}
+@media (max-width: 1364px){
+    .app_products .cardList{
+        grid-gap: 0 20px;
+    }
+    .app_products .card button {
+        font-size: 16px;
+        padding: 13px 23px;
+        font-family: "Inter" , sans-serif;
+    }
+    .commodity .card .status {
+        font-size: 16px;
+        margin: 20px 0 8px;
+        padding: 5px 16px;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.75);
+    }
+
+    .commodity .card .price {
+        font-size: 20px;
+        font-weight: 600;
+        padding: 13px 25px 10px;
+
     }
 }
 @media (max-width: 1257px){
 
+    .app_products .cardList{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px 50px;
+        margin: 30px 40px;
+    }
     .nav .content_wrapper{
         padding: 10px 4%;
 
@@ -75,6 +106,12 @@
 
 }
 @media (max-width: 1100px){
+    .app_products .cardList{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+        margin: 30px;
+    }
     .order{
         top: 0;
         left: 0;
@@ -103,7 +140,21 @@
         padding: 30px;
     }
 }
+@media (max-width: 990px){
+    .app_products .cardList{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+        margin: 90px;
+    }
+}
 @media (max-width: 800px){
+    .app_products .cardList{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+        margin: 60px;
+    }
     .order{
         padding: 150px 100px;
     }
@@ -114,6 +165,12 @@
     }
 }
 @media (max-width: 785px) {
+    .app_products .cardList{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+        margin: 40px;
+    }
     .order .input_order h2{
         font-size: 30px;
         padding-bottom: 30px;
@@ -262,6 +319,12 @@
 
 }
 @media (max-width: 500px){
+    .app_products .cardList{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+        margin: 20px;
+    }
     .content .product .border{
         font-size: 20px;
         padding: 10px 15px;
@@ -289,6 +352,90 @@
     }
 }
 @media (max-width: 474px) {
+    .app_products .card img {
+        overflow: hidden;
+        height: 100%;
+    }
+
+    .app_products .card .img {
+        width: 100%;
+        height: 225px;
+        overflow: hidden;
+
+    }
+
+    .app_products .card .text {
+        padding: 13px;
+        width: 100%;
+    }
+
+    .app_products .card h2 {
+        font-size: 17px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .app_products.card .location img {
+        width: 9px;
+        height: auto;
+    }
+
+    .app_products.card .location {
+        font-size: 11px;
+        height: 1.3em;
+
+    }
+
+    .app_products .card .description p {
+        font-size: 12px;
+        line-height: 13px;
+    }
+
+    .app_products .card .text_border {
+        width: 100px;
+    }
+
+    .app_products .card .border_container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .app_products .card .border {
+        border-radius: 5px;
+        border: 2px solid #B4D2FF;
+        padding: 10px 15px 10px 12px;
+        text-transform: uppercase;
+        /*display: flex;*/
+        /*flex-wrap: wrap;*/
+        display: inline-block;
+    }
+
+    .app_products.card .status {
+        font-size: 10px;
+        margin: 15px 0 10px;
+        padding: 4px 14px;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.75);
+    }
+
+    .app_products.card .price {
+        font-size: 15px;
+        padding: 8px 15px 7px;
+
+    }
+
+    .app_products .card button {
+        border: none;
+        font-size: 16px;
+        padding: 10px 20px;
+        border-radius: 8px;
+    }
+
+    .app_products .card .button {
+        display: flex;
+        align-items: end;
+    }
+
     .nav .content_wrapper{
         padding: 10px 13%;
 
@@ -333,6 +480,74 @@
     }
 }
 @media (max-width: 396px) {
+    .app_products .card .img {
+        width: 100%;
+        height: 179px;
+    }
+
+    .app_products  .card .text {
+        padding: 13px;
+        width: 100%;
+    }
+
+    .app_products  .card h2 {
+        font-size: 15px;
+    }
+
+    .app_products  .card .location img {
+        width: 9px;
+        height: auto;
+    }
+
+    .app_products  .card .location {
+        font-size: 9px;
+    }
+
+    .app_products  .card .description p {
+        font-size: 11px;
+        line-height: 13px;
+    }
+
+    .app_products  .card .text_border {
+        width: 100px;
+    }
+
+    .app_products  .card .border_container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .app_products  .card .border {
+        border-radius: 5px;
+        border: 2px solid #B4D2FF;
+        padding: 5px 10px 5px 6px;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+
+    .app_products  .card .status {
+        font-size: 10px;
+        margin: 10px 0 5px;
+        padding: 2px 7px;
+    }
+
+    .app_products .card .price {
+        font-size: 10px;
+        padding: 6px 13px 3px;
+    }
+
+    .app_products  .card button {
+        border: none;
+        font-size: 16px;
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-weight: 600;
+    }
+
+    .app_products  .card .button {
+        display: flex;
+        align-items: end;
+    }
     .content{
         margin: 0 20px;
     }
@@ -355,6 +570,9 @@
     }
 }
 @media (max-width: 360px) {
+    .app_products .content_wrapper{
+        padding: 0 1%;
+    }
     .order{
         padding: 100px 0;
     }

@@ -141,9 +141,8 @@
 
         </div>
     </div>
+    <div class="app_products ">
     <div class="content_wrapper">
-        <div class="app_products ">
-
             <div class="cardList">
 
                 @include('components.card_product_mini')
