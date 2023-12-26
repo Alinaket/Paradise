@@ -481,7 +481,7 @@
         display: none;
     }
 
-    .commodity .card .text p {
+    .commodity .card .description p {
         height: 3.3em;
     }
 
@@ -600,7 +600,7 @@
 
     }
 
-    .commodity .card p {
+    .commodity .card .description p {
         font-size: 12px;
         line-height: 13px;
     }
@@ -868,7 +868,7 @@
         font-size: 9px;
     }
 
-    .commodity .card p {
+    .commodity .card .description p {
         font-size: 11px;
         line-height: 13px;
     }

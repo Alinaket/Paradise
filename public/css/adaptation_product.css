@@ -52,7 +52,7 @@
     .content .product .mobile .price{
         font-size: 26px;
         padding: 10px 35px;
-        margin: 10px 0;
+        /*margin: 10px 0;*/
     }
     .content .product .button{
         text-align: left;
@@ -209,6 +209,10 @@
 
 }
 @media (max-width: 653px ) {
+
+    .content .content_wrapper{
+        padding: 30px 25px;
+    }
     .order{
         padding: 100px 50px;
     }
@@ -243,7 +247,7 @@
         text-align: center;
     }
     .content .product button{
-        width: 90%;
+        width: 100%;
         font-size: 30px;
     }
     .content .product p:hover{
@@ -258,6 +262,14 @@
 
 }
 @media (max-width: 500px){
+    .content .product .border{
+        font-size: 20px;
+        padding: 10px 15px;
+    }
+    .content .product .mobile .price{
+        font-size: 22px;
+        padding: 10px 25px;
+    }
     .nav .content_wrapper{
         padding: 10px 10%;
 
@@ -321,18 +333,16 @@
     }
 }
 @media (max-width: 396px) {
-    .content .product .text_border{
-        display: flex;
-        flex-direction: column;
-        grid-gap: 10px 0;
+    .content{
+        margin: 0 20px;
     }
-    .content .product .border{
-        font-size: 16px;
-        padding: 8px 18px;
+    .content .product .mobile .status{
+        font-size: 15px;
+        padding: 6px 10px;
     }
-    .content .product .price{
-        font-size: 18px;
-        padding: 10px 20px;
+    .content .product .mobile .price{
+        font-size: 17px;
+        padding: 6px 20px;
     }
     .content .product p{
         font-size: 15px;

@@ -10,8 +10,9 @@
                 <img src="{{asset("../img/location_color.png")}}" alt="">
                 <em>{{$item->address}}</em>
             </div>
-
-            <p>{{$item->description}}</p>
+            <div class="description">
+                <p>{{$item->description}}</p>
+            </div>
             <div class="border_container">
                 <div class="text_border">
                     <div class="status border">
@@ -22,7 +23,7 @@
                             @endif</span>
                     </div>
                     <div class="price border">
-                        <span>{{$item->price}}</span>$
+                        <p><span>{{$item->price}}</span>$</p>
                     </div>
                 </div>
                 <a href="{{route('product', ['slug'=>$item->slug])}}" class="button">
