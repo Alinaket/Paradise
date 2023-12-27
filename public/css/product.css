@@ -107,7 +107,7 @@
     height: auto;
     background: #ffffff;
     position: absolute;
-    top: 4em;
+    top: 13%;
     right: 2em;
     padding: 15px 20px;
     overflow: hidden;
@@ -135,23 +135,23 @@
     display: inline-block;
     border: 3px solid #B4D2FF;
 
+
 }
 
 .content .product .status {
-    font-size: 16px;
+    font-size: 18px;
     margin: 30px 0 15px;
-    padding: 8px 18px;
+    padding: 8px 20px;
     font-weight: 600;
     color: rgb(0, 0, 0);
     border: 3px solid #B4D2FF;
 
 }
 
-.content .product .price span{
+.content .product .price{
     font-size: 24px;
     font-weight: 600;
     padding: 10px 25px 7px;
-    width: 50px;
 
 }
 

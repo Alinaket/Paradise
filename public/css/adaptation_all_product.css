@@ -1,7 +1,6 @@
-@media (max-width: 1880px){
 
-}
 @media (max-width: 1224px) {
+
     .all_product .card p{
         font-size: 16px;
     }
@@ -11,11 +10,9 @@
     .all_product .card .status{
         font-size: 13px;
         margin: 20px 0 10px;
-        padding: 6px 15px;
     }
     .all_product .card .price{
         font-size: 20px;
-        padding: 8px 23px 5px;
     }
     .all_product .card button {
         font-size: 22px;
@@ -27,6 +24,10 @@
     }
 }
 @media (max-width: 1170px) {
+
+}
+@media (max-width: 1170px) {
+
     .all_product .card img{
         height: 100%;
     }
@@ -44,12 +45,22 @@
     }
 }
 @media (max-width: 1090px){
-
+    .all_product .card .price{
+        font-size: 16px;
+    }
+    .all_product .card button {
+        font-size: 20px;
+        padding: 16px 30px;
+    }
+    .all_product .card .text{
+        padding: 20px 30px;
+    }
     .all_product .card{
         display: grid;
         grid-template-columns: 1fr;
     }
     .all_product .cardList {
+        padding: 45px;
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
@@ -66,19 +77,44 @@
         margin-top: 0;
     }
 }
-@media (max-width: 995px){
-    .all_product .cardList{
-        display: grid;
-        grid-template-columns: 1fr;
+
+@media (max-width: 1066px){
+    .all_product .cardList {
+        padding: 25px;
+
     }
 }
+@media (max-width: 1040px){
+    .all_product .cardList {
+        padding: 15px;
+
+    }
+}
+@media (max-width: 995px){
+    .all_product{
+        padding: 30px 40px;
+    }
+.all_product .cardList{
+        display: grid;
+        grid-template-columns: 1fr;
+        /*padding: 30px 40px;*/
+    }
+}
+
 @media (max-width: 660px){
+    .all_product{
+        padding: 30px 20px;
+    }
+    .all_product .card .price{
+        font-size: 20px;
+    }
     .all_product .card .location{
         height: 1.8em;
         overflow: hidden;
         margin-bottom: 6px;
     }
 }
+
 @media (max-width: 544px){
     .all_product .card img{
         width: 100%;
@@ -117,13 +153,17 @@
         font-weight: 600;
         font-family: "Inter" , sans-serif;
     }
+    .all_product .card .price span{
+        padding: 0;
+    }
 }
 @media (max-width: 503px){
+
     .all_product .card .text{
         padding: 20px 30px;
     }
     .all_product .card .border{
-        font-size: 16px;
+        font-size: 20px;
         padding: 7px 15px;
         margin: 0 10px;
     }

@@ -123,14 +123,17 @@
     margin-bottom: 30px;
     height: 100px;
 }
-
-.all_product .card .text_border {
-    width: 200px;
+/*.all_product .card .text_border{*/
+/*    margin-right: 20px;*/
+/*}*/
+.all_product .card .text_border span{
+    white-space: nowrap;
 }
 
 .all_product .card .border_container {
     display: flex;
     justify-content: space-between;
+    grid-gap:  20px;
 }
 
 .all_product .card .border {
@@ -138,17 +141,14 @@
     border: 3px solid #B4D2FF;
     padding: 10px 15px 10px 12px;
     text-transform: uppercase;
-    /*display: flex;*/
-    /*flex-wrap: wrap;*/
-    display: inline-block;
 }
 
 .all_product .card .status {
     font-size: 15px;
     margin: 20px 0 10px;
-    padding: 6px 18px;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.75);
+    display: inline-block;
 }
 
 .all_product .card .price span {

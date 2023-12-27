@@ -19,11 +19,11 @@
                         <span>@if($item->type==1)
                                 Продажа
                             @else
-                                Покупка
+                                Оренда
                             @endif</span>
                     </div>
                     <div class="price border">
-                        <p><span>{{$item->price}}</span>$</p>
+                        <span>{{$item->price}}$</span>
                     </div>
                 </div>
                 <a href="{{route('product', ['slug'=>$item->slug])}}" class="button">

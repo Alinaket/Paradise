@@ -13,6 +13,9 @@
     .app_products .cardList{
         grid-gap: 0 20px;
     }
+    .content_wrapper .cardList{
+        padding: 5px 0;
+    }
     .app_products .card button {
         font-size: 16px;
         padding: 13px 23px;
@@ -39,7 +42,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 30px 50px;
-        margin: 30px 40px;
+        margin: 30px 0;
     }
     .nav .content_wrapper{
         padding: 10px 4%;
@@ -75,7 +78,7 @@
     .content .product .mobile{
         display: block;
         width: 100%;
-        margin-right: 90px;
+        margin:30px  90px  0 0;
     }
     .content .product .mobile .status{
         font-size: 20px;
@@ -106,6 +109,7 @@
 
 }
 @media (max-width: 1100px){
+
     .app_products .cardList{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -195,6 +199,9 @@
     .content .product  .price{
         font-size: 20px;
     }
+    .content .product .location_map{
+        margin-top: 15%;
+    }
     .content .product iframe{
         height: 220px;
         width: 100%;
@@ -204,12 +211,12 @@
         font-size: 25px;
         padding: 20px 50px;
     }
-    .content .product p{
+    .content .product .description p{
         height: 6.2em;
         overflow: hidden;
 
     }
-    .content .product p:hover{
+    .content .product .fake p:hover{
         max-height: 20.5em;
         height: auto;
         width: 100%;
@@ -296,7 +303,7 @@
     }
     .content .product .border {
         font-size: 25px;
-        padding: 15px 25px;
+        padding: 15px 40px;
         margin: auto;
 
     }
@@ -311,6 +318,7 @@
         max-height: 30.2em;
         height: auto;
         width: 100%;
+        top: 45px;
     }
     .content .product p{
         font-size: 18px;

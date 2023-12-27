@@ -85,7 +85,7 @@
                         <em>{{$product->address}}</em>
                     </div>
                     <div class="fake">
-                        <p>{{$product->description}}</p>
+                            <p>{{$product->description}}</p>
                     </div>
                     <div class="border_container">
                         <div class="text_border">
@@ -117,12 +117,12 @@
                                 <span>@if($product->type==1)
                                         Продаж
                                     @else
-                                        Купівля
+                                        Оренда
                                     @endif</span>
                         </div>
 
                         <div class=" border price">
-                            <p><span>{{$product->price}}</span></p>
+                            <span>{{$product->price}}$</span>
                         </div>
                     </div>
                     <div class="button">

@@ -24,24 +24,24 @@
                             <p>{{$item->description}}</p>
                             <div class="border_container">
                                 <div class="text_border">
-                                    <div class="status border">
-                                        <span>@if($item->type==1)
-                                                Продаж
-                                            @else
-                                                Купівля
-                                            @endif</span>
+                                    <div class="status">
+                                        <div class="border">
+                                            <span>@if($item->type==1)
+                                                    Оренда
+                                                @else
+                                                    Продаж
+                                                @endif</span>
+                                        </div>
                                     </div>
 
-                                    <div class="price border">
-                                        <span>{{$item->price}} $</span>
+                                    <div class="price">
+                                        <div class="border">
+                                            <span>{{$item->price}} $</span>
+                                        </div>
                                     </div>
                                 </div>
                                 <a href="{{route('product', ['slug'=>$item->slug])}}" class="button">
-                                    <button>@if($item->type==1)
-                                            Продаж
-                                        @else
-                                            Купівля
-                                        @endif</button>
+                                    <button>Детальніше</button>
                                 </a>
                             </div>
                         </div>
