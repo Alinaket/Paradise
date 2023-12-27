@@ -18,6 +18,9 @@
 }
 
 @media (max-width: 1382px) {
+    .content_wrapper .cardList{
+        padding: 5px 60px;
+    }
     .nav .img_logo img {
         margin: 0;
     }
@@ -31,12 +34,6 @@
     }
 }
 
-@media (max-width: 1380px) {
-    .commodity .cardList {
-        grid-gap: 45px 30px;
-    }
-}
-
 @media (max-width: 1366px) {
     .commodity .cardList {
         display: grid;
@@ -46,6 +43,9 @@
 }
 
 @media (max-width: 1100px) {
+    .content_wrapper .cardList{
+        padding: 5px 40px;
+    }
     .contact {
         top: 0;
         left: 0;
@@ -369,6 +369,9 @@
 }
 
 @media (max-width: 580px) {
+    .content_wrapper .cardList{
+        padding: 5px 10px;
+    }
     .contact {
         padding: 130px 100px;
     }
@@ -423,7 +426,9 @@
 }
 
 @media (max-width: 500px) {
-
+    .content_wrapper .cardList{
+        padding: 5px;
+    }
     .nav_mobile button {
         font-size: 18px;
     }
@@ -444,6 +449,7 @@
 }
 
 @media (max-width: 484px) {
+
     .contact {
         padding: 130px 80px;
     }

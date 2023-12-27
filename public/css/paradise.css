@@ -86,7 +86,7 @@
     right:25%;
     padding: 40px 150px;
     font-family: 'Gothic A1', sans-serif;
-    z-index: 2;
+    z-index: 4;
     opacity: 0;
     transition-duration: 1s;
 }
