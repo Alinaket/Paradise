@@ -91,9 +91,9 @@
     }
 }
 @media (max-width: 995px){
-    .all_product{
-        padding: 30px 40px;
-    }
+    /*.all_product{*/
+    /*    padding: 30px 40px;*/
+    /*}*/
 .all_product .cardList{
         display: grid;
         grid-template-columns: 1fr;
@@ -102,9 +102,9 @@
 }
 
 @media (max-width: 660px){
-    .all_product{
-        padding: 30px 20px;
-    }
+    /*.all_product{*/
+    /*    padding: 30px 20px;*/
+    /*}*/
     .all_product .card .price{
         font-size: 20px;
     }

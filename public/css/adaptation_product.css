@@ -331,7 +331,7 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 30px;
-        margin: 20px;
+        margin: 9px;
     }
     .content .product .border{
         font-size: 20px;
@@ -359,7 +359,24 @@
         width: 100%;
     }
 }
-@media (max-width: 474px) {
+@media (max-width: 474px){
+
+    .content .product .title_img{
+        padding: 0 0 10px 0;
+
+    }
+    .content .product .slider_img{
+        grid-gap: 0 5px;
+
+    }
+    .content .product .mobile{
+        margin: 20px 0 0 0;
+
+    }
+    .content .product .text_border{
+        margin-top: 20px;
+
+    }
     .app_products .card img {
         overflow: hidden;
         height: 100%;
@@ -395,10 +412,14 @@
     }
 
     .app_products .card .description p {
-        font-size: 12px;
-        line-height: 13px;
-    }
+        font-size: 10px;
+        line-height: 11px;
+        height: 6em;
 
+    }
+    .app_products .card .location{
+        height: 1.5em;
+    }
     .app_products .card .text_border {
         width: 100px;
     }

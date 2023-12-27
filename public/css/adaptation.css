@@ -377,6 +377,7 @@
 }
 
 @media (max-width: 580px) {
+
     .content_wrapper .cardList{
         padding: 5px 10px;
     }
@@ -740,18 +741,45 @@
     }
 }
 
-@media (max-width: 365px) {
-
+@media (max-width: 375px) {
+    .contact .icon span {
+        font-size: 18px;
+        position: absolute;
+        top: 100px;
+        left: 20px;
+    }
+    .contact .img_logo{
+        margin-bottom: 10px;
+    }
+    .contact .img_logo img{
+        display: none;
+    }
+    .nav_mobile .sort ul{
+        margin: 15px;
+    }
+    .nav_mobile .info_mobile .hr{
+        margin: 25px 0;
+    }
+    .nav_mobile .info_con_mob li{
+        padding: 6px;
+    }
+    .nav_mobile .content_wrapper{
+        padding: 100px 40px;
+    }
+    .nav_mobile .img_logo img {
+        width: 51px;
+        height: auto;
+    }
     .contact {
-        padding: 130px 60px;
+        padding: 80px 60px;
     }
     .nav_mobile button {
         font-size: 14px;
     }
 
     .nav_mobile .sort ul li {
-        padding: 10px 3px 5px 5px;
-        font-size: 16px;
+        padding: 5px;
+        font-size: 14px;
         font-weight: 500;
         font-family: "Inter", sans-serif;
     }
@@ -817,8 +845,8 @@
     }
 
     .title_screen h1 {
-        font-size: 15px;
-        line-height: 16px;
+        font-size: 17px;
+        line-height: 18px;
         text-align: center;
         padding: 0;
     }
@@ -832,7 +860,8 @@
     }
 
     .title_screen .img_trident p {
-        padding: 50px 0 10px;
+        padding: 40px 0 10px;
+        font-size: 14px;
     }
 
     .title_screen .img_trident img {
