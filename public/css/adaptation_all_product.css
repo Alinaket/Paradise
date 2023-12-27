@@ -158,18 +158,25 @@
     }
 }
 @media (max-width: 503px){
-
+    .all_product .card button{
+        padding: 20px 30px;
+    }
+    .all_product .card .status{
+        margin: 0;
+    }
     .all_product .card .text{
         padding: 20px 30px;
     }
     .all_product .card .border{
         font-size: 20px;
         padding: 7px 15px;
-        margin: 0 10px;
     }
     .all_product .card .text_border{
         text-align: center;
-        margin-top: 70px;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
     }
 
 }
