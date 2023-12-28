@@ -1,9 +1,7 @@
 .sp2{
     grid-column: span 2;
 }
-.fake{
-    display: none;
-}
+
 .content_wrapper{
     max-width: 1590px;
     width: 100%;

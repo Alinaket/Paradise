@@ -177,7 +177,7 @@
     }
     .order .input_order h2{
         font-size: 30px;
-        padding-bottom: 30px;
+        padding-bottom: 10px;
         text-align: center;
     }
     .order .input_order p{
@@ -216,14 +216,6 @@
         overflow: hidden;
 
     }
-    .content .product .fake p:hover{
-        max-height: 20.5em;
-        height: auto;
-        width: 100%;
-    }
-    .content .product .fake{
-        height: 110px;
-    }
 
 }
 @media (max-width: 916px) {
@@ -233,6 +225,11 @@
     }
 }
 @media (max-width: 702px) {
+    .order .img_logo img{
+        width: 90px;
+        height: auto;
+        padding: 20px;
+    }
     .order{
         padding: 70px;
     }
@@ -354,13 +351,37 @@
     .order .input_order .flex{
         display: grid;
         grid-template-columns: 1fr;
+        grid-gap: 10px;
     }
     .order .input_order .hr{
         width: 100%;
     }
 }
 @media (max-width: 474px){
+    .order .icon span{
+        position: absolute;
+        top: -20px;
+        left: -10px;
+        font-size: 14px;
+    }
+    .order input{
+        font-size: 18px;
+        padding: 10px 5px 5px;
 
+    }
+    .order .input_order .flex{
+        padding: 15px 0;
+
+    }
+    .order .input_order p{
+        font-size: 16px;
+    }
+    .order .check_list{
+        font-size: 16px;
+    }
+    .order .button{
+        margin-top: 30px;
+    }
     .content .product .title_img{
         padding: 0 0 10px 0;
 
@@ -607,7 +628,6 @@
     }
     .order .input_order h2{
         font-size: 20px;
-        padding-bottom: 20px;
     }
     .order .input_order p{
         font-size: 13px;
