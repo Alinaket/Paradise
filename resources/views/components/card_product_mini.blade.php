@@ -17,13 +17,13 @@
                 <div class="text_border">
                     <div class="status border">
                         <span>@if($item->type==1)
-                                Продажа
+                                Продаж
                             @else
                                 Оренда
                             @endif</span>
                     </div>
                     <div class="price border">
-                        <span>{{$item->price}}$</span>
+                        <span>{{$item->price}} грн</span>
                     </div>
                 </div>
                 <a href="{{route('product', ['slug'=>$item->slug])}}" class="button">

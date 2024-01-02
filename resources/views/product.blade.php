@@ -93,12 +93,12 @@
                                 <span>@if($product->type==1)
                                         Продаж
                                     @else
-                                        Купівля
+                                        Оренда
                                     @endif</span>
                             </div>
 
                             <div class="price border">
-                                <span>{{$product->price}}$</span>
+                                <span>{{$product->price}}грн</span>
                             </div>
                         </div>
                         <div class="button">
@@ -122,7 +122,7 @@
                         </div>
 
                         <div class=" border price">
-                            <span>{{$product->price}}$</span>
+                            <span>{{$product->price}}грн</span>
                         </div>
                     </div>
                     <div class="button">
