@@ -65,7 +65,7 @@
                         @foreach($product->all_img as $item)
                             <div class="img">
                                 <img
-                                    src="{{$item->url}}"
+                                    src="{{asset($item->url??"")}}"
                                     alt="">
                             </div>
                         @endforeach
@@ -73,7 +73,7 @@
 
                     <div class="title_img img">
                         <img
-                            src="{{$product->title_img->url}}"
+                            src="{{asset($product->title_img->url)}}"
                             alt="">
                     </div>
                 </div>
@@ -98,7 +98,7 @@
                             </div>
 
                             <div class="price border">
-                                <span>{{$product->price}}грн</span>
+                                <span>{{$product->price}} <span class="span_prise">грн</span></span>
                             </div>
                         </div>
                         <div class="button">

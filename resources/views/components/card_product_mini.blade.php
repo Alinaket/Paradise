@@ -1,7 +1,7 @@
 @foreach($recommend_house as $item )
     <div class="card">
         <div class="img">
-            <img src="{{$item->title_img->url}}"
+            <img src="{{asset($item->title_img->url??"")}}"
                  alt="">
         </div>
         <div class="text">
@@ -23,10 +23,10 @@
                             @endif</span>
                     </div>
                     <div class="price border">
-                        <span>{{$item->price}} грн</span>
+                        <span>{{$item->price}} <span class="span_prise">грн</span></span>
                     </div>
                 </div>
-                <a href="{{route('product', ['slug'=>$item->slug])}}" class="button">
+                <a href="{{route('product', ['slug'=>($item->slug??"")])}}" class="button">
                     <button>Детальніше</button>
                 </a>
 

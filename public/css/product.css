@@ -31,8 +31,9 @@
 
 .content .slider_img {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-direction: column;
+    grid-gap: 10px;
 }
 
 .content .slider_img .img {
