@@ -91,9 +91,9 @@
                         <div class="text_border">
                             <div class="status border">
                                 <span>@if($product->type==1)
-                                        Продаж
-                                    @else
                                         Оренда
+                                    @else
+                                        Продаж
                                     @endif</span>
                             </div>
 

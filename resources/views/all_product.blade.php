@@ -27,9 +27,9 @@
                                     <div class="status">
                                         <div class="border">
                                             <span>@if($item->type==1)
-                                                    Оренда
-                                                @else
                                                     Продаж
+                                                @else
+                                                    Оренда
                                                 @endif</span>
                                         </div>
                                     </div>
