@@ -134,10 +134,6 @@
     border: none;
     font-size: 20px;
     width: 100%;;
-    /*margin-top: 10px ;*/
-}
-.nav_mobile input{
-
 }
 .contact .hr{
     height: 2px;
@@ -147,6 +143,7 @@
 }
 .contact .input p{
     font-size: 20px;
+    padding-bottom: 8px;
     font-weight: 600;
     font-family: 'Inter';
 }
@@ -154,7 +151,7 @@
     color: #ef4444;
     font-size: 18px;
 }
-.contact .contact_input form{
+.contact .flex{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 40px;
@@ -545,8 +542,7 @@
     border: 3px solid #B4D2FF;
     padding: 10px 15px 10px 12px;
     text-transform: uppercase;
-    /*display: flex;*/
-    /*flex-wrap: wrap;*/
+
     display: inline-block;
 }
 

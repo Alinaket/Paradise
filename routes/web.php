@@ -20,4 +20,4 @@ Route::get('/product',[ProductController::class, 'all_product'])->name('all_prod
 Route::get('/product/{type}',[ProductController::class, 'all_product'])->name('all_product_type');
 Route::get('/product/lot/{slug}',[ProductController::class, 'product'], )->name('product');
 Route::post('/send-mail',[MailsController::class, 'send_mail'])->name('send_mail');
-Route::get('/send-mail-1',[MailsController::class, 'send_mail'])->name('send_mail');
+Route::post('/send-order',[MailsController::class, 'send_order'])->name('send_order');

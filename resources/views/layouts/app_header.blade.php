@@ -41,58 +41,60 @@
         <img src="{{asset('../img/logo.png')}}" alt="">
     </div>
     <h2>контакт для зворотнього зв’язку</h2>
-    <div class="input">
-        <div class="contact_input">
-            <form action="" class="flex">
-                <label for="">
+    <form action="{{route('send_mail')}}" method="post" >
+        @csrf
+        <div class="input">
+            <div class="contact_input flex">
+
+                <label>
                     <p>Ім’я <span>*</span></p>
-                    <input type="text">
+                    <input type="text" name="first_name">
 
                     <div class="hr"></div>
 
                 </label>
 
-                <label for="">
+                <label>
                     <p>Ел.адреса <span>*</span></p>
-                    <input type="text">
+                    <input type="text" name="email">
 
                     <div class="hr"></div>
 
                 </label>
-                <label for="">
+                <label>
                     <p>Призвіще <span>*</span></p>
-                    <input type="text">
+                    <input type="text" name="last_name">
 
                     <div class="hr"></div>
 
                 </label>
-                <label for="">
+                <label>
                     <p>Телефон <span>*</span></p>
-                    <input type="text">
+                    <input type="text" name="number">
 
                     <div class="hr"></div>
 
                 </label>
-            </form>
-        </div>
-        <div class="contact_input_2">
-            <form action="">
-                <label for="">
+
+            </div>
+            <div class="contact_input_2">
+                <label>
                     <p>Тема</p>
-                    <input class="subject" type="text">
+                    <input class="subject" type="text" name="theme">
                     <div class="hr"></div>
                 </label>
-                <label for="">
-                    <textarea class="height" placeholder="Введіть своє повідомлення тут..." name="" id="" cols="30"
+                <label>
+                    <textarea class="height" placeholder="Введіть своє повідомлення тут..." name="text" id="" cols="30"
                               rows="10"></textarea>
                     <div class="hr"></div>
                 </label>
-            </form>
+                <div class="button">
+                    <button>Надіслати</button>
+                </div>
+
+            </div>
         </div>
-    </div>
-    <div class="button">
-        <button>Надіслати</button>
-    </div>
+    </form>
 </div>
 
 

@@ -12,49 +12,54 @@
         </div>
         <div class="input_order">
             <h2>Замовити послугу</h2>
-            <form action="" class="flex">
-                <label for="">
-                    <p>Ім’я <span>*</span></p>
-                    <input type="text">
+            <form action="{{route('send_mail')}}" method="post" >
+                @csrf
+                <div class="label flex">
+                    <label for="">
+                        <p>Ім’я <span>*</span></p>
+                        <input type="text" name="first_name">
 
-                    <div class="hr"></div>
+                        <div class="hr"></div>
 
-                </label>
+                    </label>
 
-                <label for="">
-                    <p>Прізвище <span>*</span></p>
-                    <input type="text">
+                    <label for="">
+                        <p>Прізвище <span>*</span></p>
+                        <input type="text" name="last_name">
 
-                    <div class="hr"></div>
+                        <div class="hr"></div>
 
-                </label>
-                <label for="">
-                    <p>Ел.адреса <span>*</span></p>
-                    <input type="text">
+                    </label>
+                    <label for="">
+                        <p>Ел.адреса <span>*</span></p>
+                        <input type="text" name="email">
 
-                    <div class="hr"></div>
+                        <div class="hr"></div>
 
-                </label>
-                <label for="">
-                    <p>Телефон <span>*</span></p>
-                    <input type="text">
-                    <div class="hr"></div>
+                    </label>
+                    <label for="">
+                        <p>Телефон <span>*</span></p>
+                        <input type="text" name="number">
+                        <div class="hr"></div>
 
-                </label>
+                    </label>
+                </div>
+                <div class="box">
+                    <div class="check_list">
+                        <label>
+                            <h3>оренда</h3>
+                            <input type="radio" name="type">
+                        </label>
+                        <label>
+                            <h3>продаж</h3>
+                            <input type="radio" name="type">
+                        </label>
+                    </div>
+                    <div class="button">
+                        <button>Відправити</button>
+                    </div>
+                </div>
             </form>
-        </div>
-        <div class="check_list">
-            <label>
-                <h3>оренда</h3>
-                <input type="checkbox"/>
-            </label>
-            <label>
-                <h3>продаж</h3>
-                <input type="checkbox"/>
-            </label>
-        </div>
-        <div class="button">
-            <button>Відправити</button>
         </div>
     </div>
     <div class="content">

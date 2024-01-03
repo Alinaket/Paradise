@@ -1,11 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
 <head>
-    <meta charset="UTF-8">
-    <title>Order Shipped</title>
+    <title>{{ $title }}</title>
 </head>
-<body>
-<h1>Your Order Has Been Shipped</h1>
-<p>Thank you for your order! It has been shipped.</p>
+<body style="font-family: Arial, sans-serif; background-color: #f4f4f4; color: #333;">
+
+<div style="max-width: 600px; margin: 0 auto; padding: 20px;">
+    <h1>{{$title}}</h1>
+    <table>
+        <tbody>
+        @foreach($body as $key=>$item)
+            <tr>
+                <td style="max-width: 500px; padding: 8px 10px; font-size: 18px">{{$key}}</td>
+                <td>{{$item}}</td>
+            </tr>
+        @endforeach
+
+        </tbody>
+    </table>
+</div>
 </body>
 </html>
+
