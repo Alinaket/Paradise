@@ -70,10 +70,9 @@
                             </div>
                         @endforeach
                     </div>
-
                     <div class="title_img img">
                         <img
-                            src="{{asset($product->title_img->url)}}"
+                            src="{{asset($product->title_img->url??"")}}"
                             alt="">
                     </div>
                 </div>
@@ -130,10 +129,6 @@
                     </div>
                 </div>
                 <div class="location_map">
-                    {{--                    <iframe--}}
-                    {{--                        src="{{$product->map}}"--}}
-                    {{--                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"--}}
-                    {{--                        referrerpolicy="no-referrer-when-downgrade"></iframe>--}}
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13695544.69435517!2d126.54951586965775!3d33.0659738668307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34674e0fd77f192f%3A0xf54275d47c665244!2z0K_Qv9C-0L3RltGP!5e0!3m2!1suk!2sua!4v1703625722648!5m2!1suk!2sua"
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"

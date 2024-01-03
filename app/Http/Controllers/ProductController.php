@@ -37,7 +37,7 @@ class ProductController extends Controller
             default:
                 $type_key = null;
         }
-        $all_product = Product::take(9);
+        $all_product = Product::take(300);
         if ($type_key) {
             $all_product = $all_product->where('type', $type_key);
         }
