@@ -17,8 +17,10 @@
     grid-template-columns: auto 1fr;
 }
 .all_product .card .img {
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
     height: 375px;
+    margin: auto;
 }
 
 .all_product .card img {
