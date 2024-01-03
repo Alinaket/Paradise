@@ -12,7 +12,7 @@
         </div>
         <div class="input_order">
             <h2>Замовити послугу</h2>
-            <form action="{{route('send_mail')}}" method="post" >
+            <form action="{{route('send_order')}}" method="post" >
                 @csrf
                 <div class="label flex">
                     <label for="">
@@ -48,11 +48,11 @@
                     <div class="check_list">
                         <label>
                             <h3>оренда</h3>
-                            <input type="radio" name="type">
+                            <input type="radio" name="type" value="Оренда">
                         </label>
                         <label>
                             <h3>продаж</h3>
-                            <input type="radio" name="type">
+                            <input type="radio" name="type" value="Продаж">
                         </label>
                     </div>
                     <div class="button">

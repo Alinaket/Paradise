@@ -136,9 +136,11 @@
     font-size: 24px;
     font-weight: 600;
     padding: 10px 25px 7px;
+}
+.content .product .price span{
+    white-space: nowrap;
 
 }
-
 .content .product .button {
     text-align: center;
 }

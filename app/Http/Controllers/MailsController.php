@@ -56,11 +56,13 @@ class MailsController extends Controller
         $email = $request->input('email') ?? "";
         $number = $request->input('number') ?? "";
         $type = $request->input('type');
+
         $body = [
             "Ім’я" =>$first_name,
             "Прізвище" => $last_name,
             "Пошта" => $email,
             "Номер" => $number,
+            "Тип" => $type
         ];
 
         $title = 'Нова заявка від '. $email;
