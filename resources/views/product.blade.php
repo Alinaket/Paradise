@@ -1,8 +1,8 @@
 @extends("layouts.app_header")
 @section("title", $product->name)
 @section("content")
-    <link rel="stylesheet" href="{{asset('css/product.css')}}">
-    <link rel="stylesheet" href="{{asset('css/adaptation_product.css')}}">
+    <link rel="stylesheet" href="{{asset('css/product.css')}}?{{date("Y-d-a")}}">
+    <link rel="stylesheet" href="{{asset('css/adaptation_product.css')}}?{{date("Y-d-a")}}">
     <div class="order none open">
         <div class="icon" onclick="order_block()">
             <span><i class="fa-solid fa-x"></i></span>

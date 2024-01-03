@@ -1,7 +1,7 @@
 @extends("layouts.app_header")
 @section("content")
-    <link rel="stylesheet" href="{{asset('../css/all_product.css')}}">
-    <link rel="stylesheet" href="{{asset('../css/adaptation_all_product.css')}}">
+    <link rel="stylesheet" href="{{asset('../css/all_product.css')}}?{{date("Y-d-a")}}">
+    <link rel="stylesheet" href="{{asset('../css/adaptation_all_product.css')}}?{{date("Y-d-a")}}">
 
 
     <div class="all_product">
