@@ -106,15 +106,6 @@
     border-radius: 10px;
 }
 
-/*.content .product p:after {*/
-/*    content: "";*/
-/*    position: absolute;*/
-/*    bottom: 0;*/
-/*    left: 0;*/
-/*    right: 0;*/
-/*    height: 5em;*/
-/*    !*backdrop-filter: blur(3px);*!*/
-/*}*/
 
 .content .product .text_border {
     width: 200px;
@@ -126,6 +117,7 @@
     text-transform: uppercase;
     display: inline-block;
     border: 3px solid #B4D2FF;
+    white-space: nowrap;
 
 
 }

@@ -149,13 +149,16 @@
     display: inline-block;
 }
 
-.all_product .card .price span {
+.all_product .card .price  {
     font-size: 22px;
     font-weight: 600;
-    padding: 10px 25px 7px;
 
 }
+.span_prise {
+    font-size: 16px;
+    padding: 0 10px;
 
+}
 .all_product .card button {
     border: none;
     background: rgba(180, 210, 255, 0.75);

@@ -110,6 +110,7 @@
 }
 @media (max-width: 1100px){
 
+
     .app_products .cardList{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -324,6 +325,11 @@
 
 }
 @media (max-width: 500px){
+    .content .product .border {
+        white-space: nowrap;
+
+    }
+
     .app_products .cardList{
         display: grid;
         grid-template-columns: 1fr;
@@ -517,6 +523,9 @@
 
 }
 @media (max-width: 434px) {
+    .span_prise{
+        font-size: 12px;
+    }
     .order .check_list{
         display: grid;
         grid-template-columns: 1fr;

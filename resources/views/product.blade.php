@@ -121,7 +121,7 @@
                         </div>
 
                         <div class=" border price">
-                            <span>{{$product->price}}грн</span>
+                            <span>{{$product->price}} <span class="span_prise">грн</span></span>
                         </div>
                     </div>
                     <div class="button">

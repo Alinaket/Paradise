@@ -468,6 +468,9 @@
 }
 
 @media (max-width: 452px) {
+    .span_prise{
+        font-size: 12px;
+    }
     .nav_mobile .content_wrapper {
         padding: 120px 40px;
     }
@@ -637,8 +640,7 @@
         border: 2px solid #B4D2FF;
         padding: 10px 15px 10px 12px;
         text-transform: uppercase;
-        /*display: flex;*/
-        /*flex-wrap: wrap;*/
+        white-space: nowrap;
         display: inline-block;
     }
 
@@ -653,9 +655,11 @@
     .commodity .card .price {
         font-size: 15px;
         padding: 8px 15px 7px;
-
     }
-
+    .commodity .card .price {
+        font-size: 15px;
+        padding: 8px 15px 7px;
+    }
     .commodity .card button {
         border: none;
         font-size: 16px;
@@ -742,6 +746,10 @@
 }
 
 @media (max-width: 375px) {
+    .span_prise{
+        font-size: 8px;
+    }
+
     .contact .icon span {
         font-size: 18px;
         position: absolute;

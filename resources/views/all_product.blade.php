@@ -36,7 +36,7 @@
 
                                     <div class="price">
                                         <div class="border">
-                                            <span>{{$item->price}} грн</span>
+                                            <span>{{$item->price}}<span class="span_prise">грн</span></span>
                                         </div>
                                     </div>
                                 </div>
